@@ -1,0 +1,26 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+body {
+    background:red;
+}
+
+.action h1 {
+    font-size: 28px;
+    padding-top: 2em;
+    padding-bottom: 2em;
+}
+
+.action {
+    text-align: center;
+  }
+
+  .action button {
+      font-size: 20px;
+  }
