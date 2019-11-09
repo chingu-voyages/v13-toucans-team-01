@@ -10,3 +10,24 @@ html {
 body {
     font-family: 'Comfortaa', cursive;
 }
+img.how_picture{
+    float: right;
+    height: 50;
+    width: 50%;
+}
+
+.title {
+    text-align: center;
+    padding: 2em;
+    font-size: 24px;
+}
+
+.how_lists {
+    margin-left: 2em;
+    padding: 0em 2em;
+    
+}
+
+.how_lists h1 {
+    padding: 0px 20px 20px 0px;
+}
