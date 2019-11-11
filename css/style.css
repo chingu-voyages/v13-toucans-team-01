@@ -15,8 +15,9 @@ body {
 
 img.how_picture{
     float: right;
-    height: 50;
-    width: 50%;
+    max-height: 50%;
+    max-width: 50%;
+    padding-right: 10px;
 }
 
 .title {
@@ -32,5 +33,9 @@ img.how_picture{
 }
 
 .how_lists h1 {
-    padding: 0px 20px 20px 0px;
+    padding: 20px 10px 20px 10px;
+}
+
+.how_lists ul{
+    padding-left: 40px;
 }
