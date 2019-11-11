@@ -1,6 +1,8 @@
+/* RESET */
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 html {
@@ -11,7 +13,41 @@ body {
     font-family: 'Comfortaa', cursive;
 }
 
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+img {
+    display: block;
+    height: auto;
+    width: 100%;
+}
+
+
+/********** HEADER **********/
+
+/* LOGO */
+#header .logo {
+    border: solid 1px;
+    display: flex;
+}
+
+#header .logo .logo_image {
+    width: 50px;
+} 
+
+#header .logo p {
+    align-self: center;
+}
+
+
 /* HOW IT WORKS SECTION STYLING*/
+
 
 img.how_picture{
     float: right;
@@ -89,6 +125,7 @@ img.how_picture{
     top: 100%;
     z-index: -1;
     -webkit-transition: top 0.09s ease-in;
+    transition: top 0.09s ease-in;
 }
 
 .action button:hover {
@@ -97,4 +134,71 @@ img.how_picture{
 
 .action button:hover:before {
     top: 0;
+}
+
+
+/********** FOOTER **********/
+#footer {
+    border-top: 1px solid #000;
+    display: grid;
+    grid-template-columns: 10rem 1fr 8rem;
+    padding: .5rem 0;
+    width: 100%;
+}
+
+#footer .footer__logo {
+    align-items: center;
+    display: grid;
+    grid-column: 1;
+    grid-row: 1/3;
+    grid-template-columns: repeat(2, 1fr);
+} 
+
+#footer .footer__logo img {
+    width: 5rem;
+}
+
+#footer .footer__logo p {
+    font-size: .8rem;
+}
+
+#footer .footer__links {
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
+    text-align: left;
+}
+
+#footer .footer__copyright {
+    align-self: center;
+    grid-column: 2;
+    grid-row: 2;
+    text-align: center;
+    font-size: .8rem;
+}
+
+#footer .footer__social-links {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    grid-column: 3;
+    grid-row: 1/3;
+    justify-content: center;
+}
+
+#footer .footer__social-links i {
+    margin: .5rem 0;
+    font-size: 1.3rem;
+}
+
+.fa-twitter {
+    color: #3185bd;
+}
+
+.fa-facebook {
+    color: rgb(31, 56, 109);
+}
+
+.fa-linkedin-in {
+    color: rgb(48, 108, 139);
 }
