@@ -1,0 +1,92 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Comfortaa', cursive;
+}
+
+/* HOW IT WORKS SECTION STYLING*/
+
+img.how_picture{
+    float: right;
+    height: 50;
+    width: 50%;
+}
+
+.title {
+    text-align: center;
+    padding: 2em;
+    font-size: 24px;
+}
+
+.how_lists {
+    margin-left: 2em;
+    padding: 0em 2em;
+    
+}
+
+.how_lists h1 {
+    padding: 0px 20px 20px 0px;
+}
+
+.action h1 {
+    font-size: 28px;
+    padding-top: 2em;
+    padding-bottom: 2em;
+    color: #383736;
+}
+
+.action {
+    text-align: center;
+}
+
+.action button {
+    position: relative;
+    height: 45px;
+    width: 150px;
+    margin: 10px 7px;
+    padding: 5px 5px;
+    font-weight: 700;
+    font-size: 15px;
+    letter-spacing: 2px;
+    color: #383736;
+    border: 2px #383736 solid;
+    border-radius: 4px;
+    text-transform: uppercase;
+    outline: 0;
+    overflow:hidden;
+    background: none;
+    z-index: 1;
+    cursor: pointer;
+    transition:         0.08s ease-in;
+    -o-transition:      0.08s ease-in;
+    -ms-transition:     0.08s ease-in;
+    -moz-transition:    0.08s ease-in;
+    -webkit-transition: 0.08s ease-in;
+}
+
+.action button:before {
+    content: "";
+    position: absolute;
+    background: #383736;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 100%;
+    z-index: -1;
+    -webkit-transition: top 0.09s ease-in;
+}
+
+.action button:hover {
+    color: whitesmoke;
+} 
+
+.action button:hover:before {
+    top: 0;
+}
