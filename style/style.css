@@ -10,10 +10,9 @@ html {
 }
 
 #body {
-    width: 1100px;
     margin: auto;
     font-family: 'Comfortaa', cursive;
-    /* text-rendering: optimizeLegibility; */
+    text-rendering: optimizeLegibility; 
 }
 
 li {
@@ -38,7 +37,7 @@ img {
 } 
 
 header {
-    /* background-image: url(/images/hero_img.jpg); */
+    background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(images/hero_img.jpg);
     background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(/images/hero_img.jpg);
     background-position: center;
     background-size: cover;
