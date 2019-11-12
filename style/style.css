@@ -9,8 +9,11 @@ html {
     box-sizing: border-box;
 }
 
-body {
+#body {
+    width: 1100px;
+    margin: auto;
     font-family: 'Comfortaa', cursive;
+    /* text-rendering: optimizeLegibility; */
 }
 
 li {
@@ -30,25 +33,135 @@ img {
 
 
 /********** HEADER **********/
-
-/* LOGO */
-#header .logo {
-    border: solid 1px;
-    display: flex;
-}
-
 #header .logo .logo_image {
     width: 50px;
 } 
 
-#header .logo p {
-    align-self: center;
+header {
+    /* background-image: url(/images/hero_img.jpg); */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(/images/hero_img.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    background-attachment: fixed;
+}
+
+.top_header {
+    width: 1100px;
+    display: flex;
+    padding-top: 50px;
+    margin: auto;
+}
+
+nav {
+    display: flex;
+    position: relative;
+    margin-top: 10px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    text-decoration: none;
+    list-style: none;
+    text-align: center;
+}
+
+nav ul li {
+    text-decoration: none;
+    display: inline-block;
+    text-transform: uppercase;
+
+}
+
+nav ul li a {
+    text-decoration: none;
+    padding: 15px;
+    color: #fff;
+    font-size: 15px;
+}
+
+.logo {
+    display: flex;
+    margin-right: auto;
+}
+
+.logo p {
+    position: relative;
+    bottom: -20px;
+    color: #fff;
+}
+
+.dropdown {
+    position: relative;
+    display: block;
+}
+
+.dropdown_content {
+    display: none;
+    color: #fff;
+    position: absolute;
+    border: none;
+    background-color: #e5e5e5;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.3);
+    margin-top: 10px;
+    z-index: 1;
+}
+
+.dropdown:hover .dropdown_content {
+    display: block;
+    margin-top: 10px;
+    padding: 12px 10px; 
+}
+
+.dropdown_content a {
+    background: none;
+    color: black;
+    padding: 8px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown_content a:hover {
+    color: green;
+}
+
+.hero_box {
+    position: absolute;
+    top: 50%;
+    left: 50%; 
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50% -50%);
+    width: 60%;
+    text-align: center;
+    color: #fff;
+    word-spacing: 5;
+}
+
+.hero_box .hero_h1 {
+    font-size: 45px;
+    padding-bottom: 20px;
+}
+
+.hero_box p {
+    font-size: 20px;
+    margin-bottom: 50px;
+}
+
+.hero_box a {
+    text-decoration: none;
+    font-size: 14px;
+    cursor: pointer;
+    background: green;
+    padding: 15px;
+    margin-top: 30px;
+    border-radius: 10px;
+    color: #fff;
 }
 
 
 /* HOW IT WORKS SECTION STYLING*/
-
-
 img.how_picture{
     float: right;
     max-height: auto;
