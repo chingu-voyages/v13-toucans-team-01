@@ -249,6 +249,8 @@ img.how_picture{
 }
 
 
+/********** FEATURES **********/
+
 /********** FOOTER **********/
 #footer {
     border-top: 1px solid #000;
@@ -279,6 +281,7 @@ img.how_picture{
     display: flex;
     justify-content: space-around;
     text-align: left;
+    max-width: 800px;
 }
 
 #footer .footer__copyright {
@@ -314,3 +317,97 @@ img.how_picture{
 .fa-linkedin-in {
     color: rgb(48, 108, 139);
 }
+
+
+/* Medium (max-width: 600px)  */
+@media screen and (max-width: 600px) {
+
+    /********** FEATURES **********/
+
+    #features {
+        display: grid;
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    #features .features__header {
+        font-size: 3.5rem;
+        padding: 4rem 0;
+    }
+
+    #features section {
+        padding-bottom: 3.5rem;
+    }
+
+    #features section h2 {
+        font-size: 2rem;
+        padding: 2rem;
+        
+    }
+    
+    #features section h3 {
+        font-size: 1.5rem;
+
+    }
+
+
+
+    /********** FOOTER/MOBILE **********/
+    #footer {
+        align-items: center;
+        display: grid;
+        grid-template-columns: 1fr;
+        margin-top: 3rem;
+        padding: 2rem;
+    }
+
+    #footer .footer__logo {
+        display: none;
+    } 
+
+    #footer .footer__links::before {
+        content: 'Bank of Toucan';
+        font-size: 2rem;
+        font-weight: 900;
+        margin-bottom: 3rem;
+        margin-top: 1rem;
+        text-transform: uppercase;
+    }
+
+    #footer .footer__links {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        grid-row: 1;
+        text-align: center;
+        margin:  0;
+    }
+
+    #footer .footer__links li {
+        font-size: 1.2rem;
+        margin: 1rem;
+    }
+
+    #footer .footer__copyright {
+        align-self: flex-end;
+        grid-column: 1;
+        grid-row: 3;
+        line-height: 20px;
+        text-align: center;
+        font-size: .8rem;
+    }
+
+    #footer .footer__social-links {
+        align-items: center;
+        display: flex;
+        flex-direction: row;
+        grid-column: 1;
+        grid-row: 2;
+        justify-content: center;
+    }
+    
+    #footer .footer__social-links i {
+        margin: 3rem 1rem;
+        font-size: 2rem;
+    }
+};
