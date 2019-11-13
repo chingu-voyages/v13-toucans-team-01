@@ -1,4 +1,5 @@
 /* RESET */
+
 * {
     margin: 0;
     padding: 0;
@@ -12,10 +13,15 @@ html {
 #body {
     margin: auto;
     font-family: 'Comfortaa', cursive;
-    text-rendering: optimizeLegibility; 
+    text-rendering: optimizeLegibility;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     text-transform: uppercase;
 }
 
@@ -36,9 +42,10 @@ img {
 
 
 /********** HEADER **********/
+
 #header .logo .logo_image {
     width: 50px;
-} 
+}
 
 header {
     background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(images/hero_img.jpg);
@@ -74,7 +81,6 @@ nav ul li {
     text-decoration: none;
     display: inline-block;
     text-transform: uppercase;
-
 }
 
 nav ul li a {
@@ -106,7 +112,7 @@ nav ul li a {
     position: absolute;
     border: none;
     background-color: #e5e5e5;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.3);
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.3);
     margin-top: 10px;
     z-index: 1;
 }
@@ -114,7 +120,7 @@ nav ul li a {
 .dropdown:hover .dropdown_content {
     display: block;
     margin-top: 10px;
-    padding: 12px 10px; 
+    padding: 12px 10px;
 }
 
 .dropdown_content a {
@@ -132,7 +138,7 @@ nav ul li a {
 .hero_box {
     position: absolute;
     top: 50%;
-    left: 50%; 
+    left: 50%;
     -webkit-transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50% -50%);
@@ -165,14 +171,14 @@ nav ul li a {
 
 
 /* HOW IT WORKS SECTION STYLING*/
-img.how_picture{
+
+img.how_picture {
     float: right;
     max-height: auto;
     max-width: 50%;
     position: relative;
     border-radius: 5%;
     padding-right: 10px;
-
 }
 
 .title {
@@ -183,7 +189,6 @@ img.how_picture{
 
 .how_lists {
     margin-left: 2em;
-    
 }
 
 .how_lists ul {
@@ -194,6 +199,9 @@ img.how_picture{
     padding: 0px 20px 10px 0px;
     text-decoration-line: underline;
 }
+
+
+/*  CALL TO ACTION SECTION */
 
 .action h1 {
     font-size: 28px;
@@ -206,10 +214,13 @@ img.how_picture{
     text-align: center;
 }
 
+
+/* style action button using fill on hover */
+
 .action button {
     position: relative;
     height: 45px;
-    width: 150px;
+    width: auto;
     margin: 10px 7px;
     padding: 5px 5px;
     font-weight: 700;
@@ -220,14 +231,14 @@ img.how_picture{
     border-radius: 4px;
     text-transform: uppercase;
     outline: 0;
-    overflow:hidden;
+    overflow: hidden;
     background: none;
     z-index: 1;
     cursor: pointer;
-    transition:         0.08s ease-in;
-    -o-transition:      0.08s ease-in;
-    -ms-transition:     0.08s ease-in;
-    -moz-transition:    0.08s ease-in;
+    transition: 0.08s ease-in;
+    -o-transition: 0.08s ease-in;
+    -ms-transition: 0.08s ease-in;
+    -moz-transition: 0.08s ease-in;
     -webkit-transition: 0.08s ease-in;
 }
 
@@ -246,16 +257,128 @@ img.how_picture{
 
 .action button:hover {
     color: whitesmoke;
-} 
+}
 
 .action button:hover:before {
     top: 0;
 }
 
 
+/*add full-width input fields*/
+
+input[type=text],
+input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 2px solid #ccc;
+    box-sizing: border-box;
+}
+
+
+/* set a style for all buttons*/
+
+button {
+    background-color: green;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    cursor: pointer;
+    width: 100%;
+}
+
+
+/*set styles for the cancel button*/
+
+.cancelbtn {
+    padding: 14px 20px;
+    background-color: #FF2E00;
+}
+
+
+/*float cancel and signup buttons and add an equal width*/
+
+.cancelbtn,
+.signupbtn {
+    float: left;
+    width: 50%
+}
+
+
+/*add padding to container elements*/
+
+.container {
+    padding: 16px;
+}
+
+
+/*define the modal’s background*/
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4);
+    padding-top: 60px;
+}
+
+
+/*define the modal-content background*/
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 5% auto 15% auto;
+    border: 1px solid #888;
+    width: 80%;
+}
+
+
+/*define the close button*/
+
+.close {
+    position: absolute;
+    right: 35px;
+    top: 15px;
+    color: #000;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+
+/*define the close hover and focus effects*/
+
+.close:hover,
+.close:focus {
+    color: red;
+    cursor: pointer;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+@media screen and (max-width: 300px) {
+    .cancelbtn,
+    .signupbtn {
+        width: 100%;
+    }
+}
+
+
 /********** FEATURES **********/
 
+
 /********** FOOTER **********/
+
 #footer {
     border-top: 1px solid #000;
     display: grid;
@@ -264,14 +387,16 @@ img.how_picture{
     width: 100%;
 }
 
+
 /* Logo Footer */
+
 #footer .footer__logo {
     align-items: center;
     display: grid;
     grid-column: 1;
     grid-row: 1/3;
     grid-template-columns: 85px 40px;
-} 
+}
 
 #footer .footer__logo img {
     width: 5rem;
@@ -282,7 +407,9 @@ img.how_picture{
     text-align: left;
 }
 
+
 /* Links Footer */
+
 #footer .footer__links {
     align-items: center;
     display: flex;
@@ -293,7 +420,9 @@ img.how_picture{
     text-decoration: underline;
 }
 
+
 /* Copyright */
+
 #footer .footer__copyright {
     align-self: end;
     grid-column: 2;
@@ -302,7 +431,9 @@ img.how_picture{
     font-size: .8rem;
 }
 
+
 /* Social links */
+
 #footer .footer__social-links {
     align-items: center;
     display: flex;
@@ -316,18 +447,23 @@ img.how_picture{
     font-size: 1.3rem;
 }
 
-.fa-twitter {color: #3185bd;}
+.fa-twitter {
+    color: #3185bd;
+}
 
-.fa-facebook {color: rgb(31, 56, 109);}
+.fa-facebook {
+    color: rgb(31, 56, 109);
+}
 
-.fa-linkedin-in {color: rgb(48, 108, 139);}
+.fa-linkedin-in {
+    color: rgb(48, 108, 139);
+}
 
 
 /* Medium (max-width: 600px)  */
+
 @media screen and (max-width: 870px) {
-
     /********** FEATURES **********/
-
     #features {
         border-bottom: 1px solid #000;
         border-top: 1px solid #000;
@@ -336,25 +472,21 @@ img.how_picture{
         padding: 0 2rem;
         text-align: center;
     }
-
     #features .features__header {
         font-size: 3.5rem;
         padding: 4rem 0;
     }
-
     #features section {
         border-bottom: 1px solid #000;
         display: flex;
         flex-direction: column;
         padding-bottom: 3.5rem;
     }
-
     #features section h2 {
         font-size: 2rem;
         line-height: 50px;
-        padding: 2rem;        
+        padding: 2rem;
     }
-
     #features .button {
         border: 1px solid;
         margin: 2rem auto;
@@ -362,14 +494,12 @@ img.how_picture{
         text-align: center;
         width: 10rem;
     }
-    
     #features section h3 {
         font-size: 1.2rem;
         line-height: 34px;
         margin: 2rem auto;
         text-transform: none;
     }
-
     /********** FOOTER/MOBILE **********/
     #footer {
         align-items: center;
@@ -378,22 +508,19 @@ img.how_picture{
         margin-top: 3rem;
         padding: 2rem;
     }
-
     /* Logo Footer */
     #footer .footer__logo {
         display: none;
-    } 
-
+    }
     /* Links Footer */
     #footer .footer__links {
         align-items: center;
         display: flex;
         flex-direction: column;
         grid-row: 1;
-        margin:  0;
+        margin: 0;
         text-align: center;
     }
-    
     #footer .footer__links::before {
         content: 'Bank of Toucan';
         font-size: 2.5rem;
@@ -402,13 +529,11 @@ img.how_picture{
         margin-top: 1rem;
         text-transform: uppercase;
     }
-
     #footer .footer__links li {
         font-size: 1.2rem;
         letter-spacing: 1.5px;
         margin: 1rem;
     }
-
     /* Copyright */
     #footer .footer__copyright {
         align-self: flex-end;
@@ -419,7 +544,6 @@ img.how_picture{
         line-height: 20px;
         text-align: center;
     }
-
     /* Social links */
     #footer .footer__social-links {
         align-items: center;
@@ -429,9 +553,10 @@ img.how_picture{
         grid-row: 2;
         justify-content: center;
     }
-    
     #footer .footer__social-links i {
         font-size: 2rem;
         margin: 3.5rem 2rem;
     }
-};
+}
+
+;
