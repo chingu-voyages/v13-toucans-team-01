@@ -10,6 +10,49 @@ for instance: 600px / 16em = 37.7em
 
 */
 
+/* Widescreens/TV's (min-width: 1201px) */
+@media only screen and (min-width: 1201px) {
+
+
+    /********** FOOTER **********/
+    #footer {
+        grid-template-columns: 15rem 1fr 25rem;
+        padding-bottom: .5rem;
+    }
+
+    /* Footer Logo */
+    #footer .footer__logo {
+        grid-template-rows: 7rem auto;
+        margin-left: 1rem;
+    }
+
+    /* Copyright */
+    #footer .footer__copyright {
+        align-self: end;
+        grid-column: 1/4;
+        grid-row: 2;
+        font-size: 1rem;
+        padding-top: 3rem;
+        justify-self: center;
+        }
+
+    /* Footer Links */
+    #footer .footer__links {
+        font-size: 1.2rem;
+    }
+
+    /* Social links */
+    #footer .footer__social-links {
+        align-items: center;
+        flex-direction: row;
+        grid-row: 1;
+    }
+
+    #footer .footer__social-links i {
+        margin: 0 2.5rem;
+        font-size: 2rem;
+    }
+}
 
 /* Big tablet to 1200px (widths smaller then the 1140px row) 
 @media only screen and (max-width: 1200px) {
@@ -21,9 +64,74 @@ for instance: 600px / 16em = 37.7em
     }
 
 
-/* Small phones to small tablets: from 481px to 767px 
+/* Small phones to small tablets: from 481px to 767px */
 @media only screen and (max-width: 767px) {
+
+    /********** SM TABLETS **********/
+    #footer {
+        align-items: center;
+        display: grid;
+        grid-template-columns: 1fr;
+        margin-top: 3rem;
+        padding: 2rem;
     }
+
+    /* Logo Footer */
+    #footer .footer__logo {
+        display: none;
+    }
+
+    /* Links Footer */
+    #footer .footer__links {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        grid-row: 1;
+        margin: 0;
+        text-align: center;
+    }
+
+    #footer .footer__links::before {
+        content: 'Bank of Toucan';
+        font-size: 2.5rem;
+        font-weight: 900;
+        margin-bottom: 3rem;
+        margin-top: 1rem;
+        text-transform: uppercase;
+    }
+
+    #footer .footer__links li {
+        font-size: 1.2rem;
+        letter-spacing: 1.5px;
+        margin: 1rem;
+    }
+
+    /* Copyright */
+    #footer .footer__copyright {
+        align-self: flex-end;
+        font-size: .9rem;
+        grid-column: 1;
+        grid-row: 3;
+        letter-spacing: 1.5px;
+        line-height: 20px;
+        text-align: center;
+    }
+
+    /* Social links */
+    #footer .footer__social-links {
+        align-items: center;
+        display: flex;
+        flex-direction: row;
+        grid-column: 1;
+        grid-row: 2;
+        justify-content: center;
+    }
+
+    #footer .footer__social-links i {
+        font-size: 2rem;
+        margin: 3.5rem 2rem;
+    }
+}
 
 
 /* Small phones: from 0 to 480px 
