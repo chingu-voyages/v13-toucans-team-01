@@ -34,7 +34,7 @@ for instance: 600px / 16em = 37.7em
         font-size: 1rem;
         padding-top: 3rem;
         justify-self: center;
-        }
+    }
 
     /* Footer Links */
     #footer .footer__links {
@@ -68,12 +68,91 @@ for instance: 600px / 16em = 37.7em
 @media only screen and (max-width: 767px) {
 
     /********** SM TABLETS **********/
+
+    /* Features -----------------------*/
+
+    h2 {
+        text-transform: uppercase;
+    }
+
+    #features {
+        display: grid;
+        font-family: sans-serif;
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    #features .features__header {
+        background-color: rgb(33, 23, 66);
+        border-bottom: 1px solid rgba(17, 17, 17, 0.2);
+        border-top: 5px solid rgba(17, 17, 17, .05);
+        color: #efefef;
+        font-size: 3.5rem;
+        padding: 1rem 0;
+        word-spacing: 1px;
+    }
+
+    #features section {
+        color: #222;
+        display: flex;
+        flex-direction: column;
+        display: flex;
+        flex-direction: column;
+    }
+
+    #features section h2 {
+        font-size: 2rem;
+        line-height: 50px;
+        padding: 2rem;
+        padding-top: 4rem;
+    }
+
+    #features .button {
+        background-color: green;
+        color: #efefef;
+        border: 1px solid;
+        margin: 0 auto;
+        padding: 1rem;
+        text-align: center;
+        width: 10rem;
+        font-size: 1.1rem;
+        letter-spacing: .5px;
+    }
+
+    #features section h3 {
+        font-size: 1.2rem;
+        line-height: 34px;
+        margin: 5rem auto;
+        text-transform: none;
+    }
+
+    #features .features__card-1 {
+        background-color: rgb(218, 241, 181);
+    }
+
+    #features .features__card-2 {
+        /* background-color: rgb(242, 250, 229); */
+    }
+
+    #features .features__card-3 {
+        background-color: rgb(218, 241, 181);
+    }
+
+    /* Footer -----------------------*/
+
+    h3 {
+        padding: 0 2rem
+    }
     #footer {
         align-items: center;
+        background-color: rgb(54, 49, 18);
+        color: #efefef;
         display: grid;
         grid-template-columns: 1fr;
         margin-top: 3rem;
         padding: 2rem;
+        padding-bottom: 3rem;
+        padding-top: 5rem;
     }
 
     /* Logo Footer */
@@ -95,16 +174,26 @@ for instance: 600px / 16em = 37.7em
         content: 'Bank of Toucan';
         font-size: 2.5rem;
         font-weight: 900;
+        letter-spacing: 5px;
+        line-height: ;
         margin-bottom: 3rem;
         margin-top: 1rem;
+        padding: 0 2rem;
         text-transform: uppercase;
+        word-spacing: 1px;
     }
 
     #footer .footer__links li {
+        color: #efefef;
         font-size: 1.2rem;
         letter-spacing: 1.5px;
         margin: 1rem;
     }
+
+    #footer .footer__links li a {
+        color: #efefef;
+    }
+
 
     /* Copyright */
     #footer .footer__copyright {
