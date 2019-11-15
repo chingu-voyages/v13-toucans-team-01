@@ -351,12 +351,25 @@ button {
 
 /********** FEATURES **********/
 
+a {
+    text-decoration: none;
+}
 
 /********** FOOTER **********/
 
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
 #footer {
+    background-color: gold;
     border-top: 1px solid #000;
     display: grid;
+    font-family: sans-serif;
     grid-template-columns: 11rem 1fr 11rem;
     padding-bottom: .5rem;
     padding-top: 3rem;
@@ -399,7 +412,7 @@ button {
     grid-column: 1/4;
     grid-row: 2;
     font-size: 1rem;
-    padding-top: 3rem;
+    padding-top: 1rem;
     justify-self: center;
 }
 
@@ -417,54 +430,9 @@ button {
     font-size: 1.3rem;
 }
 
-.fa-twitter {color: #3185bd;}
+.fa-twitter {color: #6ac2fc;}
 
-.fa-facebook {color: rgb(31, 56, 109);}
+.fa-facebook {color: rgb(140, 175, 250);}
 
-.fa-linkedin-in {color: rgb(48, 108, 139);}
+.fa-linkedin-in {color: rgb(96, 202, 255);}
 
-
-/* Medium (max-width: 600px)  */
-
-@media screen and (max-width: 870px) {
-    /********** FEATURES **********/
-    #features {
-        border-bottom: 1px solid #000;
-        border-top: 1px solid #000;
-        display: grid;
-        grid-template-columns: 1fr;
-        padding: 0 2rem;
-        text-align: center;
-    }
-    #features .features__header {
-        font-size: 3.5rem;
-        padding: 4rem 0;
-    }
-    #features section {
-        border-bottom: 1px solid #000;
-        display: flex;
-        flex-direction: column;
-        padding-bottom: 3.5rem;
-        display: flex;
-        flex-direction: column;
-    }
-    #features section h2 {
-        font-size: 2rem;
-        line-height: 50px;
-        padding: 2rem;
-    }
-    #features .button {
-        border: 1px solid;
-        margin: 2rem auto;
-        padding: 1rem;
-        text-align: center;
-        width: 10rem;
-    }
-    #features section h3 {
-        font-size: 1.2rem;
-        line-height: 34px;
-        margin: 2rem auto;
-        text-transform: none;
-    }
-    
-}
