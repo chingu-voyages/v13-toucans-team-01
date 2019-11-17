@@ -26,28 +26,23 @@ for instance: 600px / 16em = 37.7em
     }
 
     #features .features__header {
-        background-color: rgb(54, 49, 18);
-        border-bottom: 1px solid rgba(17, 17, 17, 0.2);
-        border-top: 5px solid rgba(17, 17, 17, .05);
-        color: #efefef;
+        color: #111;
         font-size: 3.5rem;
-        padding: 1rem 0;
         word-spacing: 1px;
+        padding-bottom: 1rem;
+        padding-top: 10rem;
     }
 
     /* Cards */
-    #features .feature__cards {   
-        background-image: url(/images/saving-money-canadian-remastered.jpg);
+    #features .feature__cards {
         color: #222;
         display: grid;
         grid-template-columns: 1fr 1fr; 
-        grid-gap: 0.5rem;  
-        grid-row-gap: 2rem;
-        padding: .5rem;  
+        grid-gap: 1.5rem;  
+        padding-top: 10rem;  
     }
 
     #features .feature__cards .card {
-        border: 1px solid #999;
         padding: 2.5rem;
     }
 
@@ -58,6 +53,7 @@ for instance: 600px / 16em = 37.7em
     }
 
     #features .feature__cards .card h3 {
+        color: #333;
         font-size: 1.1rem;
         font-weight: normal;
         letter-spacing: 1px;
@@ -138,14 +134,14 @@ for instance: 600px / 16em = 37.7em
 
     /* Footer -----------------------*/
     #footer {
-        grid-template-columns: 8rem 1fr 25rem;
+        grid-template-columns: 1fr 1fr 1fr ;
         padding-bottom: .5rem;        
     }
 
     /* Copyright */
     #footer .footer__copyright {
         align-self: end;
-        grid-column: 2/4;
+        grid-column: 1/3;
         grid-row: 2;
         font-size: 1rem;
         padding-top: 2.8rem;
@@ -181,123 +177,123 @@ for instance: 600px / 16em = 37.7em
     }
 
     #features {
+        border-bottom: 1px solid #000;
+        border-top: 1px solid #000;
         font-family: sans-serif;
-        justify-content: center;
+        padding: 8rem 0;
         text-align: center;
     }
 
     #features .features__header {
-        background-color: rgb(54, 49, 18);
-        border-bottom: 1px solid rgba(17, 17, 17, 0.2);
-        border-top: 5px solid rgba(17, 17, 17, .05);
-        color: #efefef;
+        color: #222;
         font-size: 3.5rem;
-        padding: 1rem 0;
-        word-spacing: 1px;
+        padding-bottom: .5rem;
+    }
+
+    #features h3 {
+        margin-bottom: 10rem;
     }
 
     /* Cards */
-    #features .feature__cards {   
-        background-image: url(/images/saving-money-canadian-remastered.jpg);
+    #features .feature__cards { 
         color: #222;
         display: grid;
-        grid-template-columns: 1fr 1fr; 
-        grid-gap: 0.5rem;  
-        grid-row-gap: 2rem;
+        grid-template-columns: 1fr 1fr 1fr; 
+        grid-gap: 1.5rem;  
+        margin: auto;
+        max-width: 1000px;
         padding: .5rem;  
+        width: 90vw;
     }
 
     #features .feature__cards .card {
-        border: 1px solid #999;
-        padding: 2.5rem;
-    }
-
-    #features .feature__cards .card h2 {
-        font-size: 1.3rem;
-        margin: 1.5rem auto;
-        margin-bottom: 2rem;
-    }
-
-    #features .feature__cards .card h3 {
-        font-size: 1.1rem;
-        font-weight: normal;
-        letter-spacing: 1px;
-        line-height: 25px;
-        margin: 1rem auto;
-    }
-
-    #features .features__card-1 {
-        background-color: #fff;
-        display: flex;
-        flex-direction: column;
-        grid-column: 1;
-        grid-row: 1;
-    }
-
-    #features .feature__cards .photo-1 {
-        grid-column: 2;
-        grid-row: 1;
-    }
-
-    #features .features__card-2 {
-        background-color: #fff;
-        display: flex;
-        flex-direction: column;
-        grid-column: 2;
-        grid-row: 2;
-    }
-
-    #features .features__cards .photo-2 {
-        grid-column: 2;
-        grid-row: 2;
-    }
-
-    #features .features__card-3 {
-        background-color: #fff;
-        display: flex;
-        flex-direction: column;
-        grid-column: 1;
-        grid-row: 3;
-    }
-
-    #features .features__cards .photo-3 {
-        grid-column: 2;
-        grid-row: 3;
-    }
-   
-    #features .feature__cards h2 {
-        font-size: 1rem;
-        line-height: 25px;
-        display: flex;
-        flex-direction: column;
-    }
-
-    #features .feature__cards h3 {
-        font-size: 1.2rem;
-        line-height: 34px;
-        margin: 5rem auto;
-        text-transform: none;
-    }    
+        padding: 0rem;
+        position: relative;
+    } 
     
-    #features .feature__cards .photo{
-        align-self: center;
+    #features .feature__cards .card h2 {
+        display: flex;
+        font-size: 1rem;
+        flex-direction: column;
+        line-height: 25px;
+        padding-top: 4rem;
     }
 
     #features .feature__cards .button {
         background-color: green;
-        color: #efefef;
         border: 1px solid;
-        margin: 1rem auto;
-        padding: 0.8rem;
-        text-align: center;
-        width: 10rem;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        color: #efefef;
         font-size: 1.1rem;
         letter-spacing: .5px;
+        margin: 1rem auto;
         order: 3;
+        padding: 0.8rem;
+        position: absolute;
+        text-align: center;
+        width: 10rem;
     }
 
+    #features .feature__cards .card h3 {
+        color: #333;
+        font-size: .9rem;
+        font-weight: normal;
+        letter-spacing: 1px;
+        line-height: 25px;
+        margin: 1rem auto;
+        padding: 2rem 0;
+        padding-bottom: 5rem;
+    }
+  
+    #features .feature__cards .features__card-1 {
+        background-color: #fff;
+        display: flex;
+        flex-direction: column;
+        grid-column: 1;
+        grid-row: 2;
+    }
+
+    #features .feature__cards .features__card-2 {
+        background-color: #fff;
+        display: flex;
+        flex-direction: column;
+        grid-column: 2;
+        grid-row: 2;
+    }
+    
+    #features .feature__cards .features__card-3 {
+        background-color: #fff;
+        display: flex;
+        flex-direction: column;
+        grid-column: 3;
+        grid-row: 2;
+    }
+
+    #features .feature__cards .photo-1 {
+        grid-column: 1;
+        grid-row: 1;
+    }
+
+    #features .features__cards .photo-2 {
+        grid-column: 2;
+        grid-row: 1;
+    }
+
+    #features .features__cards .photo-3 {
+        grid-column: 3;
+        grid-row: 1;
+    }     
+    
+    /* Footer ------------------*/
     #footer {
         background-color:#191901;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    #footer .footer__copyright {
+        grid-column: 1/3;
     }
 
     #footer .footer__links li {
@@ -312,7 +308,7 @@ for instance: 600px / 16em = 37.7em
 
 
 /* Small phones to small tablets: from 481px to 767px */
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 670px) {
 
     /* Features -----------------------*/
     h2 {
@@ -323,17 +319,24 @@ for instance: 600px / 16em = 37.7em
         display: grid;
         font-family: sans-serif;
         grid-template-columns: 1fr;
+        padding-bottom: 10rem;
         text-align: center;
     }
 
     #features .features__header {
-        background-color: rgb(54, 49, 18);
-        border-bottom: 1px solid rgba(17, 17, 17, 0.2);
-        border-top: 5px solid rgba(17, 17, 17, .05);
-        color: #efefef;
-        font-size: 3.5rem;
-        padding: 2rem 0;
+        color: #111;
+        font-size: 3.8rem;
+        line-height: 3rem;
+        padding: 1rem 0;
+        margin-bottom: 1rem;
         word-spacing: 1px;
+    }
+
+    #features h3 {
+        border-bottom: 1px solid #000;
+        font-size: 1.2rem;
+        line-height: 1.5rem;
+        padding-bottom: 7rem;
     }
 
     #features .feature__cards {
@@ -343,24 +346,44 @@ for instance: 600px / 16em = 37.7em
         grid-gap: 0;
         grid-row-gap: 0;
         padding: 0;
+        width: 100%;
     }
 
     #features .feature__cards .card {
-        padding: 2rem 0;
+        border: none;
+        display: flex;
+        flex-direction: column;
+        padding: 5rem 0;
+        margin-bottom: 5rem;
     }
    
     #features .feature__cards .card h2 {
+        color: #333;
         font-size: 2rem;
         line-height: 50px;
-        padding: 0;
-        padding-top: 0;
+        padding: 0 2rem;
+    }
+
+    #features .feature__cards h3 {
+        border: none;
+        color: #444;
+        font-size: 1.2rem;
+        font-weight: normal;
+        line-height: 34px;
+        margin: 5rem auto;
+        margin-bottom: 2rem;
+        text-transform: none;
+    }
+
+    #features .feature__cards .photo {
+        min-width: 1px;
     }
 
     #features .button {
         background-color: green;
         color: #efefef;
         border: 1px solid;
-        margin: 0 auto;
+        margin: 1rem auto;
         padding: 1rem;
         text-align: center;
         width: 10rem;
@@ -368,18 +391,24 @@ for instance: 600px / 16em = 37.7em
         letter-spacing: .5px;
     }   
 
-    #features .features__card-1 {
+    #features .feature__cards .features__card-1 {
         grid-row: 1;
         grid-column: 1;
+        margin-top: 3rem;
     }
 
-    #features .feature__cards .photo-1 {
-        grid-row: 2;
+    #features .feature__cards .features__card-2 {
+        grid-row: 3;
         grid-column: 1;
     }
-
-    #features .features__card-2 {
-        grid-row: 3;
+    
+    #features .feature__cards .features__card-3 {
+        grid-row: 5;
+        grid-column: 1;
+    }
+    
+    #features .feature__cards .photo-1 {
+        grid-row: 2;
         grid-column: 1;
     }
 
@@ -387,22 +416,10 @@ for instance: 600px / 16em = 37.7em
         grid-row: 4;
         grid-column: 1;
     }
-    
-    #features .features__card-3 {
-        grid-row: 5;
-        grid-column: 1;
-    }
 
     #features .feature__cards .photo-3 {
         grid-row: 6;
         grid-column: 1;
-    }
-
-    #features .feature__cards h3 {
-        font-size: 1.2rem;
-        line-height: 34px;
-        margin: 5rem auto;
-        text-transform: none;
     }
 
     /* Footer -----------------------*/
