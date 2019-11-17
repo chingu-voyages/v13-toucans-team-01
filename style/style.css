@@ -15,72 +15,81 @@ body {
     text-rendering: optimizeLegibility;
 }
 
-img {
+/* img {
     display: block;
     height: auto;
     width: 100%;
-}
+    margin-top: 40px;
+} */
 
 
 /********** HEADER **********/
 
-#header .logo .logo_image {
+/* #header_1 .logo_1 .logo_image_1 {
     width: 50px;
-}
+} */
 
-header {
-    background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(images/hero_img.jpg);
+/* .logo_image_1 {
+    padding-top: 30px;
+} */
+
+/* header {
+    background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(/images/hero_img.jpg);
     background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(/images/hero_img.jpg);
     background-position: center;
     background-size: cover;
     height: 100vh;
     background-attachment: fixed;
-}
+} */
 
-.top_header {
-    width: 1100px;
+/* .top_header_1 {
+    max-width: 1100px;
     display: flex;
-    padding-top: 50px;
+    padding-top: 50px; 
     margin: auto;
-}
+} */
 
-nav {
+/* .nav_1 {
     display: flex;
     position: relative;
-    margin-top: 10px;
+    margin-top: 10px; 
 }
 
+.main_menu_1 {
+    justify-content: flex-end;
+} */
+
 /* LOGO */
-#header .logo {
-    border: solid 1px;
+/* #header_1 .logo_1 {
     display: flex;
     justify-content: space-between;
     text-decoration: none;
     list-style: none;
     text-align: center;
-}
-
-nav ul li {
+} */
+/* 
+.nav_1 ul li {
     text-decoration: none;
     display: inline-block;
     text-transform: uppercase;
 }
 
-nav ul li a {
+.nav_1 ul li a {
     text-decoration: none;
-    padding: 15px;
+    padding: 15px; 
     color: #fff;
     font-size: 15px;
 }
 
-.logo {
+.logo_1 {
     display: flex;
     margin-right: auto;
 }
 
-.logo p {
+.logo_1 p {
     position: relative;
     bottom: -20px;
+    left: -1080px;
     color: #fff;
 }
 
@@ -118,7 +127,7 @@ nav ul li a {
     color: green;
 }
 
-.hero_box {
+.hero_box_1 {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -131,19 +140,19 @@ nav ul li a {
     word-spacing: 5;
 }
 
-#header .logo p {
+#header_1 .logo_1 p {
     align-self: center;
-}
+} */
 
 
 /* HOW IT WORKS SECTION STYLING*/
 
 
 /* HOW IT WORKS SECTION STYLING*/
-.how_to {
+/* .how_to {
     width: 1100px;
     height: auto;
-}
+} */
 
 img.how_picture {
     float: right;
