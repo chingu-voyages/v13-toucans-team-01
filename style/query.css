@@ -10,9 +10,295 @@ for instance: 600px / 16em = 37.7em
 
 */
 
+/* Widescreens/TV's (min-width: 1201px) */
+@media only screen and (min-width: 1201px) {
 
-/* Big tablet to 1200px (widths smaller then the 1140px row) 
+     /* Features -----------------------*/
+    h2 {
+        text-transform: uppercase;
+        letter-spacing: 0.1px;
+    }
+
+    #features {
+        font-family: sans-serif;
+        justify-content: center;
+        text-align: center;
+    }
+
+    #features .features__header {
+        color: #111;
+        font-size: 3.5rem;
+        word-spacing: 1px;
+        padding-bottom: 1rem;
+        padding-top: 10rem;
+    }
+
+    /* Cards */
+    #features .feature__cards {
+        color: #222;
+        display: grid;
+        grid-template-columns: 1fr 1fr; 
+        grid-gap: 1.5rem;  
+        padding-top: 10rem;  
+    }
+
+    #features .feature__cards .card {
+        padding: 2.5rem;
+    }
+
+    #features .feature__cards .card h2 {
+        font-size: 1.3rem;
+        margin: 1.5rem auto;
+        margin-bottom: 2rem;
+    }
+
+    #features .feature__cards .card h3 {
+        color: #333;
+        font-size: 1.1rem;
+        font-weight: normal;
+        letter-spacing: 1px;
+        line-height: 25px;
+        margin: 1rem auto;
+    }
+
+    #features .features__card-1 {
+        background-color: #fff;
+        display: flex;
+        flex-direction: column;
+        grid-column: 1;
+        grid-row: 1;
+    }
+
+    #features .feature__cards .photo-1 {
+        grid-column: 2;
+        grid-row: 1;
+    }
+
+    #features .features__card-2 {
+        background-color: #fff;
+        display: flex;
+        flex-direction: column;
+        grid-column: 2;
+        grid-row: 2;
+    }
+
+    #features .features__cards .photo-2 {
+        grid-column: 2;
+        grid-row: 2;
+    }
+
+    #features .features__card-3 {
+        background-color: #fff;
+        display: flex;
+        flex-direction: column;
+        grid-column: 1;
+        grid-row: 3;
+    }
+
+    #features .features__cards .photo-3 {
+        grid-column: 2;
+        grid-row: 3;
+    }
+   
+    #features .feature__cards h2 {
+        font-size: 1rem;
+        line-height: 25px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    #features .feature__cards h3 {
+        font-size: 1.2rem;
+        line-height: 34px;
+        margin: 5rem auto;
+        text-transform: none;
+    }    
+    
+    #features .feature__cards .photo{
+        align-self: center;
+    }
+
+    #features .feature__cards .button {
+        background-color: green;
+        color: #efefef;
+        border: 1px solid;
+        margin: 1rem auto;
+        margin-top: 4rem;
+        padding: 0.8rem;
+        text-align: center;
+        width: 10rem;
+        font-size: 1.1rem;
+        letter-spacing: .5px;
+        order: 3;
+    }
+
+    /* Footer -----------------------*/
+    #footer {
+        grid-template-columns: 1fr 1fr 1fr ;
+        padding-bottom: .5rem;        
+    }
+
+    /* Copyright */
+    #footer .footer__copyright {
+        align-self: end;
+        grid-column: 1/3;
+        grid-row: 2;
+        font-size: 1rem;
+        padding-top: 2.8rem;
+        justify-self: left;
+    }
+
+    /* Footer Links */
+    #footer .footer__links {
+        font-size: 1.1rem;
+        padding: 2rem 15rem;
+        padding-bottom: 1rem;
+        letter-spacing: 1px;
+    }
+
+    /* Social links */
+    #footer .footer__social-links {
+        align-items: end;
+        grid-row: 2;
+    }
+
+    #footer .footer__social-links i {
+        margin: 0 2.5rem;
+        font-size: 2rem;
+    }
+}
+
+/* Big tablet to 1200px (widths smaller then the 1140px row) */
 @media only screen and (max-width: 1200px) {
+    /* Features -----------------------*/
+    h2 {
+        text-transform: uppercase;
+        letter-spacing: 0.1px;
+    }
+
+    #features {
+        border-bottom: 1px solid #000;
+        border-top: 1px solid #000;
+        font-family: sans-serif;
+        padding: 8rem 0;
+        text-align: center;
+    }
+
+    #features .features__header {
+        color: #222;
+        font-size: 3.5rem;
+        padding-bottom: .5rem;
+    }
+
+    #features h3 {
+        margin-bottom: 10rem;
+    }
+
+    /* Cards */
+    #features .feature__cards { 
+        color: #222;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr; 
+        grid-gap: 1.5rem;  
+        margin: auto;
+        max-width: 1000px;
+        padding: .5rem;  
+        width: 90vw;
+    }
+
+    #features .feature__cards .card {
+        padding: 0rem;
+        position: relative;
+    } 
+    
+    #features .feature__cards .card h2 {
+        display: flex;
+        font-size: 1rem;
+        flex-direction: column;
+        line-height: 25px;
+        padding-top: 4rem;
+    }
+
+    #features .feature__cards .button {
+        background-color: green;
+        border: 1px solid;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        color: #efefef;
+        font-size: 1.1rem;
+        letter-spacing: .5px;
+        margin: 1rem auto;
+        order: 3;
+        padding: 0.8rem;
+        position: absolute;
+        text-align: center;
+        width: 10rem;
+    }
+
+    #features .feature__cards .card h3 {
+        color: #333;
+        font-size: .9rem;
+        font-weight: normal;
+        letter-spacing: 1px;
+        line-height: 25px;
+        margin: 1rem auto;
+        padding: 2rem 0;
+        padding-bottom: 5rem;
+    }
+  
+    #features .feature__cards .features__card-1 {
+        background-color: #fff;
+        display: flex;
+        flex-direction: column;
+        grid-column: 1;
+        grid-row: 2;
+    }
+
+    #features .feature__cards .features__card-2 {
+        background-color: #fff;
+        display: flex;
+        flex-direction: column;
+        grid-column: 2;
+        grid-row: 2;
+    }
+    
+    #features .feature__cards .features__card-3 {
+        background-color: #fff;
+        display: flex;
+        flex-direction: column;
+        grid-column: 3;
+        grid-row: 2;
+    }
+
+    #features .feature__cards .photo-1 {
+        grid-column: 1;
+        grid-row: 1;
+    }
+
+    #features .features__cards .photo-2 {
+        grid-column: 2;
+        grid-row: 1;
+    }
+
+    #features .features__cards .photo-3 {
+        grid-column: 3;
+        grid-row: 1;
+    }     
+    
+    /* Footer ------------------*/
+    #footer {
+        background-color:#191901;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    #footer .footer__copyright {
+        grid-column: 1/3;
+    }
+
+    #footer .footer__links li {
+        padding: 1rem;
+    }
 }
 
 
@@ -21,9 +307,199 @@ for instance: 600px / 16em = 37.7em
     }
 
 
-/* Small phones to small tablets: from 481px to 767px 
-@media only screen and (max-width: 767px) {
+/* Small phones to small tablets: from 481px to 767px */
+@media only screen and (max-width: 670px) {
+
+    /* Features -----------------------*/
+    h2 {
+        text-transform: uppercase;
     }
+
+    #features {
+        display: grid;
+        font-family: sans-serif;
+        grid-template-columns: 1fr;
+        padding-bottom: 10rem;
+        text-align: center;
+    }
+
+    #features .features__header {
+        color: #111;
+        font-size: 3.8rem;
+        line-height: 3rem;
+        padding: 1rem 0;
+        margin-bottom: 1rem;
+        word-spacing: 1px;
+    }
+
+    #features h3 {
+        border-bottom: 1px solid #000;
+        font-size: 1.2rem;
+        line-height: 1.5rem;
+        padding-bottom: 7rem;
+    }
+
+    #features .feature__cards {
+        color: #222;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 0;
+        grid-row-gap: 0;
+        padding: 0;
+        width: 100%;
+    }
+
+    #features .feature__cards .card {
+        border: none;
+        display: flex;
+        flex-direction: column;
+        padding: 5rem 0;
+        margin-bottom: 5rem;
+    }
+   
+    #features .feature__cards .card h2 {
+        color: #333;
+        font-size: 2rem;
+        line-height: 50px;
+        padding: 0 2rem;
+    }
+
+    #features .feature__cards h3 {
+        border: none;
+        color: #444;
+        font-size: 1.2rem;
+        font-weight: normal;
+        line-height: 34px;
+        margin: 5rem auto;
+        margin-bottom: 2rem;
+        text-transform: none;
+    }
+
+    #features .feature__cards .photo {
+        min-width: 1px;
+    }
+
+    #features .button {
+        background-color: green;
+        color: #efefef;
+        border: 1px solid;
+        margin: 1rem auto;
+        padding: 1rem;
+        text-align: center;
+        width: 10rem;
+        font-size: 1.1rem;
+        letter-spacing: .5px;
+    }   
+
+    #features .feature__cards .features__card-1 {
+        grid-row: 1;
+        grid-column: 1;
+        margin-top: 3rem;
+    }
+
+    #features .feature__cards .features__card-2 {
+        grid-row: 3;
+        grid-column: 1;
+    }
+    
+    #features .feature__cards .features__card-3 {
+        grid-row: 5;
+        grid-column: 1;
+    }
+    
+    #features .feature__cards .photo-1 {
+        grid-row: 2;
+        grid-column: 1;
+    }
+
+    #features .feature__cards .photo-2 {
+        grid-row: 4;
+        grid-column: 1;
+    }
+
+    #features .feature__cards .photo-3 {
+        grid-row: 6;
+        grid-column: 1;
+    }
+
+    /* Footer -----------------------*/
+    h3 {
+        padding: 0 2rem
+    }
+    #footer {
+        align-items: center;
+        background-color: #191901;
+        color: #efefef;
+        display: grid;
+        grid-template-columns: 1fr;
+        margin-top: 3rem;
+        padding: 2rem;
+        padding-bottom: 3rem;
+        padding-top: 5rem;
+    }
+
+    /* Links Footer */
+    #footer .footer__links {
+        align-items: center;
+        color: #efefef;
+        display: flex;
+        flex-direction: column;
+        grid-row: 1;
+        margin: 0;
+        text-align: center;
+    }
+
+    #footer .footer__links::before {
+        content: 'Bank of Toucan';
+        font-size: 2.5rem;
+        font-weight: 900;
+        letter-spacing: 5px;
+        line-height: 62px;
+        margin-bottom: 3rem;
+        margin-top: 1rem;
+        padding: 0 2rem;
+        text-transform: uppercase;
+        word-spacing: 1px;
+    }
+
+    #footer .footer__links li {
+        color: #efefef;
+        font-size: 1.1rem;
+        letter-spacing: 1.5px;
+        margin: 1rem;
+    }
+
+    #footer .footer__links li a {
+        color: #efefef;
+    }
+
+
+    /* Copyright */
+    #footer .footer__copyright {
+        align-self: flex-end;
+        font-size: .9rem;
+        grid-column: 1;
+        grid-row: 3;
+        letter-spacing: 1.5px;
+        line-height: 20px;
+        text-align: center;
+    }
+
+    /* Social links */
+    #footer .footer__social-links {
+        align-items: center;
+        display: flex;
+        flex-direction: row;
+        grid-column: 1;
+        grid-row: 2;
+        justify-content: center;
+    }
+
+    #footer .footer__social-links i {
+        font-size: 2.2rem;
+        margin: 3.5rem 2rem;
+    }
+}
 
 
 /* Small phones: from 0 to 480px 
