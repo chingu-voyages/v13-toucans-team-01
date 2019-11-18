@@ -1,7 +1,6 @@
 /* RESET */
 
 * {
-    /* border: 1px solid; */
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -16,82 +15,61 @@ body {
     text-rendering: optimizeLegibility;
 }
 
-/* img {
-    display: block;
-    height: auto;
-    width: 100%;
-    margin-top: 40px;
-} */
 
-
-/********** HEADER **********/
-
-/* #header_1 .logo_1 .logo_image_1 {
-    width: 50px;
-} */
-
-/* .logo_image_1 {
-    padding-top: 30px;
-} */
-
-/* header {
+/* DESGIN FOR HEADER SECTION */
+header {
     background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(/images/hero_img.jpg);
     background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(/images/hero_img.jpg);
     background-position: center;
     background-size: cover;
     height: 100vh;
     background-attachment: fixed;
-} */
-
-/* .top_header_1 {
-    max-width: 1100px;
-    display: flex;
-    padding-top: 50px; 
-    margin: auto;
-} */
-
-/* .nav_1 {
-    display: flex;
-    position: relative;
-    margin-top: 10px; 
 }
 
-.main_menu_1 {
-    justify-content: flex-end;
-} */
+.top_header {
+    display: flex;
+    width: 70em;
+    margin: auto;
+    padding-top: 3em;
+}
 
-/* LOGO */
-/* #header_1 .logo_1 {
+.logo {
+    display: flex;
+    margin-right: auto;
+    color: #fff;
+}
+
+.logo_image {
+    width: 3em;
+}
+
+.logo p {
+    margin-top: 1.1em;
+}
+
+nav {
+    display: flex;
+}
+
+nav ul {
     display: flex;
     justify-content: space-between;
     text-decoration: none;
     list-style: none;
     text-align: center;
-} */
-/* 
-.nav_1 ul li {
+}
+
+nav ul li {
     text-decoration: none;
     display: inline-block;
-    text-transform: uppercase;
+
 }
 
-.nav_1 ul li a {
+nav ul li a {
     text-decoration: none;
-    padding: 15px; 
+    padding: 10px 10px 0 10px; 
     color: #fff;
-    font-size: 15px;
-}
-
-.logo_1 {
-    display: flex;
-    margin-right: auto;
-}
-
-.logo_1 p {
-    position: relative;
-    bottom: -20px;
-    left: -1080px;
-    color: #fff;
+    font-size: 20px;
 }
 
 .dropdown {
@@ -105,7 +83,7 @@ body {
     position: absolute;
     border: none;
     background-color: #e5e5e5;
-    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.3);
     margin-top: 10px;
     z-index: 1;
 }
@@ -113,7 +91,7 @@ body {
 .dropdown:hover .dropdown_content {
     display: block;
     margin-top: 10px;
-    padding: 12px 10px;
+    padding: 12px 10px; 
 }
 
 .dropdown_content a {
@@ -128,33 +106,39 @@ body {
     color: green;
 }
 
-.hero_box_1 {
+.hero_box {
     position: absolute;
-    top: 50%;
-    left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
+    top: 40%;
+    left: 20%; 
     transform: translate(-50% -50%);
     width: 60%;
     text-align: center;
-    color: #fff;
-    word-spacing: 5;
 }
 
-#header_1 .logo_1 p {
-    align-self: center;
-} */
+.hero_box .hero_h1 {
+    font-size: 45px;
+    padding-bottom: 20px;
+    color: #fff;
+}
 
+.hero_box p {
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: #fff;
+}
 
-/* HOW IT WORKS SECTION STYLING*/
+.hero_box a {
+    text-decoration: none;
+    font-size: 25px;
+    cursor: pointer;
+    background: green;
+    padding: 12px;
+    margin-top: 30px;
+    border-radius: 10px;
+    color: #fff;
+}
 
-
-/* HOW IT WORKS SECTION STYLING*/
-/* .how_to {
-    width: 1100px;
-    height: auto;
-} */
-
+/* DESIGN FOR HOW IT WORKS SECTION */
 img.how_picture {
     float: right;
     max-height: auto;
@@ -185,7 +169,6 @@ img.how_picture {
 
 
 /*  CALL TO ACTION SECTION */
-
 .action h1 {
     font-size: 28px;
     padding-top: 2em;
@@ -201,7 +184,6 @@ img.how_picture {
 
 
 /* style action button using fill on hover */
-
 .action button {
     position: relative;
     height: 45px;
@@ -250,7 +232,6 @@ img.how_picture {
 
 
 /*add full-width input fields*/
-
 input[type=text],
 input[type=password] {
     width: 100%;
@@ -263,7 +244,6 @@ input[type=password] {
 
 
 /* set a style for all buttons*/
-
 button {
     background-color: green;
     color: white;
@@ -275,7 +255,6 @@ button {
 
 
 /*set styles for the cancel button*/
-
 .cancelbtn {
     padding: 14px 20px;
     background-color: #FF2E00;
@@ -283,7 +262,6 @@ button {
 
 
 /*float cancel and signup buttons and add an equal width*/
-
 .cancelbtn,
 .signupbtn {
     float: left;
@@ -292,14 +270,12 @@ button {
 
 
 /*add padding to container elements*/
-
 .container {
     padding: 16px;
 }
 
 
 /*define the modal’s background*/
-
 .modal {
     display: none;
     position: fixed;
@@ -316,7 +292,6 @@ button {
 
 
 /*define the modal-content background*/
-
 .modal-content {
     background-color: #fefefe;
     margin: 5% auto 15% auto;
@@ -326,7 +301,6 @@ button {
 
 
 /*define the close button*/
-
 .close {
     position: absolute;
     right: 35px;
@@ -338,7 +312,6 @@ button {
 
 
 /*define the close hover and focus effects*/
-
 .close:hover,
 .close:focus {
     color: red;
@@ -361,19 +334,8 @@ button {
 
 /********** FEATURES **********/
 
-a {
-    text-decoration: none;
-}
 
 /********** FOOTER **********/
-
-a {
-    text-decoration: none;
-}
-
-li {
-    list-style: none;
-}
 
 #footer {
     background-color: rgb(54, 49, 18);
