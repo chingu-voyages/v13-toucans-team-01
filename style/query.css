@@ -13,7 +13,7 @@ for instance: 600px / 16em = 37.7em
 /* Widescreens/TV's (min-width: 1201px) */
 @media only screen and (min-width: 1201px) {
 
-     /* Features -----------------------*/
+/* Features -----------------------*/
     h2 {
         text-transform: uppercase;
         letter-spacing: 0.1px;
@@ -302,13 +302,58 @@ for instance: 600px / 16em = 37.7em
 }
 
 
-/* Small tablet to big tablet: from 768px to 1023px 
+/* Small tablet to big tablet: from 671px to 1023px 
 @media only screen and (max-width: 1023px) {
     }
 
 
-/* Small phones to small tablets: from 481px to 767px */
+/* Small phones to small tablets: from 481px to 670px */
 @media only screen and (max-width: 670px) {
+
+    /* Header*/
+    .logo {
+        display: flex;
+        margin-left: 40px;
+        overflow: hidden;
+    }
+    
+    .logo p {
+        margin-top: 20px;
+    }
+
+    .hero_box {
+        position: relative;
+        left: 10px;
+        top: 150px;
+        width: 100%;
+        text-align: center;
+    }
+
+    .hero_box .hero_h1 {
+        font-size: 35px;
+        padding: 12px;
+        margin-bottom: 40px;
+        color: #fff;
+        text-align: center;
+    }
+
+    .hero_box p {
+        font-size: 20px;
+        padding: 10px;
+        margin-bottom: 40px;
+        color: #fff;
+    }
+
+    .hero_box a {
+        text-decoration: none;
+        font-size: 20px;
+        cursor: pointer;
+        background: green;
+        padding: 12px;
+        margin-top: 30px;
+        border-radius: 10px;
+        color: #fff;
+    }
 
     /* Features -----------------------*/
     h2 {
@@ -502,8 +547,51 @@ for instance: 600px / 16em = 37.7em
 }
 
 
-/* Small phones: from 0 to 480px 
+/* Small phones: from 0 to 480px */
 @media only screen and (max-width: 480px) {
-}    
 
-*/
+    /* Header*/
+    .logo {
+        display: block;
+        margin-left: 13%;
+        text-align: center;
+        overflow: hidden;
+    }
+    
+    .logo p {
+        margin: 0;
+    }
+
+    .hero_box {
+        position: relative;
+        left: 1px;
+        top: 150px;
+        width: 100%;
+        text-align: center;
+    }
+
+    .hero_box .hero_h1 {
+        font-size: 35px;
+        padding: 12px;
+        margin-bottom: 40px;
+        color: #fff;
+        text-align: center;
+    }
+
+    .hero_box p {
+        font-size: 20px;
+        margin-bottom: 40px;
+        color: #fff;
+    }
+
+    .hero_box a {
+        text-decoration: none;
+        font-size: 20px;
+        cursor: pointer;
+        background: green;
+        padding: 12px;
+        margin-top: 30px;
+        border-radius: 10px;
+        color: #fff;
+    }
+}

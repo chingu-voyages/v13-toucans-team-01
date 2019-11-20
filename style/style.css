@@ -20,8 +20,10 @@ body {
 header {
     background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(/images/hero_img.jpg);
     background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(/images/hero_img.jpg);
+    overflow: hidden;
     background-position: center;
     background-size: cover;
+    background-repeat: no-repeat;
     height: 100vh;
     background-attachment: fixed;
 }
@@ -106,6 +108,19 @@ nav ul li a {
     color: green;
 }
 
+.hamburger {
+    background: green;
+    color: #fff;
+}
+
+.hamburgerBar {
+    color: #fff;
+    width: 200px;
+    height: 20px;
+    z-index: 4;
+    margin: auto;
+}
+
 .hero_box {
     position: absolute;
     top: 40%;
@@ -137,6 +152,7 @@ nav ul li a {
     border-radius: 10px;
     color: #fff;
 }
+
 
 /* DESIGN FOR HOW IT WORKS SECTION */
 img.how_picture {
