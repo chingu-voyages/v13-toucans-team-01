@@ -230,7 +230,11 @@ img.how_picture {
     top: 0;
 }
 
-
+b {
+    font-size: 32px;
+    font-weight: bolder;
+    padding-bottom: 28px;
+}
 /*add full-width input fields*/
 input[type=text],
 input[type=password] {
@@ -239,6 +243,7 @@ input[type=password] {
     margin: 8px 0;
     display: inline-block;
     border: 2px solid #ccc;
+    border-radius: 30px;
     box-sizing: border-box;
 }
 
@@ -264,7 +269,7 @@ button {
 /*float cancel and signup buttons and add an equal width*/
 .cancelbtn,
 .signupbtn {
-    float: left;
+    float: center;
     width: 50%
 }
 
@@ -294,6 +299,7 @@ button {
 /*define the modal-content background*/
 .modal-content {
     background-color: #fefefe;
+    
     margin: 5% auto 15% auto;
     border: 1px solid #888;
     width: 80%;
