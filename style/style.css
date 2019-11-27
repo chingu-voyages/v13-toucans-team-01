@@ -375,9 +375,16 @@ button {
 
 /********** FEATURES **********/
 
+.features__header {
+    display: block;
+}
+
+.features__image {
+    width: 100%;
+    height: auto;
+}
 
 /********** FOOTER **********/
-
 .footer {
     background-color: #191901;
     border-top: 1px solid #000;
@@ -389,9 +396,7 @@ button {
     width: 100%;
 }
 
-
-/* Links Footer */
-
+/* Footer Nav */
 .footer__nav {
     align-items: center;
     display: flex;
@@ -411,7 +416,6 @@ button {
     font-weight: normal;
     text-decoration: underline;
 }
-
 
 /* Copyright */
 .footer__copyright {
