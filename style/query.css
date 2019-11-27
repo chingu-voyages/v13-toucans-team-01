@@ -13,44 +13,7 @@ for instance: 600px / 16em = 37.7em
 /* Widescreens/TV's (min-width: 1201px) */
 @media only screen and (min-width: 1201px) {
 
-    /* Features -----------------------*/
 
-    .features {
-        display: block;
-        font-family: sans-serif;
-        text-align: center;
-    }
-
-    .features__header {
-        color: #111;
-        font-size: 3.5rem;
-        word-spacing: 1px;
-    }
-
-    /* Cards */
-    .feature__card {
-        color: #222;
-        display: flex;
-    }
-
-    .features__h3 {
-        color: #333;
-        font-size: 1.1rem;
-        font-weight: normal;
-        letter-spacing: 1px;
-        line-height: 25px;
-    }
-
-    .features__button {
-        background-color: green;
-        color: #efefef;
-        border: 1px solid;
-        padding: 0.8rem;
-        text-align: center;
-        width: 10rem;
-        font-size: 1.1rem;
-        letter-spacing: .5px;
-    }
 
     /* Footer -----------------------*/
     * {
@@ -93,42 +56,7 @@ for instance: 600px / 16em = 37.7em
 /* Big tablet to 1200px (widths smaller then the 1140px row) */
 @media only screen and (max-width: 1200px) {
 
-    /* Features -----------------------*/
 
-    .features {
-        display: block;
-        font-family: sans-serif;
-        text-align: center;
-    }
-
-    .features__header {
-        color: #222;
-        font-size: 3.5rem;
-    }
-
-    /* .features__subheader {} */
-
-    .feature__card {
-        color: #222;
-        display: flex;
-    }
-
-    .features__button {
-        background-color: green;
-        border: 1px solid;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        color: #efefef;
-        font-size: 1.1rem;
-        letter-spacing: .5px;
-        margin: 1rem auto;
-        order: 3;
-        padding: 0.8rem;
-        position: absolute;
-        text-align: center;
-        width: 10rem;
-    }
 
     /* Footer ------------------*/
     .footer {
@@ -219,18 +147,23 @@ for instance: 600px / 16em = 37.7em
     .features {
         display: block;
         font-family: sans-serif;
+        text-align: center;
     }
 
     .features__header {
         color: #111;
         font-size: 3.8rem;
         line-height: 3rem;
+        padding: 4rem 0;
+        text-transform: uppercase;
         word-spacing: 1px;
     }
 
     .features__subheader {
-        font-size: 1.2rem;
-        line-height: 1.5rem;
+        font-size: 1.4rem;
+        font-weight: normal;
+        line-height: 2.2rem;
+        margin-bottom: 5rem;
     }
 
     .features__cards {
@@ -238,12 +171,20 @@ for instance: 600px / 16em = 37.7em
         grid-template-columns: 1fr;
     }
 
-    .feature__card {
+    .features__card {
         color: #222;
-        display: flex;
     }
 
-    .feature__h3 {
+    .features__image {
+        margin-top: 3rem;
+    }
+
+    .features__h2 {
+        font-size: 1.9rem;
+        padding: 4rem;
+    }
+
+    .features__h3 {
         color: #444;
         font-size: 1.2rem;
         font-weight: normal;
@@ -252,15 +193,19 @@ for instance: 600px / 16em = 37.7em
     }
 
     .features__button {
+        align-items: center;
         background-color: green;
         color: #efefef;
-        border: 1px solid;
-        margin: 1rem auto;
-        padding: 1rem;
-        text-align: center;
-        width: 10rem;
+        display: flex;
         font-size: 1.1rem;
+        height: 3rem;
+        justify-content: center;
         letter-spacing: .5px;
+        line-height: 1.1rem;
+        margin: 2.5rem auto;
+        text-align: center;
+        text-decoration: none;
+        width: 10rem;
     }
 
     /* Footer -----------------------*/

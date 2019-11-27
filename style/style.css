@@ -375,10 +375,6 @@ button {
 
 /********** FEATURES **********/
 
-.features__header {
-    display: block;
-}
-
 .features__image {
     width: 100%;
     height: auto;
