@@ -15,6 +15,85 @@ for instance: 600px / 16em = 37.7em
 
 
 
+    /* Features -----------------------*/
+    .features {
+        display: block;
+        font-family: sans-serif;
+        text-align: center;
+    }
+
+    .features__header {
+        color: #111;
+        font-size: 3.8rem;
+        line-height: 3rem;
+        padding: 4rem 0;
+        text-transform: uppercase;
+        word-spacing: 1px;
+    }
+
+    .features__subheader {
+        font-size: 1.4rem;
+        font-weight: normal;
+        line-height: 2.2rem;
+        margin-bottom: 5rem;
+    }
+
+    .features__cards {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 1rem;
+
+    }
+
+    .features__card {
+        border: 1px solid rgba(0, 128, 0, 0.151);
+        box-shadow: 2px 2px 5px 2px rgba(211, 211, 211, 0.274);
+        color: #222;
+        margin-top: 3rem;
+        padding: .5rem;
+        padding-bottom: 5.5rem;
+        position: relative;
+    }
+
+    .features__image {
+        margin-top: 3rem;
+    }
+
+    .features__h2 {
+        font-size: 1.4rem;
+        /* padding: 4rem; */
+        padding: 2rem 0;
+    }
+
+    .features__h3 {
+        color: #444;
+        font-size: 1rem;
+        font-weight: normal;
+        line-height: 1.7rem;
+        text-transform: none;
+        padding-bottom: 2rem;
+    }
+
+    .features__button {
+        align-items: center;
+        background-color: green;
+        color: #efefef;
+        display: flex;
+        font-size: 1.1rem;
+        height: 3rem;
+        justify-content: center;
+        letter-spacing: .5px;
+        line-height: 1.1rem;
+        margin: 4rem auto;
+        text-align: center;
+        text-decoration: none;
+        position: absolute;
+        bottom: -20px;
+        left: 0;
+        right: 0;
+        width: 10rem;
+    }
+
     /* Footer -----------------------*/
     * {
         letter-spacing: 0.8px;
@@ -56,7 +135,81 @@ for instance: 600px / 16em = 37.7em
 /* Big tablet to 1200px (widths smaller then the 1140px row) */
 @media only screen and (max-width: 1200px) {
 
+    /* Features -----------------------*/
+    .features {
+        display: block;
+        font-family: sans-serif;
+        text-align: center;
+    }
 
+    .features__header {
+        color: #111;
+        font-size: 3.8rem;
+        line-height: 3rem;
+        padding: 4rem 0;
+        text-transform: uppercase;
+        word-spacing: 1px;
+    }
+
+    .features__subheader {
+        font-size: 1.4rem;
+        font-weight: normal;
+        line-height: 2.2rem;
+        margin-bottom: 5rem;
+    }
+
+    .features__cards {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 1rem;
+    }
+
+    .features__card {
+        border: 1px solid rgba(0, 128, 0, 0.151);
+        box-shadow: 2px 2px 5px 2px rgba(211, 211, 211, 0.274);
+        color: #222;
+        margin-top: 3rem;
+        padding: .5rem;
+        padding-bottom: 5.5rem;
+        position: relative;
+    }
+
+    .features__image {}
+
+    .features__h2 {
+        font-size: 1.4rem;
+        /* padding: 4rem; */
+        padding: 1rem 0;
+    }
+
+    .features__h3 {
+        color: #444;
+        font-size: 1rem;
+        font-weight: normal;
+        line-height: 1.5rem;
+        text-transform: none;
+        padding-bottom: 2rem;
+    }
+
+    .features__button {
+        align-items: center;
+        background-color: green;
+        color: #efefef;
+        display: flex;
+        font-size: 1.1rem;
+        height: 3rem;
+        justify-content: center;
+        letter-spacing: .5px;
+        line-height: 1.1rem;
+        margin: 4rem auto;
+        text-align: center;
+        text-decoration: none;
+        position: absolute;
+        bottom: -20px;
+        left: 0;
+        right: 0;
+        width: 10rem;
+    }
 
     /* Footer ------------------*/
     .footer {
@@ -140,15 +293,12 @@ for instance: 600px / 16em = 37.7em
 
     /* Features -----------------------*/
 
-    .features>* {
-        border: 1px solid;
-    }
-
     .features {
         display: block;
         font-family: sans-serif;
         text-align: center;
     }
+
 
     .features__header {
         color: #111;
@@ -189,6 +339,7 @@ for instance: 600px / 16em = 37.7em
         font-size: 1.2rem;
         font-weight: normal;
         line-height: 34px;
+        padding-bottom: 5rem;
         text-transform: none;
     }
 
@@ -202,7 +353,7 @@ for instance: 600px / 16em = 37.7em
         justify-content: center;
         letter-spacing: .5px;
         line-height: 1.1rem;
-        margin: 2.5rem auto;
+        /* margin: 2.5rem auto; */
         text-align: center;
         text-decoration: none;
         width: 10rem;

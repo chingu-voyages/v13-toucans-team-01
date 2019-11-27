@@ -376,8 +376,9 @@ button {
 /********** FEATURES **********/
 
 .features__image {
-    width: 100%;
+    display: block;
     height: auto;
+    width: 100%;
 }
 
 /********** FOOTER **********/
