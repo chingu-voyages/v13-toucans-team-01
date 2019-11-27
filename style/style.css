@@ -17,6 +17,7 @@ body {
 
 
 /* DESGIN FOR HEADER SECTION */
+
 header {
     background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(/images/hero_img.jpg);
     background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(/images/hero_img.jpg);
@@ -64,12 +65,11 @@ nav ul {
 nav ul li {
     text-decoration: none;
     display: inline-block;
-
 }
 
 nav ul li a {
     text-decoration: none;
-    padding: 10px 10px 0 10px; 
+    padding: 10px 10px 0 10px;
     color: #fff;
     font-size: 20px;
 }
@@ -85,7 +85,7 @@ nav ul li a {
     position: absolute;
     border: none;
     background-color: #e5e5e5;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.3);
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.3);
     margin-top: 10px;
     z-index: 1;
 }
@@ -93,7 +93,7 @@ nav ul li a {
 .dropdown:hover .dropdown_content {
     display: block;
     margin-top: 10px;
-    padding: 12px 10px; 
+    padding: 12px 10px;
 }
 
 .dropdown_content a {
@@ -124,7 +124,7 @@ nav ul li a {
 .hero_box {
     position: absolute;
     top: 40%;
-    left: 20%; 
+    left: 20%;
     transform: translate(-50% -50%);
     width: 60%;
     text-align: center;
@@ -155,6 +155,7 @@ nav ul li a {
 
 
 /* DESIGN FOR HOW IT WORKS SECTION */
+
 img.how_picture {
     float: right;
     max-height: auto;
@@ -185,6 +186,7 @@ img.how_picture {
 
 
 /*  CALL TO ACTION SECTION */
+
 .action h1 {
     font-size: 28px;
     padding-top: 2em;
@@ -200,6 +202,7 @@ img.how_picture {
 
 
 /* style action button using fill on hover */
+
 .action button {
     position: relative;
     height: 45px;
@@ -251,7 +254,10 @@ b {
     font-weight: bolder;
     padding-bottom: 28px;
 }
+
+
 /*add full-width input fields*/
+
 input[type=text],
 input[type=password] {
     width: 100%;
@@ -265,6 +271,7 @@ input[type=password] {
 
 
 /* set a style for all buttons*/
+
 button {
     background-color: green;
     color: white;
@@ -276,6 +283,7 @@ button {
 
 
 /*set styles for the cancel button*/
+
 .cancelbtn {
     padding: 14px 20px;
     background-color: #FF2E00;
@@ -283,6 +291,7 @@ button {
 
 
 /*float cancel and signup buttons and add an equal width*/
+
 .cancelbtn,
 .signupbtn {
     float: center;
@@ -291,20 +300,22 @@ button {
 
 
 /*add padding to container elements*/
+
 .container {
     padding: 16px;
 }
 
 
 /*define the modal’s background*/
+
 .modal {
     display: none;
     position: fixed;
     z-index: 1;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
+    left: 30%;
+    top: 25%;
+    width: 500px;
+    height: 500px;
     overflow: auto;
     background-color: rgb(0, 0, 0);
     background-color: rgba(0, 0, 0, 0.4);
@@ -313,9 +324,9 @@ button {
 
 
 /*define the modal-content background*/
+
 .modal-content {
     background-color: #fefefe;
-    
     margin: 5% auto 15% auto;
     border: 1px solid #888;
     width: 80%;
@@ -323,6 +334,7 @@ button {
 
 
 /*define the close button*/
+
 .close {
     position: absolute;
     right: 35px;
@@ -334,6 +346,7 @@ button {
 
 
 /*define the close hover and focus effects*/
+
 .close:hover,
 .close:focus {
     color: red;
@@ -370,7 +383,9 @@ button {
     width: 100%;
 }
 
+
 /* Links Footer */
+
 #footer .footer__links {
     align-items: center;
     display: flex;
@@ -386,7 +401,9 @@ button {
     text-decoration: underline;
 }
 
+
 /* Copyright */
+
 #footer .footer__copyright {
     align-self: end;
     grid-column: 2/4;
@@ -397,7 +414,9 @@ button {
     padding-top: 0.5rem;
 }
 
+
 /* Social links */
+
 #footer .footer__social-links {
     align-items: flex-end;
     display: flex;
@@ -412,9 +431,14 @@ button {
     font-size: 1.3rem;
 }
 
-.fa-twitter {color: #6ac2fc;}
+.fa-twitter {
+    color: #6ac2fc;
+}
 
-.fa-facebook {color: rgb(140, 175, 250);}
+.fa-facebook {
+    color: rgb(140, 175, 250);
+}
 
-.fa-linkedin-in {color: rgb(96, 202, 255);}
-
+.fa-linkedin-in {
+    color: rgb(96, 202, 255);
+}
