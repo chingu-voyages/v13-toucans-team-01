@@ -45,7 +45,23 @@
                             </div>
                         </li>
                         <li><a href="#">Support</a></li>
-                        <li><a href="#">Log In</a></li>
+                        <li><a href="#" onclick="document.getElementById('logInForm').style.display='block'">Log In</a></li>
+                        <div id="logInForm" class="modal">
+                            <span onclick="document.getElementById('logInForm').style.display='none'" class="close" title="Close Modal">×</span>
+                            <form class="modal-content animate" action="/action_page.php">
+                                <div class="container">
+                                    <label><b>Log In</b></label>
+                                    <input type="text" placeholder="Email" name="" required>
+
+                                    <label></label>
+                                    <input type="password" placeholder="Password" name="psw" required>
+
+                                    <div class="clearfix">
+                                        <button type="submit" class="logInBtn">Log In</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
                     </ul>
                 </nav>
             </div>
@@ -65,9 +81,7 @@
                 </div>
                 <div class="how_content">
                     <!-- HOW IT WORKS PICTURE-->
-                    <img class="how_picture"
-                        src="https://images.unsplash.com/photo-1567427017947-545c5f8d16ad?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60"
-                        alt="jar of coins spilling over">
+                    <img class="how_picture" src="https://images.unsplash.com/photo-1567427017947-545c5f8d16ad?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60" alt="jar of coins spilling over">
                     <!-- HOW IT WORKS LIST SECTION-->
                     <div class="how_lists">
                         <div id="list deposit_funds">
@@ -108,10 +122,9 @@
             <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, beatae.</h3>
             <section class="feature__cards">
                 <section class="card features__card-1">
-                    <h2>Track  your money</h2>
+                    <h2>Track your money</h2>
                     <a href="#" class="button">Track Money</a>
-                    <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut architecto necessitatibus omnis
-                        facilis deleniti molestiae eligendi, eum vel?</h3>
+                    <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut architecto necessitatibus omnis facilis deleniti molestiae eligendi, eum vel?</h3>
                 </section>
                 <section class="photo photo-1">
                     <img src="./images/finances-remastered.jpg" alt="Keep track of your money">
@@ -119,18 +132,15 @@
                 <section class="card features__card-2">
                     <h2>Save for goals</h2>
                     <a href="#" class="button">Set Goals</a>
-                    <h3>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Commodi, quo laboriosam! Perferendis
-                        natus hic neque saepe similique nam ducimus deserunt ut?</h3>
+                    <h3>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Commodi, quo laboriosam! Perferendis natus hic neque saepe similique nam ducimus deserunt ut?</h3>
                 </section>
                 <section class="photo photo-2">
-                    <img src="./images/saving-money-2-remastered.jpg"
-                        alt="Save towards your goals to buy the things you need">
+                    <img src="./images/saving-money-2-remastered.jpg" alt="Save towards your goals to buy the things you need">
                 </section>
                 <section class="card features__card-3">
                     <h2>Life events to happen</h2>
                     <a href="#" class="button">Expect Events</a>
-                    <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore aut iste at laboriosam eius?
-                        Quo labore expedita cupiditate temporibus voluptates.</h3>
+                    <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore aut iste at laboriosam eius? Quo labore expedita cupiditate temporibus voluptates.</h3>
                 </section>
                 <section class="photo photo-3">
                     <img src="./images/life-event-birth-3-remastered.jpg" alt="Expect life events to happen">
@@ -141,14 +151,12 @@
         <!-- CALL TO ACTION SECTION -->
         <section id="action">
             <div class="action">
-                <h1> Don't just work for your money, <br>
-                    make your money work for you</h1>
+                <h1> Don't just work for your money, <br> make your money work for you</h1>
                 <button onclick="document.getElementById('form').style.display='block'" class="apply" type="button">
-                    APPLY NOW </button>
+                    SIGN UP </button>
 
                 <div id="form" class="modal">
-                    <span onclick="document.getElementById('form').style.display='none'" class="close"
-                        title="Close Modal">×</span>
+                    <span onclick="document.getElementById('form').style.display='none'" class="close" title="Close Modal">×</span>
                     <form class="modal-content animate" action="/action_page.php">
                         <div class="container">
                             <label><b>Sign Up Form</b></label>
@@ -159,12 +167,11 @@
 
                             <label></label>
                             <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
-                            <!--input type="checkbox"> Remember me
-                            <p>By creating an account you agree to our <a href="#">Terms & Privacy</a>.</p> -->
+                            <input type="checkbox"> Remember me
+                            <p>By creating an account you agree to our <a href="#">Terms & Privacy</a>.</p>
 
                             <div class="clearfix">
-                                <!-- button type="button" onclick="document.getElementById('form').style.display='none'"
-                                   </button> class="cancelbtn">Cancel</button> -->
+                                <button type="button" onclick="document.getElementById('form').style.display='none'" class="cancelbtn">Cancel</button>
                                 <button type="submit" class="signupbtn">Sign Up</button>
                             </div>
                         </div>
@@ -181,8 +188,26 @@
                     <a href="#">About</a>
                 </li>
                 <li>
-                    <a href="#">Contact</a>
+                    <a href="#" onclick="document.getElementById('contactForm').style.display='block'">Contact</a>
                 </li>
+                <div id="contactForm" class="modal">
+                    <span onclick="document.getElementById('contactForm').style.display='none'" class="close" title="Close Modal">×</span>
+                    <form class="modal-content animate" action="/action_page.php">
+                        <div class="container">
+                            <label><b>Contact</b></label>
+                            <input type="text" placeholder="Name" name="" required>
+
+                            <label></label>
+                            <input type="text" placeholder="Email" name="" required>
+
+                            <input type="text" placeholder="Message" name="" required>
+
+                            <div class="clearfix">
+                                <button type="submit" class="logInBtn">Submit</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
                 <li>
                     <a href="#">Privacy</a>
                 </li>

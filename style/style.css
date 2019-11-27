@@ -314,8 +314,9 @@ button {
     z-index: 1;
     left: 30%;
     top: 25%;
-    width: 500px;
-    height: 500px;
+    bottom: 30%;
+    width: 600px;
+    height: 600px;
     overflow: auto;
     background-color: rgb(0, 0, 0);
     background-color: rgba(0, 0, 0, 0.4);
