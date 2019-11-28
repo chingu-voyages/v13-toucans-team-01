@@ -381,7 +381,7 @@ button {
 .features__cards,
 .footer__nav,
 .footer__copyright {
-    color: ;
+    color: #333;
 }
 
 
@@ -448,7 +448,7 @@ button {
     width: 1100px;
     border: 1px solid red;
     margin: auto;
-} 
+}
 
 .services_top_header {
     display: flex;
