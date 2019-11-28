@@ -375,6 +375,16 @@ button {
 
 /********** FEATURES **********/
 
+.features,
+.features__header,
+.features__subheader,
+.features__cards,
+.footer__nav,
+.footer__copyright {
+    color: ;
+}
+
+
 .features__image {
     display: block;
     height: auto;
@@ -388,21 +398,12 @@ button {
     color: #fffbea;
     display: grid;
     font-family: sans-serif;
-    grid-template-columns: 5rem 1fr 11rem;
-    padding: 0 2rem;
     width: 100%;
 }
 
 /* Footer Nav */
 .footer__nav {
-    align-items: center;
     display: flex;
-    font-size: 1.2rem;
-    grid-column: 1/4;
-    grid-row: 1;
-    justify-content: space-around;
-    padding: auto;
-    padding: 2rem 0;
 }
 
 .footer__list {
@@ -412,28 +413,15 @@ button {
 .footer__link {
     color: #fffbea;
     font-weight: normal;
-    text-decoration: underline;
+    text-decoration: none;
 }
 
 /* Copyright */
-.footer__copyright {
-    align-self: end;
-    grid-column: 2/4;
-    grid-row: 2;
-    font-size: 1rem;
-    justify-self: left;
-    padding-bottom: 0.5rem;
-    padding-top: 0.5rem;
-}
+.footer__copyright {}
 
 /* Social links */
 .footer__social {
-    align-items: flex-end;
     display: flex;
-    grid-column: 3;
-    grid-row: 2;
-    justify-content: center;
-    padding-bottom: 0.5rem;
 }
 
 .fa-facebook,
