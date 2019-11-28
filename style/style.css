@@ -379,8 +379,7 @@ button {
 .features__header,
 .features__subheader,
 .features__cards,
-.footer__nav,
-.footer__copyright {
+.footer__nav {
     color: #333;
 }
 
