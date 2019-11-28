@@ -13,7 +13,9 @@ for instance: 600px / 16em = 37.7em
 /* Widescreens/TV's (min-width: 1201px) */
 @media only screen and (min-width: 1201px) {
 
-    /* Features */
+
+
+    /* Features -----------------------*/
     .features {
         display: block;
         font-family: sans-serif;
@@ -21,9 +23,10 @@ for instance: 600px / 16em = 37.7em
     }
 
     .features__header {
+        color: #111;
         font-size: 3.8rem;
         line-height: 3rem;
-        padding: 2.5rem 0;
+        padding: 4rem 0;
         text-transform: uppercase;
         word-spacing: 1px;
     }
@@ -39,26 +42,34 @@ for instance: 600px / 16em = 37.7em
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         grid-gap: 1rem;
+
     }
 
     .features__card {
         border: 1px solid rgba(0, 128, 0, 0.151);
         box-shadow: 2px 2px 5px 2px rgba(211, 211, 211, 0.274);
+        color: #222;
         margin-top: 3rem;
         padding: .5rem;
         padding-bottom: 5.5rem;
         position: relative;
     }
 
+    .features__image {
+        /* margin-top: 3rem; */
+    }
+
     .features__h2 {
         font-size: 1.4rem;
-        padding: 1rem 0;
+        /* padding: 4rem; */
+        padding: 2rem 0;
     }
 
     .features__h3 {
+        color: #444;
         font-size: 1rem;
         font-weight: normal;
-        line-height: 1.5rem;
+        line-height: 1.7rem;
         text-transform: none;
         padding-bottom: 2rem;
     }
@@ -83,39 +94,49 @@ for instance: 600px / 16em = 37.7em
         width: 10rem;
     }
 
-    /* Footer */
+    /* Footer -----------------------*/
+    * {
+        letter-spacing: 0.8px;
+    }
 
     .footer {
-        font-size: 1rem;
-        grid-template-areas:
-            ". l . s ."
-            ". . c . .";
-        padding-bottom: 1.5rem;
-        padding-top: 3rem;
+        grid-template-columns: 1fr 1fr 1fr;
     }
 
-    .footer__nav {
-        grid-area: l;
-        justify-content: space-between;
-    }
-
-    .footer__social {
-        grid-area: s;
-    }
-
+    /* Copyright */
     .footer__copyright {
-        grid-area: c;
-        padding-top: 2rem;
+        align-self: end;
+        grid-column: 1/3;
+        grid-row: 2;
+        font-size: 0.8rem;
+        justify-self: left;
+    }
+
+    /* Footer Links */
+    .footer__nav {
+        font-size: 1.1rem;
+        letter-spacing: 1px;
+        padding: 4rem 10rem;
+        padding-bottom: 2.3rem;
+    }
+
+    /* Social links */
+    .footer__social {
+        grid-row: 2;
+    }
+
+    .fa-facebook,
+    .fa-linkedin-in,
+    .fa-twitter {
+        margin: 0 2.5rem;
+        font-size: 1.5rem;
     }
 }
-
-
 
 /* Big tablet to 1200px (widths smaller then the 1140px row) */
 @media only screen and (max-width: 1200px) {
 
-    /* Features */
-
+    /* Features -----------------------*/
     .features {
         display: block;
         font-family: sans-serif;
@@ -123,9 +144,10 @@ for instance: 600px / 16em = 37.7em
     }
 
     .features__header {
+        color: #111;
         font-size: 3.8rem;
         line-height: 3rem;
-        padding: 2.5rem 0;
+        padding: 4rem 0;
         text-transform: uppercase;
         word-spacing: 1px;
     }
@@ -146,18 +168,23 @@ for instance: 600px / 16em = 37.7em
     .features__card {
         border: 1px solid rgba(0, 128, 0, 0.151);
         box-shadow: 2px 2px 5px 2px rgba(211, 211, 211, 0.274);
+        color: #222;
         margin-top: 3rem;
         padding: .5rem;
         padding-bottom: 5.5rem;
         position: relative;
     }
 
+    .features__image {}
+
     .features__h2 {
         font-size: 1.4rem;
+        /* padding: 4rem; */
         padding: 1rem 0;
     }
 
     .features__h3 {
+        color: #444;
         font-size: 1rem;
         font-weight: normal;
         line-height: 1.5rem;
@@ -185,33 +212,38 @@ for instance: 600px / 16em = 37.7em
         width: 10rem;
     }
 
-    /* Footer */
-
+    /* Footer ------------------*/
     .footer {
-        font-size: 1rem;
-        grid-template-areas:
-            ". l . s ."
-            ". c c c .";
-        padding-bottom: 1.5rem;
-        padding-top: 3rem;
+        grid-template-columns: 1fr 1fr 1fr;
     }
 
     .footer__nav {
-        grid-area: l;
-        justify-content: space-between;
+        padding: 2rem;
+        font-size: 1.2rem;
     }
 
-    .footer__social {
-        justify-content: space-around;
-        grid-area: s;
+    .footer__list {
+        padding: 1rem;
     }
 
     .footer__copyright {
-        grid-area: c;
-        padding-top: 2rem;
-        text-align: center;
+        font-size: 0.7rem;
+        grid-column: 1/3;
+        padding-bottom: 1rem;
+    }
+
+    .footer__social {
+        padding-bottom: 1rem;
+    }
+
+    .fa-facebook,
+    .fa-linkedin-in,
+    .fa-twitter {
+        margin: 0 1rem;
+        font-size: 1.7rem;
     }
 }
+
 
 /* Small tablet to big tablet: from 671px to 1023px 
 @media only screen and (max-width: 1023px) {
@@ -266,7 +298,7 @@ for instance: 600px / 16em = 37.7em
         color: #fff;
     }
 
-    /* Features */
+    /* Features -----------------------*/
 
     .features {
         display: block;
@@ -275,9 +307,10 @@ for instance: 600px / 16em = 37.7em
     }
 
     .features__header {
+        color: #111;
         font-size: 3.8rem;
         line-height: 3rem;
-        padding: 2.5rem 0;
+        padding: 4rem 0;
         text-transform: uppercase;
         word-spacing: 1px;
     }
@@ -294,12 +327,21 @@ for instance: 600px / 16em = 37.7em
         grid-template-columns: 1fr;
     }
 
+    .features__card {
+        color: #222;
+    }
+
+    .features__image {
+        /* margin-top: 3rem; */
+    }
+
     .features__h2 {
         font-size: 1.9rem;
         padding: 4rem;
     }
 
     .features__h3 {
+        color: #444;
         font-size: 1.2rem;
         font-weight: normal;
         line-height: 34px;
@@ -317,48 +359,85 @@ for instance: 600px / 16em = 37.7em
         justify-content: center;
         letter-spacing: .5px;
         line-height: 1.1rem;
+        /* margin: 2.5rem auto; */
         text-align: center;
         text-decoration: none;
         width: 10rem;
     }
 
-    /* Footer */
-
+    /* Footer -----------------------*/
     .footer {
-        font-size: 1.2rem;
-        grid-template-areas:
-            ". l l l ."
-            ". s s s ."
-            ". c c c .";
-        padding-bottom: 1.5rem;
-        padding-top: 0;
+        align-items: center;
+        color: #efefef;
+        display: grid;
+        grid-template-columns: 1fr;
+        /* margin-top: 3rem; */
+        /* padding: 2rem; */
+        /* padding-bottom: 3rem;
+padding-top: 5rem; */
     }
 
+    /* Footer Nav */
     .footer__nav {
         align-items: center;
+        color: #efefef;
         display: flex;
         flex-direction: column;
-        grid-area: l;
-        grid-template-columns: 1fr;
-        height: 10rem;
-        margin: 5rem 0;
-        margin-bottom: 4rem;
+        grid-row: 1;
+        margin: 0;
+        text-align: center;
+    }
+
+    .footer__nav::before {
+        content: 'Bank of Toucan';
+        font-size: 1.5rem;
+        font-weight: 900;
+        letter-spacing: 5px;
+        line-height: 62px;
+        margin-bottom: 3rem;
+        margin-top: 1rem;
+        /* padding: 0 2rem; */
+        text-transform: uppercase;
+        word-spacing: 1px;
     }
 
     .footer__list {
-        align-items: space-between;
-        justify-content: space-between;
+        color: #efefef;
+        font-size: 1.1rem;
+        letter-spacing: 1.5px;
+        /* margin: 1rem; */
     }
 
+    .footer__link {
+        color: #efefef;
+    }
+
+    /* Copyright */
+    .footer__copyright {
+        align-self: flex-end;
+        font-size: .9rem;
+        grid-column: 1;
+        grid-row: 3;
+        letter-spacing: 1.5px;
+        line-height: 20px;
+        text-align: center;
+    }
+
+    /* Social links */
     .footer__social {
-        grid-area: s;
+        align-items: center;
+        display: flex;
+        flex-direction: row;
+        grid-column: 1;
+        grid-row: 2;
         justify-content: center;
     }
 
-    .footer__copyright {
-        grid-area: c;
-        padding-top: 2rem;
-        text-align: center;
+    .fa-facebook,
+    .fa-linkedin-in,
+    .fa-twitter {
+        font-size: 2.2rem;
+        margin: 1.5rem 2rem;
     }
 }
 
