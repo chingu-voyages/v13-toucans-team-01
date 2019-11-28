@@ -452,3 +452,38 @@ button {
 .fa-linkedin-in {
     color: rgb(96, 202, 255);
 }
+
+/********** SERIVCES DESIGN **********/
+.services_header {
+    width: 1100px;
+    border: 1px solid red;
+    margin: auto;
+} 
+
+.services_top_header {
+    display: flex;
+    padding-top: 40px;
+
+}
+
+.services_logo {
+    margin-right: auto;
+}
+
+.services_logo_image {
+    width: 50px;
+    position: relative;
+}
+
+.services_menu {
+    display: flex;
+}
+
+.services_nav {
+    position: relative;
+    margin-top: 20px;
+}
+
+.services_nav ul li a {
+    color: #000;
+}
