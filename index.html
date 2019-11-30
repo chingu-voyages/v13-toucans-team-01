@@ -36,15 +36,10 @@
                 </div>
                 <nav class="nav main_menu">
                     <ul>
-                        <li><a href="#">About</a></li>
-                        <li class="dropdown"><a href="#">Services</a>
-                            <div class="dropdown_content">
-                                <a href="#">Save</a>
-                                <a href="#">Dept</a>
-                                <a href="#">Invest</a>
-                            </div>
-                        </li>
-                        <li><a href="#">Support</a></li>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#about.html">About</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="#support.html">Support</a></li>
                         <li><a href="#">Log In</a></li>
                     </ul>
                 </nav>
@@ -53,7 +48,30 @@
             <div class="hero_box">
                 <h1 class="hero_h1">Stay in control & Grow your investment</h1>
                 <p class="here_paragraph">Build lasting wealth through sustainable investments</p>
-                <a href="#" class="hero_button">Create Account</a>
+                <a href="#" onclick="document.getElementById('createAccountForm').style.display='block'" class="hero_button">Create Account</a>
+
+                <div id="createAccountForm" class="modal">
+                    <span onclick="document.getElementById('createAccountForm').style.display='none'" class="close" title="Close Modal">×</span>
+                    <form class="modal-content animate" action="/action_page.php">
+                        <div class="container">
+                            <label><b>Create Account</b></label>
+                            <input type="text" placeholder="Email" name="" required>
+
+                            
+                            <input type="password" placeholder="Password" name="psw" required>
+
+                            
+                            <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+                            <input type="checkbox"> Remember me
+                            <p>By creating an account you agree to our <a href="#">Terms & Privacy</a>.</p>
+
+                            <div class="clearfix">
+                                <button type="button" onclick="document.getElementById('createAccountForm').style.display='none'" class="cancelbtn">Cancel</button>
+                                <button type="submit" class="signupbtn">Create Account</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
             </div>
         </header>
 
@@ -164,8 +182,8 @@
                     <form class="modal-content animate" action="/action_page.php">
                         <div class="container">
                             <label><b>Email</b></label>
-                            <input type="text" placeholder="Enter Email" name="email" required>
-
+                            <input type="text" placeholder="Enter Email" name="email" required>           
+                          
                             <label><b>Password</b></label>
                             <input type="password" placeholder="Enter Password" name="psw" required>
 
@@ -196,6 +214,29 @@
                 <li class="footer__list">
                     <a class="footer__link" href="#">Contact</a>
                 </li>
+
+                <div id="contactForm" class="modal">
+                    <span onclick="document.getElementById('contactForm').style.display='none'" class="close" title="Close Modal">×</span>
+                    <form class="modal-content animate" action="/action_page.php">
+
+                        <div class="container">
+                            <label><b>Contact</b></label>
+                            <input type="text" placeholder="Name" name="" required>
+
+                            <label></label>
+                            <input type="text" placeholder="Email" name="" required>
+
+                            <input type="text" placeholder="Message" name="" required>
+
+                            <div class="clearfix">
+                                <button type="submit" class="logInBtn">Submit</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <li>
+                    <a href="#">Privacy</a>
+
                 <li class="footer__list">
                     <a class="footer__link" href="#">Privacy</a>
                 </li>
