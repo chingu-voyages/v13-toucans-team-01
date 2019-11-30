@@ -66,11 +66,6 @@ var budgetModule=(function(){
         
     };
     
-    
-    
-    
-    
-    
     //data about incomes and expenses
     var data={
         allItems:{
@@ -83,8 +78,6 @@ var budgetModule=(function(){
             budget:0,
             percentage:-1
         }
-        
-    
   };
     
     
@@ -143,30 +136,28 @@ var budgetModule=(function(){
         //Returning the budget to the controller
         
         getBudget:function(){
-        
-           
-            
+    
             return{
                 totalInc:data.totals.incm,
                 totalExp:data.totals.expn,
                 totalBudget:data.totals.budget,
                 totalPercentage:data.totals.percentage
-                  
-                          }
+                }
         },
+
         // to delete the item from the data structure
         deleteItem:function(type,id){
             var idArray;
             //To get the id from all array objects
             //Element is the current array element i.ea arr[0]etc..
         idArray=  data.allItems[type].map(function(element){
-               return element.id; 
+            return element.id; 
             });
             var index=idArray.indexOf(id);
             //To remove the object with the received id
-              if(index!==-1){
-             data.allItems[type].splice(index,1);
-              }
+            if(index!==-1){
+            data.allItems[type].splice(index,1);
+            }
             
         },
         calculatePercentages:function(){
@@ -184,24 +175,11 @@ var budgetModule=(function(){
             
         },
         
-            
-            
-            
-           
          //For checking the data object
        testing:function(){
         console.log(data);
     }
     }
-   
-    
-        
-    
-    
-    
-    
-    
-    
 })();
 
 
@@ -289,8 +267,6 @@ var uiModule=(function(){
                     
                     //Storing the html to be printed inside html.And % the propeties which we want to change with the object one's called by function
                    html= '<div class="item clearfix" id="inc-%id%"><div class="item__description">%description%</div><div class="right clearfix"><div class="item__value">%value%</div><div class="item__delete"><button class="item__delete--btn"><i class="ion-ios-close-outline"></i></button></div></div></div>'
-                   
-                  
                     
                 }
             else if(type==='exp')
@@ -300,8 +276,6 @@ var uiModule=(function(){
                     
                 }
                     
-                   
-                     
                //replacing the id of the container and the html inside it using .replace().Id will be unique for every entry even after it's deleted
              newHtml=html.replace('%id%',obj.id);
             newHtml=newHtml.replace('%description%',obj.description);
@@ -331,35 +305,18 @@ var uiModule=(function(){
                 
             });
             fieldsArr[0].focus();
-            
-              
         },
         //To display the budget to the user,this function is to be passed to the ctrl object
         displayBudget:function(obj)
         {     //The object is passed from getbudget
-             var type;
+            var type;
             
-              (obj.totalBudget>0)?type='inc':type='exp';
+            (obj.totalBudget>0)?type='inc':type='exp';
 
             document.querySelector(DOMstrings.budgetLabel).textContent=formatNumber(obj.totalBudget,type);
              document.querySelector(DOMstrings.incomeLabel).textContent=formatNumber(obj.totalInc,'inc');          
           document.querySelector(DOMstrings.expenseLabel).textContent=formatNumber(obj.totalExp,'exp');
-            
-      
-            
-         
-       
-         
-       
-           
-                
-        
-      
-          
-            
-        
-                 
-        
+ 
             if(obj.totalPercentage>0){
             document.querySelector(DOMstrings.percentageLabel).textContent=obj.totalPercentage+"%";
             }
@@ -395,7 +352,6 @@ var uiModule=(function(){
             document.querySelector(DOMstrings.dateLabel).innerHTML=months[month]+' '+year;
             
         }
-         
         ,
         //To change the border color function
         changeBorder:function(){
@@ -408,14 +364,8 @@ var uiModule=(function(){
                 ele.classList.toggle('red-focus');
             })
             document.querySelector(DOMstrings.inputBtn).classList.toggle('red');
-            
-            
-            
         }
     }
-    
-    
-    
 })();
 
 
@@ -427,7 +377,6 @@ var controllerModule=(function(bdgtMod,uiMod){
     
     
     //setting up event listener calling function
-  
     var setUpEventListener=function(){
         
         //Setting up the dom strings
@@ -452,11 +401,6 @@ var controllerModule=(function(bdgtMod,uiMod){
             //Event listener to change color as we select income or expense option
             document.querySelector(dom.inputType).addEventListener('change', uiModule.changeBorder);
     });
-        
-            
-        
-         
-        
     };
     //Event Listener Function Ends here
     
@@ -472,14 +416,11 @@ var controllerModule=(function(bdgtMod,uiMod){
         
          //3.Display the budget to the user
           uiMod.displayBudget(budgetObject);
-        
-      
     };
     
     //To update the expense percentages
     var budgetPercentage=function(){
         
-      
         //1.Calculate Percentages
         
         bdgtMod.calculatePercentages();
@@ -524,10 +465,6 @@ var controllerModule=(function(bdgtMod,uiMod){
             
             budgetPercentage();
         }
-      
-        
-        
-        
     };
     
     
@@ -542,11 +479,9 @@ var controllerModule=(function(bdgtMod,uiMod){
        
        if(itemID)
            {
-               splitID=itemID.split('-');
-               delID=parseInt(splitID[1]);
-               delType=(splitID[0]);
-               
-                 
+            splitID=itemID.split('-');
+            delID=parseInt(splitID[1]);
+            delType=(splitID[0]);
            }
        
        
@@ -565,18 +500,6 @@ var controllerModule=(function(bdgtMod,uiMod){
             budgetPercentage();
        
    }
-    
-    
- 
-
-    
-    
-    
-
-    
-    
-    
-  
     
    return {
          //passing this method to the control item
