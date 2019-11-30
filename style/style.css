@@ -153,6 +153,19 @@ nav ul li a {
     color: #fff;
 }
 
+.hero_box, .modal a {
+    background: transparent;
+    color: black;
+    font-size: 15px;
+    padding: 0px;
+    margin: 0px;
+}
+
+.hero_box .modal p {
+    color: black;
+    font-size: 15px;
+}
+
 
 /* DESIGN FOR HOW IT WORKS SECTION */
 
@@ -203,7 +216,7 @@ img.how_picture {
 
 /* style action button using fill on hover */
 
-.action button {
+.modal button {
     position: relative;
     height: 45px;
     width: auto;
@@ -228,7 +241,8 @@ img.how_picture {
     -webkit-transition: 0.08s ease-in;
 }
 
-.action button:before {
+
+.modal button:before {
     content: "";
     position: absolute;
     background: #383736;
@@ -241,15 +255,15 @@ img.how_picture {
     transition: top 0.09s ease-in;
 }
 
-.action button:hover {
+.modal button:hover {
     color: whitesmoke;
 }
 
-.action button:hover:before {
+.modal button:hover:before {
     top: 0;
 }
 
-label {
+b {
     font-size: 32px;
     font-weight: bolder;
     padding-bottom: 28px;
@@ -287,7 +301,6 @@ button {
 
 .cancelbtn {
     padding: 14px 20px;
-    background-color: #FF2E00;
 }
 
 
@@ -297,6 +310,7 @@ button {
 .signupbtn {
     float: center;
     width: 50%
+
 }
 
 
@@ -389,6 +403,9 @@ button {
     width: 100%;
 }
 
+.footer .modal .clearfix {
+    margin-left: 70px;
+}
 
 /* Links Footer */
 
