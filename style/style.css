@@ -406,6 +406,10 @@ button {
 
 /********** FEATURES **********/
 
+.features__container {
+   width: 100%;
+}
+
 .features {
    max-width: 85vw;
    margin: auto;
@@ -422,7 +426,6 @@ button {
 .footer__nav {
    color: #333;
 }
-
 
 .features__image {
    display: block;
@@ -460,9 +463,6 @@ button {
    font-weight: normal;
    text-decoration: none;
 }
-
-/* Copyright */
-.footer__copyright {}
 
 /* Social links */
 .footer__social {
