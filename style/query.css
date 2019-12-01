@@ -109,8 +109,6 @@ for instance: 600px / 16em = 37.7em
     }
 }
 
-
-
 /* Big tablet to 1140px (widths smaller then the 1140px row) */
 @media only screen and (max-width: 1140px) {
 
@@ -276,9 +274,9 @@ for instance: 600px / 16em = 37.7em
     }
 
     .features__header {
-        font-size: 3.8rem;
+        font-size: 3rem;
         line-height: 3rem;
-        padding: 2.5rem 0;
+        padding: 2rem 0;
         text-transform: uppercase;
         word-spacing: 1px;
     }
@@ -287,7 +285,7 @@ for instance: 600px / 16em = 37.7em
         font-size: 1.4rem;
         font-weight: normal;
         line-height: 2.2rem;
-        margin-bottom: 5rem;
+        margin-bottom: 3rem;
     }
 
     .features__cards {
@@ -297,26 +295,26 @@ for instance: 600px / 16em = 37.7em
 
     .features__h2 {
         font-size: 1.9rem;
-        padding: 4rem;
+        padding: 2rem;
     }
 
     .features__h3 {
-        font-size: 1.2rem;
+        font-size: 1.5rem;
         font-weight: normal;
-        line-height: 34px;
-        padding-bottom: 5rem;
+        line-height: 40px;
+        padding-bottom: 3rem;
         text-transform: none;
     }
 
     .features__button {
         align-items: center;
         background-color: green;
-        color: #efefef;
+        color: #fff;
         display: flex;
-        font-size: 1.1rem;
+        font-size: 1.3rem;
         height: 3rem;
         justify-content: center;
-        letter-spacing: .5px;
+        letter-spacing: 1px;
         line-height: 1.1rem;
         text-align: center;
         text-decoration: none;
