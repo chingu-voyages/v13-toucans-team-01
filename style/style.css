@@ -375,6 +375,10 @@ button {
 
 /********** FEATURES **********/
 
+.features__container {
+   width: 100%;
+}
+
 .features {
    max-width: 85vw;
    margin: auto;

@@ -38,7 +38,7 @@ for instance: 600px / 16em = 37.7em
     .features__cards {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
-        grid-gap: 1rem;
+        /* grid-gap: 1rem; */
     }
 
     .features__card {
@@ -138,7 +138,7 @@ for instance: 600px / 16em = 37.7em
     .features__cards {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
-        grid-gap: 1rem;
+        /* grid-gap: 1rem; */
     }
 
     .features__card {
