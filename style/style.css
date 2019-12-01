@@ -841,3 +841,16 @@ h2 {
 
 .unpaid .item__percentage { box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.1); }
 .unpaid:hover .item__description { font-weight: 900; }
+
+/* PRIVACY SECTION FORMATTING */
+
+#privacy {
+   background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
+   color: #fff;
+   padding: 40px;
+   margin: auto;
+}
+.terms {
+   text-align: center;
+
+}
