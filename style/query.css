@@ -10,8 +10,8 @@ for instance: 600px / 16em = 37.7em
 
 */
 
-/* Widescreens/TV's (min-width: 1201px) */
-@media only screen and (min-width: 1201px) {
+/* Widescreens/TV's (min-width: 1141px) */
+@media only screen and (min-width: 1141px) {
 
     /* Features */
     .features {
@@ -111,8 +111,8 @@ for instance: 600px / 16em = 37.7em
 
 
 
-/* Big tablet to 1200px (widths smaller then the 1140px row) */
-@media only screen and (max-width: 1200px) {
+/* Big tablet to 1140px (widths smaller then the 1140px row) */
+@media only screen and (max-width: 1140px) {
 
     /* Features */
 
@@ -148,19 +148,20 @@ for instance: 600px / 16em = 37.7em
         box-shadow: 2px 2px 5px 2px rgba(211, 211, 211, 0.274);
         margin-top: 3rem;
         padding: .5rem;
-        padding-bottom: 5.5rem;
+        padding-bottom: 3.5rem;
         position: relative;
     }
 
     .features__h2 {
-        font-size: 1.4rem;
-        padding: 1rem 0;
+        font-size: 0.95rem;
+        padding: 0.5rem 0;
+        padding-top: 1rem;
     }
 
     .features__h3 {
-        font-size: 1rem;
+        font-size: 0.9rem;
         font-weight: normal;
-        line-height: 1.5rem;
+        line-height: 1.4rem;
         text-transform: none;
         padding-bottom: 2rem;
     }
@@ -179,7 +180,7 @@ for instance: 600px / 16em = 37.7em
         text-align: center;
         text-decoration: none;
         position: absolute;
-        bottom: -20px;
+        bottom: -42px;
         left: 0;
         right: 0;
         width: 10rem;
