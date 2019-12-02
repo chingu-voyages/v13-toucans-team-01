@@ -12,7 +12,7 @@ for instance: 600px / 16em = 37.7em
 
 /* Widescreens/TV's (min-width: 1141px) */
 @media only screen and (min-width: 1141px) {
-
+/* DESIGN FOR THE HOME PAGE*/
     /* Features */
     .features {
         display: block;
@@ -111,7 +111,7 @@ for instance: 600px / 16em = 37.7em
 
 /* Big tablet to 1140px (widths smaller then the 1140px row) */
 @media only screen and (max-width: 1140px) {
-
+/* DESIGN FOR THE HOME PAGE*/
     /* Features */
 
     .features {
@@ -219,7 +219,7 @@ for instance: 600px / 16em = 37.7em
 
 /* Small phones to small tablets: from 481px to 670px */
 @media only screen and (max-width: 670px) {
-
+/* DESIGN FOR THE HOME PAGE*/
     /* Header*/
     .logo {
         display: flex;
@@ -359,11 +359,103 @@ for instance: 600px / 16em = 37.7em
         padding-top: 2rem;
         text-align: center;
     }
+***********************************************
+/* DESIGN FOR THE SERVICES PAGE*/
+    /* Services Top header */
+    .services_header {
+        width: 100%;
+        overflow: hidden;
+    }
+    
+    .services_top_header {
+        display: block;
+        width: 100%;
+    }
+
+    .services_logo {
+        padding: 10px;
+    }
+
+    .services_logo_image {
+        width: 50px;
+        position: relative;
+    }
+
+    .services_menu {
+        display: block;
+        text-align: center;
+    }
+
+    .services_nav {
+        position: relative;
+        margin: auto;
+        text-align: center;
+    }
+    
+    .services_nav ul li a {
+        color: #000;
+        font-size: 17px;
+        text-align: center;
+    }
+
+     /* Services hero */
+    #services_hero {
+        text-align: center;
+        background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(/images/agreement.jpg);
+        background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(/images/agreement.jpg);
+        overflow: hidden;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: auto;
+        width: 100%;
+        background-attachment: fixed;
+    }
+
+    #services_hero h2 {
+        margin: 60px auto 20px auto;
+        color: #fff;
+    }
+
+    .services_agreement {
+        width: 100%;
+        margin: auto;
+        display: flex;
+        padding: 10px;
+        line-height: 1.2;
+        color: #fff;
+    }
+
+    .services_content {
+        padding: 20px 20px;
+    }
+    
+    .services_content h3 {
+        margin-bottom: 15px;
+    }
+
+    /* Services Calculator*/
+    .services_calc_content {
+        overflow: hidden;
+        width: 100%;
+        display: flex;
+        margin: 20px auto auto auto;
+    }
+
+    #services_calculator h3 {
+        padding: 40px auto 30px auto;
+        font-size: 22px;
+    }
+
+    .calc_img {
+        width: 100%;
+        height: 100%;
+    }
 }
 
 /* Small phones: from 0 to 480px //*/
 @media only screen and (max-width: 480px) {
-
+/* DESIGN FOR THE HOME PAGE*/
     /* Header*/
     .logo {
         display: block;
@@ -407,5 +499,95 @@ for instance: 600px / 16em = 37.7em
         margin-top: 30px;
         border-radius: 10px;
         color: #fff;
+    }
+
+    /* DESIGN FOR THE SERVICES PAGE*/
+    /* Services Top header */
+    .services_header {
+        width: 100%;
+        overflow: hidden;
+    }
+    
+    .services_top_header {
+        display: block;
+        width: 100%;
+    }
+
+    .services_logo {
+        text-align: center;
+    }
+
+    .services_logo_image {
+        width: 50px;
+        position: relative;
+    }
+
+    .services_menu {
+        display: block;
+        float: none;
+    }
+
+    .services_nav {
+        position: relative;
+        margin-top: 15px;
+    }
+    
+    .services_nav ul li a {
+        color: #000;
+        display: block;
+    }
+
+     /* Services hero */
+    #services_hero {
+        text-align: center;
+        background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(/images/agreement.jpg);
+        background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(/images/agreement.jpg);
+        overflow: hidden;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: auto;
+        width: 100%;
+        background-attachment: fixed;
+    }
+
+    #services_hero h2 {
+        margin: 60px auto 20px auto;
+        color: #fff;
+    }
+
+    .services_agreement {
+        width: 100%;
+        margin: auto;
+        display: block;
+        padding: 10px;
+        line-height: 1.2;
+        color: #fff;
+    }
+
+    .services_content {
+        padding: 20px 20px;
+    }
+    
+
+    .services_content h3 {
+        margin-bottom: 15px;
+    }
+
+    /* Services Calculator*/
+    .services_calc_content {
+        width: 100%;
+        display: block;
+        margin: 20px auto auto auto;
+    }
+
+    #services_calculator h3 {
+        padding: 40px auto 30px auto;
+        font-size: 22px;
+    }
+
+    .calc_img {
+        width: 100%;
+        height: 100%;
     }
 }
