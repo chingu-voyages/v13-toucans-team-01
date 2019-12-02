@@ -196,36 +196,12 @@ for instance: 600px / 16em = 37.7em
         padding: 0 1rem;
     }
 
-    .about__bank,
-    .mission,
-    .faculty {
-        padding: 5rem 0;
-        text-align: center;
-    }
-
-    .mission__header,
-    .faculty__title {
-        font-size: 2rem;
-        padding: 4rem 0;
-
-    }
-
-    .about__text,
-    .mission__text,
-    .faculty__info {
-        font-size: 1rem;
-        font-weight: normal;
-        line-height: 28px;
-    }
-
     .about__bank {
         align-items: center;
         background-color: rgb(161, 159, 159);
         display: grid;
         grid-template-columns: 1fr;
     }
-
-    .about__info {}
 
     .about__header {
         font-size: 2.5rem;
@@ -244,27 +220,6 @@ for instance: 600px / 16em = 37.7em
     .faculty {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
-    }
-
-    .faculty__person {
-        display: grid;
-        padding-bottom: 4rem;
-        justify-items: center;
-    }
-
-    .faculty__image {
-        min-width: 20px;
-        max-width: 150px;
-    }
-
-    .faculty__title {
-        font-size: 1rem;
-        /* line-height: 0; */
-        padding: 2rem;
-    }
-
-    .faculty__text {
-        padding: 0 1rem;
     }
 
     /* Footer */
@@ -421,56 +376,45 @@ for instance: 600px / 16em = 37.7em
         grid-template-columns: 1fr;
     }
 
-    .about__bank,
-    .mission,
-    .faculty {
-        padding: 5rem 0;
-        text-align: center;
-    }
-
-    .mission__header,
-    .faculty__title {
-        font-size: 2rem;
-        /* line-height: 24px; */
-        padding: 4rem 0;
-
-    }
-
-    .about__text,
-    .mission__text,
-    .faculty__text {
-        font-size: 1rem;
-        font-weight: normal;
-        line-height: 28px;
-    }
-
-    .about__bank {
-        background-color: rgb(216,
-                213,
-                213);
-    }
-
     .about__header {
         font-size: 2.5rem;
         padding: 4rem 0;
     }
 
-    .mission {
-        background-color: rgb(182, 182, 182);
-    }
+    /* Mission */
 
+
+    /* Faculty */
     .faculty {
-        background-color: #333;
         display: grid;
         grid-template-columns: 1fr;
     }
 
     .faculty__person {
-        padding-bottom: 4rem;
+        display: flex;
+        flex-direction: column;
+        margin: 5rem 0;
+    }
+
+    .faculty__title {
+        font-size: 2rem;
+        letter-spacing: 2px;
     }
 
     .faculty__image {
-        min-width: 250px;
+        max-width: 200px;
+        align-self: center;
+    }
+
+    .faculty__name {
+        font-size: 1.5rem;
+        padding: 1rem 0;
+    }
+
+    .faculty__text {
+        font-size: 1rem;
+        font-weight: normal;
+        line-height: 24px;
     }
 
     /* Footer */

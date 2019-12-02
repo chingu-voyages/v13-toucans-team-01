@@ -441,6 +441,13 @@ button {
    display: grid;
 }
 
+.about__bank,
+.mission,
+.faculty {
+   padding: 5rem 0;
+   text-align: center;
+}
+
 /********** FOOTER **********/
 .footer {
    background-color: #191901;
