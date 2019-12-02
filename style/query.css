@@ -184,6 +184,89 @@ for instance: 600px / 16em = 37.7em
         width: 10rem;
     }
 
+    /* About Section */
+    img {
+        display: block;
+        height: auto;
+        width: 100%;
+    }
+
+    .about-container {
+        grid-template-columns: 1fr;
+        padding: 0 1rem;
+    }
+
+    .about__bank,
+    .mission,
+    .faculty {
+        padding: 5rem 0;
+        text-align: center;
+    }
+
+    .mission__header,
+    .faculty__title {
+        font-size: 2rem;
+        padding: 4rem 0;
+
+    }
+
+    .about__text,
+    .mission__text,
+    .faculty__info {
+        font-size: 1rem;
+        font-weight: normal;
+        line-height: 28px;
+    }
+
+    .about__bank {
+        align-items: center;
+        background-color: rgb(161, 159, 159);
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .about__info {}
+
+    .about__header {
+        font-size: 2.5rem;
+        padding: 4rem 0;
+    }
+
+    .about__image {
+        max-width: 500px;
+        justify-self: center;
+    }
+
+    .mission {
+        background-color: rgb(182, 182, 182);
+    }
+
+    .faculty {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .faculty__person {
+        display: grid;
+        padding-bottom: 4rem;
+        justify-items: center;
+    }
+
+    .faculty__image {
+        min-width: 20px;
+        max-width: 150px;
+    }
+
+    .faculty__title {
+        font-size: 1rem;
+        /* line-height: 0; */
+        padding: 2rem;
+    }
+
+    .faculty__text {
+        padding: 0 1rem;
+    }
+
     /* Footer */
 
     .footer {
@@ -333,6 +416,11 @@ for instance: 600px / 16em = 37.7em
         padding: 0 1rem;
     }
 
+    .about__bank {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
     .about__bank,
     .mission,
     .faculty {
@@ -350,7 +438,7 @@ for instance: 600px / 16em = 37.7em
 
     .about__text,
     .mission__text,
-    .faculty__info {
+    .faculty__text {
         font-size: 1rem;
         font-weight: normal;
         line-height: 28px;
@@ -359,8 +447,7 @@ for instance: 600px / 16em = 37.7em
     .about__bank {
         background-color: rgb(216,
                 213,
-                213) 184,
-            184);
+                213);
     }
 
     .about__header {
@@ -374,10 +461,16 @@ for instance: 600px / 16em = 37.7em
 
     .faculty {
         background-color: #333;
+        display: grid;
+        grid-template-columns: 1fr;
     }
 
     .faculty__person {
         padding-bottom: 4rem;
+    }
+
+    .faculty__image {
+        min-width: 250px;
     }
 
     /* Footer */
