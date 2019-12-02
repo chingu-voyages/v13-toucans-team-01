@@ -1,4 +1,4 @@
-/* RESET */
+    /* RESET */
 
 * {
     margin: 0;
@@ -121,11 +121,17 @@ nav ul li a {
 
 .hero_box,
 .modal a {
-    background: transparent;
+    <<<<<<< HEAD background: transparent;
     color: black;
     font-size: 15px;
     padding: 0px;
     margin: 0px;
+    =======background: transparent;
+    color: black;
+    font-size: 15px;
+    padding: 0px;
+    margin: 0px;
+    >>>>>>>master
 }
 
 .hero_box .modal p {
@@ -234,7 +240,14 @@ img.how_picture {
     top: 0;
 }
 
-.modal button {
+<<<<<<< HEAD=======label {
+    font-size: 32px;
+    font-weight: bolder;
+    padding-bottom: 28px;
+    color: black;
+}
+
+>>>>>>>master .modal button {
     position: relative;
     height: 45px;
     width: auto;
@@ -317,9 +330,13 @@ button {
 /*set styles for the cancel button*/
 
 .cancelbtn {
-    padding: 14px 20px;
+    <<<<<<< HEAD padding: 14px 20px;
     background-color: #FF2E00;
     padding: 14px 20px;
+    =======padding: 14px 20px;
+    background-color: #FF2E00;
+    padding: 14px 20px;
+    >>>>>>>master
 }
 
 
@@ -406,6 +423,10 @@ button {
 
 /********** FEATURES **********/
 
+.features__container {
+    width: 100%;
+}
+
 .features {
     max-width: 85vw;
     margin: auto;
@@ -465,12 +486,12 @@ button {
     text-decoration: none;
 }
 
-
+<<<<<<< HEAD
 /* Copyright */
 
 .footer__copyright {}
 
-
+=======>>>>>>>master
 /* Social links */
 
 .footer__social {
@@ -500,9 +521,12 @@ button {
 /********** SERIVCES DESIGN **********/
 
 .services_header {
-    width: 1100px;
+    <<<<<<< HEAD width: 1100px;
     border: 1px solid red;
     margin: auto;
+    =======width: 1100px;
+    margin: auto;
+    >>>>>>>master
 }
 
 .services_top_header {
@@ -510,7 +534,7 @@ button {
     padding-top: 20px;
     width: 1100px;
     padding-bottom: 20px;
-    padding-top: 40px;
+    padding-top: 20px;
     color: #f4f4f4;
     margin: auto;
 }
@@ -555,7 +579,7 @@ button {
 }
 
 .services_agreement {
-    width: 1100px;
+    <<<<<<< HEAD width: 1100px;
     margin: auto;
     display: flex;
     padding: 20px;
@@ -574,6 +598,26 @@ button {
 
 .calc_box p {
     margin: 40px auto 30px auto;
+    =======width: 1100px;
+    margin: auto;
+    display: flex;
+    padding: 20px;
+    line-height: 1.5;
+    color: #fff;
+}
+
+.services_content {
+    flex: 1;
+    padding: 20px 30px;
+}
+
+.services_content h3 {
+    margin-bottom: 20px;
+}
+
+.calc_box p {
+    margin: 40px auto 30px auto;
+    >>>>>>>master
 }
 
 #services_calculator {
@@ -595,9 +639,17 @@ button {
 }
 
 .calc_box {
-    flex: 1;
+    <<<<<<< HEAD flex: 1;
     align-items: center;
     margin: 20px;
+    =======flex: 1;
+    align-items: center;
+    margin: 20px;
+}
+
+.calc_box p {
+    line-height: 2;
+    >>>>>>>master
 }
 
 .calc_img {
@@ -731,11 +783,17 @@ button {
 }
 
 .add__description {
-    width: 400px;
+    <<<<<<< HEAD width: 400px;
 }
 
 .add__value {
     width: 100px;
+    =======width: 400px;
+}
+
+.add__value {
+    width: 100px;
+    >>>>>>>master
 }
 
 .add__btn {
@@ -751,7 +809,9 @@ button {
 }
 
 .add__btn:active {
-    transform: translateY(2px);
+    <<<<<<< HEAD transform: translateY(2px);
+    =======transform: translateY(2px);
+    >>>>>>>master
 }
 
 .add__type:focus,
@@ -762,65 +822,60 @@ button {
 }
 
 .add__btn:focus {
-    outline: none;
+    <<<<<<< HEAD outline: none;
 }
 
+=======outline: none;
 
+}
+>>>>>>>master
 /***** LISTS *****/
-
 .container {
     width: 1000px;
     margin: 60px auto;
 }
-
 .income {
     float: left;
     width: 475px;
     margin-right: 50px;
 }
-
 .expenses {
     float: left;
     width: 475px;
 }
-
 h2 {
     text-transform: uppercase;
     font-size: 18px;
     font-weight: 400;
     margin-bottom: 15px;
 }
-
 .icome__title {
     color: #28B9B5;
 }
-
 .expenses__title {
     color: #FF5049;
 }
-
 .item {
     padding: 13px;
     border-bottom: 1px solid #e7e7e7;
 }
-
 .item:first-child {
     border-top: 1px solid #e7e7e7;
 }
-
+.item:nth-child(even) {
+    background-color: #f7f7f7;
+    border-top: 1px solid #e7e7e7;
+}
 .item:nth-child(even) {
     background-color: #f7f7f7;
 }
-
 .item__description {
     float: left;
 }
-
 .item__value {
     float: left;
     transition: transform 0.3s;
 }
-
 .item__percentage {
     float: left;
     margin-left: 20px;
@@ -832,22 +887,18 @@ h2 {
     width: 32px;
     text-align: center;
 }
-
 .income .item__value,
 .income .item__delete--btn {
     color: #28B9B5;
 }
-
 .expenses .item__value,
 .expenses .item__percentage,
 .expenses .item__delete--btn {
     color: #FF5049;
 }
-
 .item__delete {
     float: left;
 }
-
 .item__delete--btn {
     font-size: 22px;
     background: none;
@@ -858,44 +909,37 @@ h2 {
     line-height: 1;
     display: none;
 }
-
 .item__delete--btn:focus {
     outline: none;
 }
-
 .item__delete--btn:active {
     transform: translateY(2px);
 }
-
 .item:hover .item__delete--btn {
     display: block;
 }
-
 .item:hover .item__value {
     transform: translateX(-20px);
 }
-
 .item:hover .item__percentage {
     transform: translateX(-20px);
 }
-
 .unpaid {
     background-color: #FFDAD9 !important;
     cursor: pointer;
     color: #FF5049;
 }
-
 .unpaid .item__percentage {
     box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.1);
 }
-
+.unpaid .item__percentage {
+    box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.1);
+}
 .unpaid:hover .item__description {
     font-weight: 900;
 }
 
-
 /* ADD PRIVACY POLICY SECTION */
-
 #privacy {
     text-align: justify;
     background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(/images/agreement.jpg);
@@ -908,7 +952,8 @@ h2 {
     padding: 40px 100px 20px 100px;
     color: white;
 }
-
 .privacyHeading {
     text-align: center;
-}
+    .unpaid:hover .item__description {
+        font-weight: 900;
+    }
