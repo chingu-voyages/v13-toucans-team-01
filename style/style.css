@@ -593,6 +593,10 @@ button {
    margin: 20px;
 }
 
+.calc_box p {
+   line-height: 2;
+}
+
 .calc_img {
    width: 500px;
    height: 300px;
