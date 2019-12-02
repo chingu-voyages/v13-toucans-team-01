@@ -435,6 +435,12 @@ button {
    width: 100%;
 }
 
+/************************ End Features */
+
+.about {
+   display: grid;
+}
+
 /********** FOOTER **********/
 .footer {
    background-color: #191901;
@@ -448,8 +454,6 @@ button {
 .footer .modal .clearfix {
    margin-left: 70px;
 }
-
-/* Links Footer */
 
 /* Footer Nav */
 .footer__nav {
@@ -470,7 +474,6 @@ button {
 .footer__social {
    display: flex;
 }
-
 
 .fa-facebook,
 .fa-linkedin-in,

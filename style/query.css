@@ -321,6 +321,65 @@ for instance: 600px / 16em = 37.7em
         width: 10rem;
     }
 
+    /* About Section */
+    img {
+        display: block;
+        height: auto;
+        width: 100%;
+    }
+
+    .about-container {
+        grid-template-columns: 1fr;
+        padding: 0 1rem;
+    }
+
+    .about__bank,
+    .mission,
+    .faculty {
+        padding: 5rem 0;
+        text-align: center;
+    }
+
+    .mission__header,
+    .faculty__title {
+        font-size: 2rem;
+        /* line-height: 24px; */
+        padding: 4rem 0;
+
+    }
+
+    .about__text,
+    .mission__text,
+    .faculty__info {
+        font-size: 1rem;
+        font-weight: normal;
+        line-height: 28px;
+    }
+
+    .about__bank {
+        background-color: rgb(216,
+                213,
+                213) 184,
+            184);
+    }
+
+    .about__header {
+        font-size: 2.5rem;
+        padding: 4rem 0;
+    }
+
+    .mission {
+        background-color: rgb(182, 182, 182);
+    }
+
+    .faculty {
+        background-color: #333;
+    }
+
+    .faculty__person {
+        padding-bottom: 4rem;
+    }
+
     /* Footer */
 
     .footer {
