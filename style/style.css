@@ -444,6 +444,7 @@ button {
 }
 
 @media screen and (max-width: 300px) {
+
     .cancelbtn,
     .signupbtn {
         width: 100%;
@@ -1031,5 +1032,4 @@ h2 {
 }
 
 .termsHeading {
-    text-align: center;
-}
+    text-align: center;}
