@@ -19,53 +19,50 @@
 <body>
 
    <section id="wrapper">
-      <header id="header">
-         <div class="top_header">
-            <div class="logo">
-               <img class="logo_image" src="images/toucan-logo.png" alt="Toucan Logo - Bank of Toucan">
-               <p>Bank of Toucan</p>
+      <!-- SERVICES HEADER SECTION -->
+   <section id="services">
+      <!-- HEADER SECTION -->
+      <section class="services_header">
+         <div class="services_top_header">
+            <div class="services_logo">
+                  <img class="services_logo_image" src="images/toucan-logo.png" alt="Toucan Logo - Bank of Toucan">
             </div>
             <div class="div_hamburger">
-               <div class="div_hamburgerBars">
-                  <span class="span_hamburgerBar span_topBar"></span>
-                  <span class="span_hamburgerBar span_midBar"></span>
-                  <span class="span_hamburgerBar span_bottomBar"></span>
-               </div>
-            </div>
-            <nav class="nav main_menu">
-               <ul>
-                  <li><a href="index.html">Home</a></li>
-                  <li><a href="#">About</a></li>
-                  <li><a href="services.html">Services</a></li>
-                  <li><a href="#support.html">Support</a></li>
-                  <li><a href="#" onclick="document.getElementById('logInForm').style.display='block'">Log In</a>
-                  </li>
-
-                  <div id="logInForm" class="modal">
-                     <span onclick="document.getElementById('logInForm').style.display='none'" class="close"
-                        title="Close Modal">×</span>
-                     <form class="modal-content animate" action="/action_page.php">
-                        <div class="container">
-                           <b> Log In</b>
-                           <input type="text" placeholder="Enter Email" name="email" required>
-
-
-                           <input type="password" placeholder="Enter Password" name="psw" required>
-
-
-                           <div class="clearfix">
-
-                              <button type="submit" class="signupbtn">Log In</button>
-                           </div>
-                        </div>
-                     </form>
+                  <div class="div_hamburgerBars">
+                     <span class="span_hamburgerBar span_topBar"></span>
+                     <span class="span_hamburgerBar span_midBar"></span>
+                     <span class="span_hamburgerBar span_bottomBar"></span>
                   </div>
-               </ul>
-            </nav>
+            </div>
+            <div class="services_menu">
+                  <nav class="services_nav services_main_menu">
+                     <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="#">Support</a></li>
+                        <li><a href="#">Log In</a></li>
+                     </ul>
+                  </nav>
+            </div>
          </div>
-      </header>
+      </section>
+   </section>
 
+   <!-- ABOUT HERO SECTION -->
+   <section id="about">
+      <div class="about_section">
+         <div class="about_hero_content">
+         <h3>About us</h3>
+         </div>
+      </div>
+   </section>
 
+   <!-- ABOUT CONTENT SECTION -->
+   <section id="about_content">
+      ADD CONTENT HERE...
+         
+   </section>
 
       <!-- FOOTER SECTION -->
       <footer class="footer">
@@ -114,7 +111,7 @@
             </li>
          </ul>
 
-         <!-- ----------------------------- Footer Nav end block -->
+         <!-- Footer Nav end block -->
 
          <!-- Social Icons/Links -->
          <section class="footer__social">

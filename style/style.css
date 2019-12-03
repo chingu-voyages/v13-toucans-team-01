@@ -121,17 +121,11 @@ nav ul li a {
 
 .hero_box,
 .modal a {
-    <<<<<<< HEAD background: transparent;
+    background: transparent;
     color: black;
     font-size: 15px;
     padding: 0px;
     margin: 0px;
-    =======background: transparent;
-    color: black;
-    font-size: 15px;
-    padding: 0px;
-    margin: 0px;
-    >>>>>>>master
 }
 
 .hero_box .modal p {
@@ -240,14 +234,14 @@ img.how_picture {
     top: 0;
 }
 
-<<<<<<< HEAD=======label {
+label {
     font-size: 32px;
     font-weight: bolder;
     padding-bottom: 28px;
     color: black;
 }
 
->>>>>>>master .modal button {
+.modal button {
     position: relative;
     height: 45px;
     width: auto;
@@ -330,13 +324,9 @@ button {
 /*set styles for the cancel button*/
 
 .cancelbtn {
-    <<<<<<< HEAD padding: 14px 20px;
+    padding: 14px 20px;
     background-color: #FF2E00;
     padding: 14px 20px;
-    =======padding: 14px 20px;
-    background-color: #FF2E00;
-    padding: 14px 20px;
-    >>>>>>>master
 }
 
 
@@ -486,12 +476,10 @@ button {
     text-decoration: none;
 }
 
-<<<<<<< HEAD
 /* Copyright */
 
 .footer__copyright {}
 
-=======>>>>>>>master
 /* Social links */
 
 .footer__social {
@@ -517,24 +505,42 @@ button {
     color: rgb(96, 202, 255);
 }
 
+/********** ABOUT DESIGN **********/
+#about {
+    background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(/images/about_img.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(/images/about_img.jpg);
+    overflow: hidden;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 400px;
+    background-attachment: fixed;
+}
+
+.about_hero_content {
+    position: absolute;
+    top: 50%;
+    left: 45%;
+    transform: translate(-50% -50%);
+    text-align: center;
+    color: #fff;
+}
+
+.about_hero_content h3 {
+    font-size: 30px;
+}
 
 /********** SERIVCES DESIGN **********/
 
 .services_header {
-    <<<<<<< HEAD width: 1100px;
-    border: 1px solid red;
+    width: 1100px;
     margin: auto;
-    =======width: 1100px;
-    margin: auto;
-    >>>>>>>master
 }
 
 .services_top_header {
     display: flex;
     padding-top: 20px;
-    width: 1100px;
     padding-bottom: 20px;
-    padding-top: 20px;
     color: #f4f4f4;
     margin: auto;
 }
@@ -579,7 +585,7 @@ button {
 }
 
 .services_agreement {
-    <<<<<<< HEAD width: 1100px;
+    width: 1100px;
     margin: auto;
     display: flex;
     padding: 20px;
@@ -598,7 +604,7 @@ button {
 
 .calc_box p {
     margin: 40px auto 30px auto;
-    =======width: 1100px;
+    width: 1100px;
     margin: auto;
     display: flex;
     padding: 20px;
@@ -615,16 +621,13 @@ button {
     margin-bottom: 20px;
 }
 
-.calc_box p {
-    margin: 40px auto 30px auto;
-    >>>>>>>master
-}
 
 #services_calculator {
     text-align: center;
     padding-top: 60px;
     padding-bottom: 60px;
     background: #f4f4f4;
+    overflow: hidden;
 }
 
 #services_calculator h3 {
@@ -633,23 +636,15 @@ button {
 }
 
 .services_calc_content {
-    width: 1100px;
     display: flex;
+    width: 1100px;
     margin: 20px auto auto auto;
 }
 
 .calc_box {
-    <<<<<<< HEAD flex: 1;
     align-items: center;
     margin: 20px;
-    =======flex: 1;
-    align-items: center;
-    margin: 20px;
-}
-
-.calc_box p {
-    line-height: 2;
-    >>>>>>>master
+    flex: 1;
 }
 
 .calc_img {
@@ -783,17 +778,12 @@ button {
 }
 
 .add__description {
-    <<<<<<< HEAD width: 400px;
+    width: 400px;
 }
 
 .add__value {
     width: 100px;
-    =======width: 400px;
-}
-
-.add__value {
-    width: 100px;
-    >>>>>>>master
+    width: 400px;
 }
 
 .add__btn {
@@ -809,9 +799,7 @@ button {
 }
 
 .add__btn:active {
-    <<<<<<< HEAD transform: translateY(2px);
-    =======transform: translateY(2px);
-    >>>>>>>master
+    transform: translateY(2px);
 }
 
 .add__type:focus,
@@ -822,13 +810,10 @@ button {
 }
 
 .add__btn:focus {
-    <<<<<<< HEAD outline: none;
+    outline: none;
 }
 
-=======outline: none;
 
-}
->>>>>>>master
 /***** LISTS *****/
 .container {
     width: 1000px;
