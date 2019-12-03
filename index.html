@@ -46,6 +46,9 @@
                         <div id="logInForm" class="modal">
                             <span onclick="document.getElementById('logInForm').style.display='none'" class="close"
                                 title="Close Modal">×</span>
+                            <li><a href="#" onclick="document.getElementById('logInForm').style.display='block'">Log
+                                    In</a>
+                            </li>
                             <form class="modal-content animate" action="/action_page.php">
                                 <div class="container">
                                     <b> Log In</b>
@@ -86,8 +89,7 @@
 
                             <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
                             <input type="checkbox"> Remember me
-                            <p>By creating an account you agree to our <a
-                                    href="https://www.termsandconditionsgenerator.com/live.php?token=97t92hlx20osJQtH5X7p6FKX6ca6DDNX">Terms
+                            <p>By creating an account you agree to our <a href="terms.html">Terms
                                     & Conditions</a>.</p>
 
                             <div class="clearfix">
@@ -109,41 +111,55 @@
                     <h1>How It Works</h1>
                 </div>
                 <div class="how_content">
-                    <!-- HOW IT WORKS PICTURE-->
-                    <img class="how_picture"
-                        src="https://images.unsplash.com/photo-1567427017947-545c5f8d16ad?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60"
-                        alt="jar of coins spilling over">
                     <!-- HOW IT WORKS LIST SECTION-->
                     <div class="how_lists">
+                        <!-- Card 1-->
                         <div id="list deposit_funds">
+                            <i class="fas fa-receipt"></i>
+                            <br>
+                            <br>
                             <h1>Deposit Funds</h1>
+                            <br>
                             <ul class="deposit_ul li">
-                                <li> ATMs</li>
-                                <li> Mobile Deposits</li>
-                                <li> Automatic Transfers</li>
+                                <ul> ATMs</ul>
+                                <ul> Mobile Deposits</ul>
+                                <ul> Automatic Transfers</ul>
                             </ul>
                         </div>
                         <br>
+                        <!-- Card 2-->
                         <div id="list securely_save">
+                            <i class="fas fa-dollar-sign"></i>
+                            <br>
+                            <br>
                             <h1>Securely Save</h1>
+                            <br>
                             <ul class="save_ul li">
-                                <li> Money Market Accounts (MMA)s</li>
-                                <li> Certificate of Deposit (CDs)</li>
-                                <li> Individual Retirement Accounts (IRA)</li>
+                                <ul> Money Market Accounts</ul>
+                                <ul> Certificate of Deposit</ul>
+                                <ul> Individual Retirement Accounts</ul>
                             </ul>
                         </div>
                         <br>
+                        <!-- Card 3-->
                         <div id="list grow_investment">
+                            <i class="fas fa-seedling"></i>
+                            <br>
+                            <br>
                             <h1>Grow Your Investment</h1>
+                            <br>
                             <ul class="investment_ul li">
-                                <li> Stocks </li>
-                                <li> Bonds</li>
-                                <li> Mutual Funds</li>
+                                <ul> Stocks </ul>
+                                <ul> Bonds</ul>
+                                <ul> Mutual Funds</ul>
                             </ul>
                         </div>
                     </div>
+                    <!-- HOW IT WORKS PICTURE -->
+                    <!-- <img class="how_picture" src="https://images.unsplash.com/photo-1567427017947-545c5f8d16ad?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60" alt="jar of coins spilling over"> -->
+
+
                 </div>
-                <div style="clear:both;"></div>
             </div>
         </section>
 
@@ -208,145 +224,114 @@
                         <a class="features__button" href="#">Trading</a>
                     </section>
                 </section>
-                <!-- -----------------------------------End Card block -->
-            </article>
-        </section>
-
-        <!-- CALL TO ACTION SECTION -->
-        <section id="action">
-            <div class="action">
-                <h1> Don't just work for your money, <br>
-                    make your money work for you</h1>
-                <button onclick="document.getElementById('form').style.display='block'" class="apply" type="button">
-                    APPLY NOW </button>
-
-                <div id="form" class="modal">
-                    <span onclick="document.getElementById('form').style.display='none'" class="close"
-                        title="Close Modal">×</span>
-                    <form class="modal-content animate" action="/action_page.php">
-                        <div class="container">
-                            <b> APPLY</b>
-                            <input type="text" placeholder="Enter Email" name="email" required>
 
 
-                            <input type="password" placeholder="Enter Password" name="psw" required>
+                <!-- CALL TO ACTION SECTION -->
+                <section id="action">
+                    <div class="action">
+                        <h1> Don't just work for your money, <br> make your money work for you</h1>
+                        <button onclick="document.getElementById('form').style.display='block'" class="apply"
+                            type="button">
+                            APPLY NOW </button>
+
+                        <div id="form" class="modal">
+                            <span onclick="document.getElementById('form').style.display='none'" class="close"
+                                title="Close Modal">×</span>
+                            <form class="modal-content animate" action="/action_page.php">
+                                <div class="container">
+                                    <b> APPLY</b>
+                                    <input type="text" placeholder="Enter Email" name="email" required>
 
 
-                            <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
-                            <input type="checkbox"> Remember me
-                            <p>By creating an account you agree to our <a
-                                    href="https://www.termsandconditionsgenerator.com/live.php?token=97t92hlx20osJQtH5X7p6FKX6ca6DDNX">Terms
-                                    & Conditions</a>.</p>
+                                    <input type="password" placeholder="Enter Password" name="psw" required>
 
-                            <div class="clearfix">
-                                <button type="button" onclick="document.getElementById('form').style.display='none'"
-                                    class="cancelbtn">Cancel</button>
-                                <button type="submit" class="signupbtn">Sign Up</button>
-                            </div>
+
+                                    <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+                                    <input type="checkbox"> Remember me
+                                    <p>By creating an account you agree to our <a href="terms.html">Terms
+                                            & Conditions</a>.</p>
+
+                                    <div class="clearfix">
+                                        <button type="button"
+                                            onclick="document.getElementById('form').style.display='none'"
+                                            class="cancelbtn">Cancel</button>
+                                        <button type="submit" class="signupbtn">Sign Up</button>
+                                    </div>
+                                </div>
+                            </form>
                         </div>
-                    </form>
-                </div>
-            </div>
-        </section>
+                    </div>
+                </section>
 
-        <!-- FOOTER SECTION -->
-        <footer class="footer">
-            <!-- Footer nav start block -->
-            <ul class="footer__nav">
-                <li class="footer__list">
-                    <a class="footer__link" href="about.html">About</a>
-                </li>
-                <li class="footer__list">
-                    <a class="footer__link" href="#"
-                        onclick="document.getElementById('contactForm').style.display='block'">Contact</a>
-                </li>
+                <!-- FOOTER SECTION -->
+                <footer class="footer">
+                    <!-- Footer nav start block -->
+                    <ul class="footer__nav">
+                        <li class="footer__list">
+                            <a class="footer__link" href="about.html">About</a>
+                        </li>
+                        <li class="footer__list">
+                            <a class="footer__link" href="#"
+                                onclick="document.getElementById('contactForm').style.display='block'">Contact</a>
+                        </li>
 
-                <div id="contactForm" class="modal">
-                    <span onclick="document.getElementById('contactForm').style.display='none'" class="close"
-                        title="Close Modal">×</span>
-                    <form class="modal-content animate" action="/action_page.php">
+                        <div id="contactForm" class="modal">
+                            <span onclick="document.getElementById('contactForm').style.display='none'" class="close"
+                                title="Close Modal">×</span>
+                            <form class="modal-content animate" action="/action_page.php">
 
-                        <div class="container">
-                            <b>Contact</b>
-                            <input type="text" placeholder="Name" name="" required>
+                                <div class="container">
+                                    <b>Contact</b>
+                                    <input type="text" placeholder="Name" name="" required>
 
 
-                            <input type="text" placeholder="Email" name="" required>
+                                    <input type="text" placeholder="Email" name="" required>
 
-                            <input type="text" placeholder="Message" name="" required>
+                                    <input type="text" placeholder="Message" name="" required>
 
-                            <div class="clearfix">
-                                <button type="button"
-                                    onclick="document.getElementById('contactForm').style.display='none'"
-                                    class="cancelbtn">Cancel</button>
-                                <button type="submit" class="signupbtn">Submit</button>
-                            </div>
+                                    <div class="clearfix">
+                                        <button type="button"
+                                            onclick="document.getElementById('contactForm').style.display='none'"
+                                            class="cancelbtn">Cancel</button>
+                                        <button type="submit" class="signupbtn">Submit</button>
+                                    </div>
+                            </form>
                         </div>
-                    </form>
-                </div>
-<<<<<<< HEAD
-                <li>
-=======
->>>>>>> dev
+                        </div>
+                        </form>
+                        </div>
 
 
-                <li class="footer__list">
-                    <a class="footer__link"
-                        href="https://www.freeprivacypolicy.com/privacy/view/6ac7bf968f41862c8eaea5df7fedf3f7">Privacy</a>
-                </li>
-                <li class="footer__list">
-                    <a class="footer__link"
-                        href="https://www.termsandconditionsgenerator.com/live.php?token=97t92hlx20osJQtH5X7p6FKX6ca6DDNX">Terms</a>
-                </li>
-<<<<<<< HEAD
-=======
-            </ul>
+                        <li class="footer__list">
+                            <a class="footer__link" href="privacy.html">Privacy</a>
+                        </li>
+                        <li class="footer__list">
+                            <a class="footer__link" href="terms.html">Terms</a>
+                        </li>
+                    </ul>
 
-            <!-- ----------------------------- Footer Nav end block -->
+                    <!-- ----------------------------- Footer Nav end block -->
 
-            <!-- Social Icons/Links -->
-            <section class="footer__social">
-                <a class="footer__link" href="https://twitter.com/">
-                    <i class="fab fa-twitter"></i>
-                </a>
-                <a class="footer__link" href="https://www.facebook.com/">
-                    <i class="fab fa-facebook"></i>
-                </a>
-                <a class="footer__link" href="https://www.linkedin.com/">
-                    <i class="fab fa-linkedin-in"></i>
-                </a>
-            </section>
+                    <!-- Social Icons/Links -->
+                    <section class="footer__social">
+                        <a class="footer__link" href="https://twitter.com/">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a class="footer__link" href="https://www.facebook.com/">
+                            <i class="fab fa-facebook"></i>
+                        </a>
+                        <a class="footer__link" href="https://www.linkedin.com/">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                    </section>
 
-            <!-- Copyright -->
-            <section class="footer__copyright">
-                <p>&copy; 2020 Bank of Toucan, Quebec & USA - All Rights reserved</p>
-            </section>
->>>>>>> dev
-
-                <!-- ----------------------------- Footer Nav end block -->
-
-                <!-- Copyright -->
-                <section class="footer__copyright">
-                    <p>&copy; 2020 Bank of Toucan, Quebec & USA - All Rights reserved</p>
-                </section>
-                <!-- Social Icons/Links -->
-                <section class="footer__social">
-                    <a href="https://twitter.com/">
-                        <i class="fab fa-twitter"></i>
-                    </a>
-                    <a href="https://www.facebook.com/">
-                        <i class="fab fa-facebook"></i>
-                    </a>
-                    <a href="https://www.linkedin.com/">
-                        <i class="fab fa-linkedin-in"></i>
-                    </a>
-                </section>
-        </footer>
-        <!-- END FOOTER --->
-
-    </section>
-
-    <script src="javascript/script.js"></script>
+                    <!-- Copyright -->
+                    <section class="footer__copyright">
+                        <p>&copy; 2020 Bank of Toucan, Quebec & USA - All Rights reserved</p>
+                    </section>
+        </section>
+        <script src="javascript/script.js">
+        </script>
 </body>
 
 </html>
