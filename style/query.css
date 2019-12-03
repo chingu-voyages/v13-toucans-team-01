@@ -362,7 +362,6 @@ for instance: 600px / 16em = 37.7em
         text-align: center;
     }
 
-    ***********************************************
 
     /* DESIGN FOR THE SERVICES PAGE*/
     /* Services Top header */
@@ -497,6 +496,7 @@ for instance: 600px / 16em = 37.7em
 
     .hero_box a {
         text-decoration: none;
+        ;
         font-size: 20px;
         cursor: pointer;
         background: green;
@@ -595,4 +595,4 @@ for instance: 600px / 16em = 37.7em
         width: 100%;
         height: 100%;
     }
-    }
+}

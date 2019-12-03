@@ -224,150 +224,118 @@
                         <a class="features__button" href="#">Trading</a>
                     </section>
                 </section>
-                <!-- Caed 2 -->
-                <section class="features__card">
-                    <img class="features__image" src="./images/saving-money-2-remastered.jpg"
-                        alt="Save towards your goals to buy the things you need">
-                    <h2 class="features__h2">
-                        Business Analysis
-                    </h2>
-                    <h3 class="features__h3">
-                        “In the midst of chaos, there is also opportunity”
-                        <br>
-                        <span style="font-style:italic;">
-                            -- Sun-Tzu
-                        </span>
-                    </h3>
-                    <a class="features__button" href="#">
-                        Analysis
+            </article>
+
+
+            <!-- CALL TO ACTION SECTION -->
+            <section id="action">
+                <div class="action">
+                    <h1> Don't just work for your money, <br> make your money work for you</h1>
+                    <button onclick="document.getElementById('form').style.display='block'" class="apply" type="button">
+                        APPLY NOW </button>
+
+                    <div id="form" class="modal">
+                        <span onclick="document.getElementById('form').style.display='none'" class="close"
+                            title="Close Modal">×</span>
+                        <form class="modal-content animate" action="/action_page.php">
+                            <div class="container">
+                                <b> APPLY</b>
+                                <input type="text" placeholder="Enter Email" name="email" required>
+
+
+                                <input type="password" placeholder="Enter Password" name="psw" required>
+
+
+                                <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+                                <input type="checkbox"> Remember me
+                                <p>By creating an account you agree to our <a href="terms.html">Terms
+                                        & Conditions</a>.</p>
+
+                                <div class="clearfix">
+                                    <button type="button" onclick="document.getElementById('form').style.display='none'"
+                                        class="cancelbtn">Cancel</button>
+                                    <button type="submit" class="signupbtn">Sign Up</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </section>
+
+            <!-- FOOTER SECTION -->
+            <footer class="footer">
+
+                <!-- Footer nav start block -->
+                <ul class="footer__nav">
+                    <li class="footer__list">
+                        <a class="footer__link" href="about.html">About</a>
+                    </li>
+                    <li class="footer__list">
+                        <a class="footer__link" href="#"
+                            onclick="document.getElementById('contactForm').style.display='block'">Contact</a>
+                    </li>
+
+                    <div id="contactForm" class="modal">
+                        <span onclick="document.getElementById('contactForm').style.display='none'" class="close"
+                            title="Close Modal">×</span>
+                        <form class="modal-content animate" action="/action_page.php">
+
+                            <div class="container">
+                                <b>Contact</b>
+                                <input type="text" placeholder="Name" name="" required>
+
+
+                                <input type="text" placeholder="Email" name="" required>
+
+                                <input type="text" placeholder="Message" name="" required>
+
+                                <div class="clearfix">
+                                    <button type="button"
+                                        onclick="document.getElementById('contactForm').style.display='none'"
+                                        class="cancelbtn">Cancel</button>
+                                    <button type="submit" class="signupbtn">Submit</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <li>
+
+
+
+                    <li class="footer__list">
+                        <a class="footer__link" href="privacy.html">Privacy</a>
+                    </li>
+                    <li class="footer__list">
+                        <a class="footer__link" href="terms.html">Terms</a>
+                    </li>
+                </ul>
+
+                <!-- ----------------------------- Footer Nav end block -->
+
+
+                <!-- Social Icons/Links -->
+                <section class="footer__social">
+                    <a class="footer__link" href="https://twitter.com/">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a class="footer__link" href="https://www.facebook.com/">
+                        <i class="fab fa-facebook"></i>
+                    </a>
+                    <a class="footer__link" href="https://www.linkedin.com/">
+                        <i class="fab fa-linkedin-in"></i>
                     </a>
                 </section>
 
-                <!-- Card 3 -->
-                <section class="features__card">
-                    <img class="features__image" src="./images/life-event-birth-3-remastered.jpg"
-                        alt="Expect life events to happen">
-                    <h2 class="features__h2">Sales and Trading</h2>
-                    <h3 class="features__h3">“I believe in analysis and not forecasting.”
-                        <br>
-                        <span style="font-style:italic;">-- Nicolas Darvas</span></h3>
-                    <a class="features__button" href="#">Trading</a>
+                <!-- Copyright -->
+                <section class="footer__copyright">
+                    <p>&copy; 2020 Bank of Toucan, Quebec & USA - All Rights reserved</p>
                 </section>
+
+
+            </footer> <!-- END FOOTER --->
         </section>
 
-    </section>
-
-
-    <!-- CALL TO ACTION SECTION -->
-    <section id="action">
-        <div class="action">
-            <h1> Don't just work for your money, <br> make your money work for you</h1>
-            <button onclick="document.getElementById('form').style.display='block'" class="apply" type="button">
-                APPLY NOW </button>
-
-            <div id="form" class="modal">
-                <span onclick="document.getElementById('form').style.display='none'" class="close"
-                    title="Close Modal">×</span>
-                <form class="modal-content animate" action="/action_page.php">
-                    <div class="container">
-                        <b> APPLY</b>
-                        <input type="text" placeholder="Enter Email" name="email" required>
-
-
-                        <input type="password" placeholder="Enter Password" name="psw" required>
-
-
-                        <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
-                        <input type="checkbox"> Remember me
-                        <p>By creating an account you agree to our <a href="terms.html">Terms
-                                & Conditions</a>.</p>
-
-                        <div class="clearfix">
-                            <button type="button" onclick="document.getElementById('form').style.display='none'"
-                                class="cancelbtn">Cancel</button>
-                            <button type="submit" class="signupbtn">Sign Up</button>
-                        </div>
-                    </div>
-                </form>
-            </div>
-        </div>
-    </section>
-
-    <!-- FOOTER SECTION -->
-    <footer class="footer">
-
-        <!-- Footer nav start block -->
-        <ul class="footer__nav">
-            <li class="footer__list">
-                <a class="footer__link" href="about.html">About</a>
-            </li>
-            <li class="footer__list">
-                <a class="footer__link" href="#"
-                    onclick="document.getElementById('contactForm').style.display='block'">Contact</a>
-            </li>
-
-            <div id="contactForm" class="modal">
-                <span onclick="document.getElementById('contactForm').style.display='none'" class="close"
-                    title="Close Modal">×</span>
-                <form class="modal-content animate" action="/action_page.php">
-
-                    <div class="container">
-                        <b>Contact</b>
-                        <input type="text" placeholder="Name" name="" required>
-
-
-                        <input type="text" placeholder="Email" name="" required>
-
-                        <input type="text" placeholder="Message" name="" required>
-
-                        <div class="clearfix">
-                            <button type="button" onclick="document.getElementById('contactForm').style.display='none'"
-                                class="cancelbtn">Cancel</button>
-                            <button type="submit" class="signupbtn">Submit</button>
-                        </div>
-                    </div>
-                </form>
-            </div>
-            <li>
-
-
-
-            <li class="footer__list">
-                <a class="footer__link" href="privacy.html">Privacy</a>
-            </li>
-            <li class="footer__list">
-                <a class="footer__link" href="terms.html">Terms</a>
-            </li>
-        </ul>
-
-        <!-- ----------------------------- Footer Nav end block -->
-
-
-        <!-- Social Icons/Links -->
-        <section class="footer__social">
-            <a class="footer__link" href="https://twitter.com/">
-                <i class="fab fa-twitter"></i>
-            </a>
-            <a class="footer__link" href="https://www.facebook.com/">
-                <i class="fab fa-facebook"></i>
-            </a>
-            <a class="footer__link" href="https://www.linkedin.com/">
-                <i class="fab fa-linkedin-in"></i>
-            </a>
-        </section>
-
-        <!-- Copyright -->
-        <section class="footer__copyright">
-            <p>&copy; 2020 Bank of Toucan, Quebec & USA - All Rights reserved</p>
-        </section>
-
-
-    </footer>
-    <!-- END FOOTER --->
-
-    </section>
-
-    <script src="javascript/script.js"></script>
+        <script src="javascript/script.js"></script>
 </body>
 
 </html>

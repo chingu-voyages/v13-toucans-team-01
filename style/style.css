@@ -205,7 +205,7 @@ nav ul li a {
 }
 
 .how_lists h1 {
-    padding: 0px 10px 10px 0px;
+    padding: 0px 20px 10px 0px;
     text-decoration-line: underline;
 }
 
@@ -479,6 +479,20 @@ button {
     display: block;
     height: auto;
     width: 100%;
+}
+
+
+/************************ End Features */
+
+.about {
+    display: grid;
+}
+
+.about__bank,
+.mission,
+.faculty {
+    padding: 5rem 0;
+    text-align: center;
 }
 
 
@@ -903,11 +917,6 @@ h2 {
 
 .item:nth-child(even) {
     background-color: #f7f7f7;
-    border-top: 1px solid #e7e7e7;
-}
-
-.item:nth-child(even) {
-    background-color: #f7f7f7;
 }
 
 .item__description {
@@ -1032,4 +1041,5 @@ h2 {
 }
 
 .termsHeading {
-    text-align: center;}
+    text-align: center;
+}
