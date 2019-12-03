@@ -1,5 +1,4 @@
 /* RESET */
-
 * {
     margin: 0;
     padding: 0;
@@ -15,9 +14,7 @@ body {
     text-rendering: optimizeLegibility;
 }
 
-
 /* DESGIN FOR HEADER SECTION */
-
 header {
     background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(/images/hero_img.jpg);
     background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(/images/hero_img.jpg);
@@ -133,9 +130,7 @@ nav ul li a {
     font-size: 15px;
 }
 
-
 /* DESIGN FOR HOW IT WORKS SECTION */
-
 .how_to {
     width: 100%;
     margin: auto;
@@ -171,7 +166,6 @@ nav ul li a {
     font-size: 48px;
 }
 
-
 /* img.how_picture {
     max-height: auto;
     max-width: 50%;
@@ -202,9 +196,7 @@ nav ul li a {
     text-decoration-line: underline;
 }
 
-
 /*  CALL TO ACTION SECTION */
-
 .action h1 {
     font-size: 28px;
     padding-top: 2em;
@@ -218,9 +210,7 @@ nav ul li a {
     height: auto;
 }
 
-
 /* style action button using fill on hover */
-
 .action button {
     position: relative;
     height: 45px;
@@ -327,9 +317,7 @@ b {
     color: black;
 }
 
-
-/*add full-width input fields*/
-
+/* ADD FULL-WIDTH INPUT FIELDS */
 input[type=text],
 input[type=password] {
     width: 100%;
@@ -341,9 +329,7 @@ input[type=password] {
     box-sizing: border-box;
 }
 
-
-/* set a style for all buttons*/
-
+/* SET A STYLE FOR ALL BUTTONS */
 button {
     background-color: green;
     color: white;
@@ -353,34 +339,26 @@ button {
     width: 100%;
 }
 
-
-/*set styles for the cancel button*/
-
+/* SET STYLES FOR THE CANCEL BUTTON */
 .cancelbtn {
     padding: 14px 20px;
     background-color: #FF2E00;
     padding: 14px 20px;
 }
 
-
-/*float cancel and signup buttons and add an equal width*/
-
+/* FLOAT CANCEL AND SIGNUP BUTTONS AND ADD AN EQUAL WIDTH */
 .cancelbtn,
 .signupbtn {
     float: center;
     width: 50%;
 }
 
-
-/*add padding to container elements*/
-
+/* ADD PADDING TO CONTAINER ELEMENTS */
 .container {
     padding: 16px;
 }
 
-
-/*define the modal’s background*/
-
+/* DEFINE THE MODAL'S BACKGROUND */
 .modal {
     display: none;
     position: fixed;
@@ -399,9 +377,7 @@ button {
     padding-top: 60px;
 }
 
-
-/*define the modal-content background*/
-
+/* DEFINE THE MOADL-CONTENT BACKGROUND */
 .modal-content {
     background-color: #fefefe;
     margin: 5% auto 15% auto;
@@ -409,9 +385,7 @@ button {
     width: 80%;
 }
 
-
-/*define the close button*/
-
+/* DEFINE THE CLOSE BUTTON */
 .close {
     position: absolute;
     right: 35px;
@@ -421,9 +395,7 @@ button {
     font-weight: bold;
 }
 
-
-/*define the close hover and focus effects*/
-
+/* DEFINE THE CLOSE HOVER AND FOCUS EFFECTS */
 .close:hover,
 .close:focus {
     color: red;
@@ -444,9 +416,7 @@ button {
     }
 }
 
-
-/********** FEATURES **********/
-
+/* FEATURES */
 .features__container {
     width: 100%;
 }
@@ -474,9 +444,7 @@ button {
     width: 100%;
 }
 
-
-/************************ End Features */
-
+/* ABOUT */
 .about {
     display: grid;
 }
@@ -488,9 +456,7 @@ button {
     text-align: center;
 }
 
-
-/********** FOOTER **********/
-
+/* FOOTER */
 .footer {
     background-color: #191901;
     border-top: 1px solid #000;
@@ -504,12 +470,7 @@ button {
     margin-left: 70px;
 }
 
-
-/* Links Footer */
-
-
-/* Footer Nav */
-
+/* FOOTER NAV */
 .footer__nav {
     display: flex;
 }
@@ -524,14 +485,7 @@ button {
     text-decoration: none;
 }
 
-
-/* Copyright */
-
-.footer__copyright {}
-
-
-/* Social links */
-
+/* SOCIAL LINKS */
 .footer__social {
     display: flex;
 }
@@ -555,9 +509,7 @@ button {
     color: rgb(96, 202, 255);
 }
 
-
 /********** ABOUT DESIGN **********/
-
 #about {
     background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(/images/about_img.jpg);
     background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(/images/about_img.jpg);
@@ -582,9 +534,7 @@ button {
     font-size: 30px;
 }
 
-
 /********** SERIVCES DESIGN **********/
-
 .services_header {
     width: 1100px;
     margin: auto;
@@ -704,7 +654,6 @@ button {
     height: 300px;
 }
 
-
 /**********************************************
 *** TOP PART
 **********************************************/
@@ -785,11 +734,9 @@ button {
     border-radius: 3px;
 }
 
-
 /**********************************************
 *** BOTTOM PART
 **********************************************/
-
 
 /***** FORM *****/
 
@@ -864,7 +811,6 @@ button {
 .add__btn:focus {
     outline: none;
 }
-
 
 /***** LISTS *****/
 
@@ -997,9 +943,7 @@ h2 {
     font-weight: 900;
 }
 
-
 /* ADD PRIVACY POLICY SECTION */
-
 #privacy {
     text-align: justify;
     background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(/images/agreement.jpg);
@@ -1017,9 +961,7 @@ h2 {
     text-align: center;
 }
 
-
 /* ADD TERMS AND CONDITIONS PAGE */
-
 #terms {
     text-align: justify;
     background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(/images/agreement.jpg);

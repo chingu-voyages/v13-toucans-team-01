@@ -14,7 +14,7 @@ for instance: 600px / 16em = 37.7em
 @media only screen and (min-width: 1141px) {
 
     /* DESIGN FOR THE HOME PAGE*/
-    /* Features */
+    /* FEATURES */
     .features {
         display: block;
         font-family: sans-serif;
@@ -39,7 +39,6 @@ for instance: 600px / 16em = 37.7em
     .features__cards {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
-        /* grid-gap: 1rem; */
     }
 
     .features__card {
@@ -84,8 +83,7 @@ for instance: 600px / 16em = 37.7em
         width: 10rem;
     }
 
-    /* Footer */
-
+    /* FOOTER */
     .footer {
         font-size: 1rem;
         grid-template-areas:
@@ -113,7 +111,7 @@ for instance: 600px / 16em = 37.7em
 /* Big tablet to 1140px (widths smaller then the 1140px row) */
 @media only screen and (max-width: 1140px) {
     /* DESIGN FOR THE HOME PAGE*/
-    /* Features */
+    /* FEATURES */
 
     .features {
         display: block;
@@ -139,7 +137,6 @@ for instance: 600px / 16em = 37.7em
     .features__cards {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
-        /* grid-gap: 1rem; */
     }
 
     .features__card {
@@ -185,7 +182,7 @@ for instance: 600px / 16em = 37.7em
         width: 10rem;
     }
 
-    /* About Section */
+    /* ABOUT */
     img {
         display: block;
         height: auto;
@@ -223,8 +220,7 @@ for instance: 600px / 16em = 37.7em
         grid-template-columns: repeat(4, 1fr);
     }
 
-    /* Footer */
-
+    /* FOOTER */
     .footer {
         font-size: 1rem;
         grid-template-areas:
@@ -260,7 +256,7 @@ for instance: 600px / 16em = 37.7em
 @media only screen and (max-width: 670px) {
 
     /* DESIGN FOR THE HOME PAGE*/
-    /* Header*/
+    /* HEADER*/
     .logo {
         display: flex;
         margin-left: 40px;
@@ -305,8 +301,7 @@ for instance: 600px / 16em = 37.7em
         color: #fff;
     }
 
-    /* Features */
-
+    /* FEATURES */
     .features {
         display: block;
         font-family: sans-serif;
@@ -361,7 +356,7 @@ for instance: 600px / 16em = 37.7em
         width: 10rem;
     }
 
-    /* About Section */
+    /* ABOUT */
     img {
         display: block;
         height: auto;
@@ -383,10 +378,7 @@ for instance: 600px / 16em = 37.7em
         padding: 4rem 0;
     }
 
-    /* Mission */
-
-
-    /* Faculty */
+    /* FACULTY */
     .faculty {
         display: grid;
         grid-template-columns: 1fr;
@@ -419,8 +411,7 @@ for instance: 600px / 16em = 37.7em
         line-height: 24px;
     }
 
-    /* Footer */
-
+    /* FOOTER */
     .footer {
         font-size: 1.2rem;
         grid-template-areas:
@@ -458,9 +449,8 @@ for instance: 600px / 16em = 37.7em
         text-align: center;
     }
 
-
     /* DESIGN FOR THE SERVICES PAGE*/
-    /* Services Top header */
+    /* SERVICES TOP HEADER */
     .services_header {
         width: 100%;
         overflow: hidden;
@@ -497,7 +487,7 @@ for instance: 600px / 16em = 37.7em
         text-align: center;
     }
 
-    /* Services hero */
+    /* SERVICES HERO */
     #services_hero {
         text-align: center;
         background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(/images/agreement.jpg);
@@ -533,7 +523,7 @@ for instance: 600px / 16em = 37.7em
         margin-bottom: 15px;
     }
 
-    /* Services Calculator*/
+    /* SERVICES CALCULATOR*/
     .services_calc_content {
         overflow: hidden;
         width: 100%;
@@ -556,7 +546,7 @@ for instance: 600px / 16em = 37.7em
 @media only screen and (max-width: 480px) {
 
     /* DESIGN FOR THE HOME PAGE*/
-    /* Header*/
+    /* HEADER*/
     .logo {
         display: block;
         margin-left: 13%;
@@ -603,7 +593,7 @@ for instance: 600px / 16em = 37.7em
     }
 
     /* DESIGN FOR THE SERVICES PAGE*/
-    /* Services Top header */
+    /* SERVICES TOP HEADER */
     .services_header {
         width: 100%;
         overflow: hidden;
@@ -638,7 +628,7 @@ for instance: 600px / 16em = 37.7em
         display: block;
     }
 
-    /* Services hero */
+    /*SERVICES HERO */
     #services_hero {
         text-align: center;
         background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(/images/agreement.jpg);
@@ -675,7 +665,7 @@ for instance: 600px / 16em = 37.7em
         margin-bottom: 15px;
     }
 
-    /* Services Calculator*/
+    /* SERVICES CALCULATOR*/
     .services_calc_content {
         width: 100%;
         display: block;
