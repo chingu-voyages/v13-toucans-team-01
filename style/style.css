@@ -409,6 +409,19 @@ button {
 /********** FEATURES **********/
 
 
+/************************ End Features */
+
+.about {
+   display: grid;
+}
+
+.about__bank,
+.mission,
+.faculty {
+   padding: 5rem 0;
+   text-align: center;
+}
+
 /********** FOOTER **********/
 
 .footer {
@@ -425,8 +438,6 @@ button {
 .footer .modal .clearfix {
    margin-left: 70px;
 }
-
-/* Links Footer */
 
 /* Footer Nav */
 .footer__nav {
@@ -502,7 +513,11 @@ button {
    padding-top: 20px;
    width: 1100px;
    padding-bottom: 20px;
+<<<<<<< HEAD
    padding-top: 40px;
+=======
+   padding-top: 20px;
+>>>>>>> dev
    color: #f4f4f4;
    margin: auto;
 }
@@ -777,12 +792,21 @@ h2 {
    font-size: 18px;
    font-weight: 400;
    margin-bottom: 15px;
+<<<<<<< HEAD
 }
 
 .icome__title {
    color: #28B9B5;
 }
 
+=======
+}
+
+.icome__title {
+   color: #28B9B5;
+}
+
+>>>>>>> dev
 .expenses__title {
    color: #FF5049;
 }
@@ -849,6 +873,7 @@ h2 {
 
 .item__delete--btn:focus {
    outline: none;
+<<<<<<< HEAD
 }
 
 .item__delete--btn:active {
@@ -863,6 +888,22 @@ h2 {
    transform: translateX(-20px);
 }
 
+=======
+}
+
+.item__delete--btn:active {
+   transform: translateY(2px);
+}
+
+.item:hover .item__delete--btn {
+   display: block;
+}
+
+.item:hover .item__value {
+   transform: translateX(-20px);
+}
+
+>>>>>>> dev
 .item:hover .item__percentage {
    transform: translateX(-20px);
 }
