@@ -198,6 +198,8 @@ for instance: 600px / 16em = 37.7em
     }
 
     .about__bank {
+        align-items: center;
+        background-color: rgb(161, 159, 159);
         display: grid;
         grid-template-columns: 1fr;
     }
@@ -207,40 +209,18 @@ for instance: 600px / 16em = 37.7em
         padding: 4rem 0;
     }
 
-    /* Mission */
+    .about__image {
+        max-width: 500px;
+        justify-self: center;
+    }
 
+    .mission {
+        background-color: rgb(182, 182, 182);
+    }
 
-    /* Faculty */
     .faculty {
         display: grid;
-        grid-template-columns: 1fr;
-    }
-
-    .faculty__person {
-        display: flex;
-        flex-direction: column;
-        margin: 5rem 0;
-    }
-
-    .faculty__title {
-        font-size: 2rem;
-        letter-spacing: 2px;
-    }
-
-    .faculty__image {
-        max-width: 200px;
-        align-self: center;
-    }
-
-    .faculty__name {
-        font-size: 1.5rem;
-        padding: 1rem 0;
-    }
-
-    .faculty__text {
-        font-size: 1rem;
-        font-weight: normal;
-        line-height: 24px;
+        grid-template-columns: repeat(4, 1fr);
     }
 
     /* Footer */
@@ -379,6 +359,64 @@ for instance: 600px / 16em = 37.7em
         text-align: center;
         text-decoration: none;
         width: 10rem;
+    }
+
+    /* About Section */
+    img {
+        display: block;
+        height: auto;
+        width: 100%;
+    }
+
+    .about-container {
+        grid-template-columns: 1fr;
+        padding: 0 1rem;
+    }
+
+    .about__bank {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .about__header {
+        font-size: 2.5rem;
+        padding: 4rem 0;
+    }
+
+    /* Mission */
+
+
+    /* Faculty */
+    .faculty {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .faculty__person {
+        display: flex;
+        flex-direction: column;
+        margin: 5rem 0;
+    }
+
+    .faculty__title {
+        font-size: 2rem;
+        letter-spacing: 2px;
+    }
+
+    .faculty__image {
+        max-width: 200px;
+        align-self: center;
+    }
+
+    .faculty__name {
+        font-size: 1.5rem;
+        padding: 1rem 0;
+    }
+
+    .faculty__text {
+        font-size: 1rem;
+        font-weight: normal;
+        line-height: 24px;
     }
 
     /* Footer */
