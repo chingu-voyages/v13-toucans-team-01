@@ -139,7 +139,7 @@ nav ul li a {
 .how_to {
     width: 100%;
     margin: auto;
-    background-image: url("https://images.unsplash.com/photo-1567427017947-545c5f8d16ad?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60");
+    background-image: linear-gradient(rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.15)), url("https://images.unsplash.com/photo-1567427017947-545c5f8d16ad?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60");
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -154,16 +154,9 @@ nav ul li a {
     grid-row-gap: 0px;
 }
 
-.deposit_funds {
-    grid-area: 1 / 1 / 2 /2;
-}
-
-.securely_save {
-    grid-area: 1 / 2 / 2 / 3;
-}
-
-.grow_investment {
-    grid-area: 1 / 3 / 2 / 4;
+.how_to .how_lists {
+    font-size: larger;
+    font-weight: 700;
 }
 
 .fa-seedling {
