@@ -146,19 +146,25 @@ nav ul li a {
     background-size: cover;
 }
 
-.how_lists {
+.how_to .how_lists {
+    font-size: larger;
+    font-weight: 700;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr;
-    grid-column-gap: 0px;
-    grid-row-gap: 0px;
 }
 
+<<<<<<< HEAD
 .deposit_funds {
+=======
+
+/* .deposit_funds {
+>>>>>>> master
     grid-area: 1 / 2 / 2 / 3;
 }
 
 .securely_save {
+<<<<<<< HEAD
     grid-area: 1 / 1 / 2 / 2;
 }
 
@@ -169,7 +175,14 @@ nav ul li a {
 .how_to .how_lists {
     font-size: larger;
     font-weight: 700;
+=======
+    grid-area: 1 / 3 / 2 / 4;
+>>>>>>> master
 }
+
+.fa-seedling {
+    grid-area: 1 / 4 / 2 / 5;
+} */
 
 .fa-seedling {
     font-size: 48px;
