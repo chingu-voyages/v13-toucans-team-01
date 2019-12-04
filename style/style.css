@@ -444,16 +444,46 @@ button {
     width: 100%;
 }
 
-/* ABOUT */
+/* ABOUT FEATURES */
 .about {
     display: grid;
 }
 
+/* ABOUT FEATURES COTAINERS */
 .about__bank,
 .mission,
 .faculty {
     padding: 5rem 0;
     text-align: center;
+}
+
+/* ABOUT FEATURES H2 */
+.mission__header,
+.faculty__title {
+    font-size: 2rem;
+    font-weight: bold;
+    letter-spacing: 4px;
+    padding: 2rem 0;
+    margin-bottom: 0;
+}
+
+/* ABOUT FEATURES H3 */
+.faculty__name {
+    font-size: 1.5rem;
+    font-weight: normal;
+    letter-spacing: 2px;
+    padding: 1rem 0;
+}
+
+/* ABOUT FEATURES P */
+.about__text,
+.mission__text,
+.faculty__text {
+    font-size: 1.2rem;
+    font-weight: normal;
+    letter-spacing: 2px;
+    line-height: 35px;
+    padding: 1rem;
 }
 
 /* FOOTER */
