@@ -146,16 +146,18 @@
         font-size: larger;
         font-weight: 700;
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-columns: repeat(3, 1fr);
         grid-template-rows: 1fr;
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
     }
     
     .deposit_funds {
-        grid-area: 1 / 2 / 2 / 3;
+        grid-area: 1 / 1 / 2 / 2;
     }
     
     .securely_save {
-        grid-area: 1 / 1 / 2 / 2;
+        grid-area: 1 / 2 / 2 / 3;
     }
     
     .grow_investment {
@@ -168,10 +170,6 @@
     }
     
     .fa-seedling {
-        grid-area: 1 / 4 / 2 / 5;
-    }
-    
-    */ .fa-seedling {
         font-size: 48px;
     }
     
