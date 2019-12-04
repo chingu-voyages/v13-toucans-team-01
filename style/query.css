@@ -83,6 +83,41 @@ for instance: 600px / 16em = 37.7em
         width: 10rem;
     }
 
+    /* FACULTY */
+    .faculty {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .faculty__person {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 0;
+    }
+
+    .faculty__title {
+        font-size: 1rem;
+        padding-bottom: 0.8rem;
+        padding-top: 0;
+    }
+
+    .faculty__image {
+        max-width: 200px;
+    }
+
+    .faculty__name {
+        font-size: 1.1rem;
+        padding-bottom: 1.3rem;
+    }
+
+    .faculty__text {
+        font-size: 0.85rem;
+        line-height: 27px;
+        padding: 0;
+        width: 85%;
+    }
+
     /* FOOTER */
     .footer {
         font-size: 1rem;
@@ -215,9 +250,40 @@ for instance: 600px / 16em = 37.7em
         background-color: rgb(182, 182, 182);
     }
 
+    /* FACULTY */
     .faculty {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
+    }
+
+    .faculty__person {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 0;
+    }
+
+    .faculty__title {
+        font-size: 1rem;
+        padding-bottom: 0.8rem;
+        padding-top: 0;
+    }
+
+    .faculty__image {
+        max-width: 100px;
+    }
+
+    .faculty__name {
+        font-size: 1.1rem;
+        /* padding: 0; */
+        padding-bottom: 1.3rem;
+    }
+
+    .faculty__text {
+        font-size: 0.85rem;
+        line-height: 27px;
+        padding: 0;
+        width: 85%;
     }
 
     /* FOOTER */
