@@ -453,18 +453,22 @@ button {
 .about__bank,
 .mission,
 .faculty {
-    padding: 5rem 0;
     text-align: center;
+    padding-bottom: 9rem;
 }
 
 /* ABOUT FEATURES H2 */
 .mission__header,
-.faculty__title {
-    font-size: 2rem;
+.faculty__title,
+.faculty__header {
+    font-size: 2.3rem;
     font-weight: bold;
-    letter-spacing: 4px;
-    padding: 2rem 0;
-    margin-bottom: 0;
+    letter-spacing: 6px;
+    padding-bottom: 3rem;
+}
+
+.faculty__header {
+    text-align: center;
 }
 
 /* ABOUT FEATURES H3 */

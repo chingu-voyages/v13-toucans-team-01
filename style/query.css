@@ -83,10 +83,23 @@ for instance: 600px / 16em = 37.7em
         width: 10rem;
     }
 
+    /* ABOUT FEATURES */
+    .about__text {
+        margin: auto;
+        margin-bottom: 4rem;
+        width: 90vw;
+    }
+
     /* FACULTY */
     .faculty {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
+    }
+
+    .about__header {
+        font-size: 3rem;
+        padding-bottom: 5rem;
+        padding-top: 5rem;
     }
 
     .faculty__person {
@@ -231,7 +244,6 @@ for instance: 600px / 16em = 37.7em
 
     .about__bank {
         align-items: center;
-        background-color: rgb(161, 159, 159);
         display: grid;
         grid-template-columns: 1fr;
     }
@@ -241,13 +253,23 @@ for instance: 600px / 16em = 37.7em
         padding: 4rem 0;
     }
 
+    .about__text {
+        margin: auto;
+        margin-bottom: 3rem;
+        width: 85vw;
+    }
+
     .about__image {
         max-width: 500px;
         justify-self: center;
     }
 
+    /* MISSION */
     .mission {
-        background-color: rgb(182, 182, 182);
+        /* background-color: rgb(182, 182, 182); */
+        display: block;
+        margin: auto;
+        width: 90vw;
     }
 
     /* FACULTY */
@@ -444,16 +466,26 @@ for instance: 600px / 16em = 37.7em
         padding: 4rem 0;
     }
 
+    .about__text {
+        margin-bottom: 4rem;
+    }
+
     /* FACULTY */
     .faculty {
         display: grid;
         grid-template-columns: 1fr;
+        padding-bottom: 4rem;
     }
+
+    /* .faculty__header {
+    padding-bottom: 3rem;
+    font-size: 2.3rem;
+} */
 
     .faculty__person {
         display: flex;
         flex-direction: column;
-        margin-bottom: 8rem;
+        margin-bottom: 5rem;
     }
 
     .faculty__title {
@@ -717,7 +749,6 @@ for instance: 600px / 16em = 37.7em
     .services_content {
         padding: 20px 20px;
     }
-
 
     .services_content h3 {
         margin-bottom: 15px;
