@@ -341,6 +341,7 @@ b {
     font-weight: bolder;
     padding-bottom: 28px;
     color: black;
+    text-align: center;
 }
 
 
@@ -390,8 +391,8 @@ button {
 
 /*add padding to container elements*/
 
-.container {
-    padding: 16px;
+.containerbtn {
+    padding: 10px;
 }
 
 
@@ -423,6 +424,7 @@ button {
     margin: 5% auto 15% auto;
     border: 1px solid #888;
     width: 80%;
+    padding: 40px;
 }
 
 
