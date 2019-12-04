@@ -14,7 +14,7 @@ for instance: 600px / 16em = 37.7em
 @media only screen and (min-width: 1141px) {
 
     /* DESIGN FOR THE HOME PAGE*/
-    /* Features */
+    /* FEATURES */
     .features {
         display: block;
         font-family: sans-serif;
@@ -39,7 +39,6 @@ for instance: 600px / 16em = 37.7em
     .features__cards {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
-        /* grid-gap: 1rem; */
     }
 
     .features__card {
@@ -84,8 +83,55 @@ for instance: 600px / 16em = 37.7em
         width: 10rem;
     }
 
-    /* Footer */
+    /* ABOUT FEATURES */
+    .about__text {
+        margin: auto;
+        margin-bottom: 4rem;
+        width: 90vw;
+    }
 
+    /* FACULTY */
+    .faculty {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .about__header {
+        font-size: 3rem;
+        padding-bottom: 5rem;
+        padding-top: 5rem;
+    }
+
+    .faculty__person {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 0;
+    }
+
+    .faculty__title {
+        font-size: 1rem;
+        padding-bottom: 0.8rem;
+        padding-top: 0;
+    }
+
+    .faculty__image {
+        max-width: 200px;
+    }
+
+    .faculty__name {
+        font-size: 1.1rem;
+        padding-bottom: 1.3rem;
+    }
+
+    .faculty__text {
+        font-size: 0.85rem;
+        line-height: 27px;
+        padding: 0;
+        width: 85%;
+    }
+
+    /* FOOTER */
     .footer {
         font-size: 1rem;
         grid-template-areas:
@@ -113,7 +159,7 @@ for instance: 600px / 16em = 37.7em
 /* Big tablet to 1140px (widths smaller then the 1140px row) */
 @media only screen and (max-width: 1140px) {
     /* DESIGN FOR THE HOME PAGE*/
-    /* Features */
+    /* FEATURES */
 
     .features {
         display: block;
@@ -139,7 +185,6 @@ for instance: 600px / 16em = 37.7em
     .features__cards {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
-        /* grid-gap: 1rem; */
     }
 
     .features__card {
@@ -185,7 +230,7 @@ for instance: 600px / 16em = 37.7em
         width: 10rem;
     }
 
-    /* About Section */
+    /* ABOUT */
     img {
         display: block;
         height: auto;
@@ -199,7 +244,6 @@ for instance: 600px / 16em = 37.7em
 
     .about__bank {
         align-items: center;
-        background-color: rgb(161, 159, 159);
         display: grid;
         grid-template-columns: 1fr;
     }
@@ -209,22 +253,62 @@ for instance: 600px / 16em = 37.7em
         padding: 4rem 0;
     }
 
+    .about__text {
+        margin: auto;
+        margin-bottom: 3rem;
+        width: 85vw;
+    }
+
     .about__image {
         max-width: 500px;
         justify-self: center;
     }
 
+    /* MISSION */
     .mission {
-        background-color: rgb(182, 182, 182);
+        /* background-color: rgb(182, 182, 182); */
+        display: block;
+        margin: auto;
+        width: 90vw;
     }
 
+    /* FACULTY */
     .faculty {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
     }
 
-    /* Footer */
+    .faculty__person {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 0;
+    }
 
+    .faculty__title {
+        font-size: 1rem;
+        padding-bottom: 0.8rem;
+        padding-top: 0;
+    }
+
+    .faculty__image {
+        max-width: 100px;
+    }
+
+    .faculty__name {
+        font-size: 1.1rem;
+        /* padding: 0; */
+        padding-bottom: 1.3rem;
+    }
+
+    .faculty__text {
+        font-size: 0.85rem;
+        line-height: 27px;
+        padding: 0;
+        width: 85%;
+    }
+
+    /* FOOTER */
     .footer {
         font-size: 1rem;
         grid-template-areas:
@@ -260,7 +344,7 @@ for instance: 600px / 16em = 37.7em
 @media only screen and (max-width: 670px) {
 
     /* DESIGN FOR THE HOME PAGE*/
-    /* Header*/
+    /* HEADER*/
     .logo {
         display: flex;
         margin-left: 40px;
@@ -305,8 +389,7 @@ for instance: 600px / 16em = 37.7em
         color: #fff;
     }
 
-    /* Features */
-
+    /* FEATURES */
     .features {
         display: block;
         font-family: sans-serif;
@@ -361,7 +444,7 @@ for instance: 600px / 16em = 37.7em
         width: 10rem;
     }
 
-    /* About Section */
+    /* ABOUT */
     img {
         display: block;
         height: auto;
@@ -383,24 +466,30 @@ for instance: 600px / 16em = 37.7em
         padding: 4rem 0;
     }
 
-    /* Mission */
+    .about__text {
+        margin-bottom: 4rem;
+    }
 
-
-    /* Faculty */
+    /* FACULTY */
     .faculty {
         display: grid;
         grid-template-columns: 1fr;
+        padding-bottom: 4rem;
     }
+
+    /* .faculty__header {
+    padding-bottom: 3rem;
+    font-size: 2.3rem;
+} */
 
     .faculty__person {
         display: flex;
         flex-direction: column;
-        margin: 5rem 0;
+        margin-bottom: 5rem;
     }
 
     .faculty__title {
-        font-size: 2rem;
-        letter-spacing: 2px;
+        padding: 1.2rem;
     }
 
     .faculty__image {
@@ -408,19 +497,11 @@ for instance: 600px / 16em = 37.7em
         align-self: center;
     }
 
-    .faculty__name {
-        font-size: 1.5rem;
-        padding: 1rem 0;
-    }
+    /* .faculty__name {} */
 
-    .faculty__text {
-        font-size: 1rem;
-        font-weight: normal;
-        line-height: 24px;
-    }
+    .faculty__text {}
 
-    /* Footer */
-
+    /* FOOTER */
     .footer {
         font-size: 1.2rem;
         grid-template-areas:
@@ -458,9 +539,8 @@ for instance: 600px / 16em = 37.7em
         text-align: center;
     }
 
-
     /* DESIGN FOR THE SERVICES PAGE*/
-    /* Services Top header */
+    /* SERVICES TOP HEADER */
     .services_header {
         width: 100%;
         overflow: hidden;
@@ -497,7 +577,7 @@ for instance: 600px / 16em = 37.7em
         text-align: center;
     }
 
-    /* Services hero */
+    /* SERVICES HERO */
     #services_hero {
         text-align: center;
         background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(/images/agreement.jpg);
@@ -533,7 +613,7 @@ for instance: 600px / 16em = 37.7em
         margin-bottom: 15px;
     }
 
-    /* Services Calculator*/
+    /* SERVICES CALCULATOR*/
     .services_calc_content {
         overflow: hidden;
         width: 100%;
@@ -556,7 +636,7 @@ for instance: 600px / 16em = 37.7em
 @media only screen and (max-width: 480px) {
 
     /* DESIGN FOR THE HOME PAGE*/
-    /* Header*/
+    /* HEADER*/
     .logo {
         display: block;
         margin-left: 13%;
@@ -603,7 +683,7 @@ for instance: 600px / 16em = 37.7em
     }
 
     /* DESIGN FOR THE SERVICES PAGE*/
-    /* Services Top header */
+    /* SERVICES TOP HEADER */
     .services_header {
         width: 100%;
         overflow: hidden;
@@ -638,7 +718,7 @@ for instance: 600px / 16em = 37.7em
         display: block;
     }
 
-    /* Services hero */
+    /*SERVICES HERO */
     #services_hero {
         text-align: center;
         background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(/images/agreement.jpg);
@@ -670,12 +750,11 @@ for instance: 600px / 16em = 37.7em
         padding: 20px 20px;
     }
 
-
     .services_content h3 {
         margin-bottom: 15px;
     }
 
-    /* Services Calculator*/
+    /* SERVICES CALCULATOR*/
     .services_calc_content {
         width: 100%;
         display: block;
