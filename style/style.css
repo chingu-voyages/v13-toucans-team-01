@@ -208,10 +208,12 @@
     
     .action h1 {
         font-size: 28px;
-        padding: 4em;
+        padding: 4em 4em 4em 2em;
         color: #383736;
         grid-area: 1 / 1 / 2 / 2;
         font-family: sans-serif;
+        text-transform: uppercase;
+        text-align: left;
     }
     
     .action {
@@ -219,7 +221,7 @@
         width: 1100px;
         height: auto;
         display: grid;
-        padding: 4em;
+        padding: 2em;
         grid-template-columns: repeat(3fr 1fr);
         grid-template-rows: 1fr;
         grid-column-gap: 0px;
