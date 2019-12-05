@@ -74,18 +74,30 @@ nav ul li a {
     font-size: 20px;
 }
 
-.hamburger {
-    background: green;
-    color: #fff;
+.div_hamburger {
+	padding: 1em;
 }
 
-.hamburgerBar {
-    color: #fff;
-    width: 200px;
-    height: 20px;
-    z-index: 4;
-    margin: auto;
+.div_hamburgerBars {
+	position: relative;
 }
+
+.span_hamburgerBar {
+	background: #fff;
+	width: 30px;
+	height: 4px;
+	display: block;
+	position: absolute;
+}
+
+.span_topBar {
+	bottom: 4px;
+}
+
+.span_bottomBar {
+	top: 7px;
+}
+
 
 .hero_box {
     position: absolute;
