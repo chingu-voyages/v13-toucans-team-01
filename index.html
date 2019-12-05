@@ -45,13 +45,12 @@
                         </li>
 
                         <div id="logInForm" class="modal">
-                            <span onclick="document.getElementById('logInForm').style.display='none'" class="close"
-                                title="Close Modal">×</span>
+                            <span onclick="document.getElementById('logInForm').style.display='none'" class="close" title="Close Modal">×</span>
                             <li><a href="#" onclick="document.getElementById('logInForm').style.display='block'">Log
                                     In</a>
                             </li>
                             <form class="modal-content animate" action="/action_page.php">
-                                <div class="container">
+                                <div class="containerBtn">
                                     <b> Log In</b>
                                     <input type="text" placeholder="Enter Email" name="email" required>
                                     <input type="password" placeholder="Enter Password" name="psw" required>
@@ -68,15 +67,14 @@
             <div class="hero_box">
                 <h1 class="hero_h1">Stay in control & Grow your investment</h1>
                 <p class="here_paragraph">Build lasting wealth through sustainable investments</p>
-                <a href="#" onclick="document.getElementById('createAccountForm').style.display='block'"
-                    class="hero_button">Create Account</a>
+                <a href="#" onclick="document.getElementById('createAccountForm').style.display='block'" class="hero_button">Create Account</a>
 
                 <div id="createAccountForm" class="modal">
-                    <span onclick="document.getElementById('createAccountForm').style.display='none'" class="close"
-                        title="Close Modal">×</span>
+                    <span onclick="document.getElementById('createAccountForm').style.display='none'" class="close" title="Close Modal">×</span>
                     <form class="modal-content animate" action="/action_page.php">
-                        <div class="container">
+                        <div class="containerBtn">
                             <b>Create Account</b>
+                            <br>
                             <input type="text" placeholder="Email" name="" required>
                             <input type="password" placeholder="Password" name="psw" required>
                             <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
@@ -85,9 +83,7 @@
                                     & Conditions</a>.</p>
 
                             <div class="clearfix">
-                                <button type="button"
-                                    onclick="document.getElementById('createAccountForm').style.display='none'"
-                                    class="cancelbtn">Cancel</button>
+                                <button type="button" onclick="document.getElementById('createAccountForm').style.display='none'" class="cancelbtn">Cancel</button>
                                 <button type="submit" class="signupbtn">Create Account</button>
                             </div>
                         </div>
@@ -106,7 +102,7 @@
                 <div class="how_content">
                     <!-- HOW IT WORKS LIST SECTION-->
                     <div class="how_lists">
-                        <!-- Card 1-->
+                        <!-- CARD 1-->
                         <div id="list deposit_funds">
                             <i class="fas fa-receipt"></i>
                             <br>
@@ -120,7 +116,7 @@
                             </ul>
                         </div>
                         <br>
-                        <!-- Card 2-->
+                        <!-- CARD 2-->
                         <div id="list securely_save">
                             <i class="fas fa-dollar-sign"></i>
                             <br>
@@ -134,7 +130,7 @@
                             </ul>
                         </div>
                         <br>
-                        <!-- Card 3-->
+                        <!-- CARD 3-->
                         <div id="list grow_investment">
                             <i class="fas fa-seedling"></i>
                             <br>
@@ -148,8 +144,6 @@
                             </ul>
                         </div>
                     </div>
-                    <!-- HOW IT WORKS PICTURE -->
-                    <!-- <img class="how_picture" src="https://images.unsplash.com/photo-1567427017947-545c5f8d16ad?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60" alt="jar of coins spilling over"> -->
                 </div>
             </div>
         </section>
@@ -158,7 +152,7 @@
         <section class="features__container">
             <article class="features">
 
-                <!-- Card start block -->
+                <!-- CARD START BLOCK -->
                 <h2 class="features__header">
                     Our Investing
                 </h2>
@@ -166,10 +160,9 @@
                     Invest in yourself. Your career is the engine of your wealth.
                 </h3>
                 <section class="features__cards">
-                    <!-- Card 1 -->
+                    <!-- CARD 1 -->
                     <section class="features__card">
-                        <img class="features__image" src="./images/finances-remastered.jpg"
-                            alt="Keep track of your money">
+                        <img class="features__image" src="images/finances-remastered.jpg" alt="Keep track of your money">
                         <h2 class="features__h2">
                             Stock Marketting
                         </h2>
@@ -185,10 +178,10 @@
                         </a>
                     </section>
 
-                    <!-- Caed 2 -->
+                    <!-- CARD 2 -->
                     <section class="features__card">
-                        <img class="features__image" src="./images/saving-money-2-remastered.jpg"
-                            alt="Save towards your goals to buy the things you need">
+                        <img class="features__image" src="images/saving-money-2-remastered.jpg" alt="Save towards your goals to buy the things you need">
+
                         <h2 class="features__h2">
                             Business Analysis
                         </h2>
@@ -206,8 +199,7 @@
 
                     <!-- Card 3 -->
                     <section class="features__card">
-                        <img class="features__image" src="./images/life-event-birth-3-remastered.jpg"
-                            alt="Expect life events to happen">
+                        <img class="features__image" src="images/life-event-birth-3-remastered.jpg" alt="Expect life events to happen">
                         <h2 class="features__h2">Sales and Trading</h2>
                         <h3 class="features__h3">“I believe in analysis and not forecasting.”
                             <br>
@@ -217,19 +209,18 @@
                 </section>
             </article>
 
-
             <!-- CALL TO ACTION SECTION -->
             <section id="action">
                 <div class="action">
-                    <h1> Don't just work for your money, <br> make your money work for you</h1>
-                    <button onclick="document.getElementById('form').style.display='block'" class="apply" type="button">
+                    <h1> Get Started With Bank of Toucan today</h1>
+                    <div class="applyBtn">
+                        <button onclick="document.getElementById('form').style.display='block'" class="apply" type="button">
                         APPLY NOW </button>
-
+                    </div>
                     <div id="form" class="modal">
-                        <span onclick="document.getElementById('form').style.display='none'" class="close"
-                            title="Close Modal">×</span>
+                        <span onclick="document.getElementById('form').style.display='none'" class="close" title="Close Modal">×</span>
                         <form class="modal-content animate" action="/action_page.php">
-                            <div class="container">
+                            <div class="containerBtn">
                                 <b> APPLY</b>
                                 <input type="text" placeholder="Enter Email" name="email" required>
                                 <input type="password" placeholder="Enter Password" name="psw" required>
@@ -239,8 +230,7 @@
                                         & Conditions</a>.</p>
 
                                 <div class="clearfix">
-                                    <button type="button" onclick="document.getElementById('form').style.display='none'"
-                                        class="cancelbtn">Cancel</button>
+                                    <button type="button" onclick="document.getElementById('form').style.display='none'" class="cancelbtn">Cancel</button>
                                     <button type="submit" class="signupbtn">Sign Up</button>
                                 </div>
                             </div>
@@ -252,30 +242,25 @@
             <!-- FOOTER SECTION -->
             <footer class="footer">
 
-                <!-- Footer nav start block -->
+                <!-- FOOTER-NAV START BLOCK -->
                 <ul class="footer__nav">
                     <li class="footer__list">
                         <a class="footer__link" href="about.html">About</a>
                     </li>
                     <li class="footer__list">
-                        <a class="footer__link" href="#"
-                            onclick="document.getElementById('contactForm').style.display='block'">Contact</a>
+                        <a class="footer__link" href="#" onclick="document.getElementById('contactForm').style.display='block'">Contact</a>
                     </li>
-
                     <div id="contactForm" class="modal">
-                        <span onclick="document.getElementById('contactForm').style.display='none'" class="close"
-                            title="Close Modal">×</span>
+                        <span onclick="document.getElementById('contactForm').style.display='none'" class="close" title="Close Modal">×</span>
                         <form class="modal-content animate" action="/action_page.php">
 
-                            <div class="container">
+                            <div class="containerBtn">
                                 <b>Contact</b>
                                 <input type="text" placeholder="Name" name="" required>
                                 <input type="text" placeholder="Email" name="" required>
                                 <input type="text" placeholder="Message" name="" required>
                                 <div class="clearfix">
-                                    <button type="button"
-                                        onclick="document.getElementById('contactForm').style.display='none'"
-                                        class="cancelbtn">Cancel</button>
+                                    <button type="button" onclick="document.getElementById('contactForm').style.display='none'" class="cancelbtn">Cancel</button>
                                     <button type="submit" class="signupbtn">Submit</button>
                                 </div>
                             </div>
@@ -289,10 +274,8 @@
                         <a class="footer__link" href="terms.html">Terms</a>
                     </li>
                 </ul>
-                
 
-                <!-- ----------------------------- Footer Nav end block -->
-                <!-- Social Icons/Links -->
+                <!-- SOCIAL ICONS -->
                 <section class="footer__social">
                     <a class="footer__link" href="https://twitter.com/">
                         <i class="fab fa-twitter"></i>
@@ -305,11 +288,12 @@
                     </a>
                 </section>
 
-                <!-- Copyright -->
+                <!-- COPY -->
                 <section class="footer__copyright">
                     <p>&copy; 2020 Bank of Toucan, Quebec & USA - All Rights reserved</p>
                 </section>
-            </footer> <!-- END FOOTER --->
+            </footer>
+            <!-- END FOOTER --->
         </section>
 
         <script src="javascript/script.js"></script>
