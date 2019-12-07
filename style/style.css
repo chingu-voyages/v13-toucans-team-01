@@ -378,7 +378,7 @@ button {
 
 /* FLOAT CANCEL AND SIGNUP BUTTONS AND ADD AN EQUAL WIDTH */
 
->>>>>>>c6f49f3524251667e425f8327c477ce473ac13da .cancelbtn,
+.cancelbtn,
 .signupbtn {
     float: center;
     width: 50%;
@@ -503,7 +503,7 @@ button {
     font-size: 1.2rem;
 }
 
-.about__button {
+.misson__button {
     font-weight: normal;
 }
 

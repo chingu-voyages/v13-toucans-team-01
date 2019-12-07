@@ -83,41 +83,132 @@ for instance: 600px / 16em = 37.7em
         width: 10rem;
     }
 
-    /* ABOUT FEATURES */
-    .about__text {
-        margin: auto;
-        margin-bottom: 4rem;
-        /* width: 90vw; */
+    /* ABOUT (RoKo) */
+    .about-container {
+        grid-template-columns: 1fr 1fr;
     }
 
-    /* FACULTY */
-    .faculty {
+    .about__bank {
         display: grid;
-        grid-template-columns: repeat(4, 1fr);
+        grid-template-columns: 1fr 1fr;
+        padding: 5rem 0;
+    }
+
+    .about__image {
+        align-self: center;
+        justify-self: center;
+        max-width: 600px;
+        width: 95%;
+    }
+
+    .about__info {
+        justify-items: center;
     }
 
     .about__header {
-        font-size: 3rem;
-        padding-bottom: 5rem;
+        font-size: 2.5rem;
         padding-top: 5rem;
+    }
+
+    .about__text {
+        justify-items: center;
+        line-height: 2.5rem;
+        margin: auto;
+        padding: 4rem 2rem;
+        padding-top: 1rem;
+        text-align: center;
+        width: 80%;
+    }
+
+    .about__button {
+        padding: 2rem;
+        padding-top: 4rem;
+    }
+
+    /* MISSION */
+    .mission {
+        padding: 4rem;
+    }
+
+    .mission__header {
+        color: hsla(43, 30%, 100%, 1);
+        font-size: 2rem;
+        line-height: 3rem;
+        padding: 0 3rem;
+        padding-bottom: 2rem;
+        text-align: center;
+    }
+
+    .mission__text {
+        color: hsla(41, 31%, 100%, 0.692);
+        font-size: 1.2rem;
+        letter-spacing: 2.5px;
+        line-height: 2.7rem;
+        padding: 0 2rem;
+    }
+
+    .about__button {
+        padding: 2rem;
+        padding-top: 4rem;
+        text-align: center;
+    }
+
+    .about__link {
+        background-color: hsla(43, 30%, 88%, 1);
+        border: 1px solid #efefef;
+        border-radius: 4px;
+        color: rgb(22, 21, 19);
+        display: inline-block;
+        font-size: 1.3rem;
+        font-weight: 900;
+        padding: 15px;
+        transition: 0.08s ease-in;
+        -o-transition: 0.08s ease-in;
+        -ms-transition: 0.08s ease-in;
+        -moz-transition: 0.08s ease-in;
+        -webkit-transition: 0.08s ease-in;
+        text-decoration: none;
+    }
+
+    /* FACULTY */
+    .faculty__header {
+        font-size: 2rem;
+        padding: 1rem;
+        padding-top: 12rem;
+    }
+
+    .faculty {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        padding: 1rem;
     }
 
     .faculty__person {
         align-items: center;
         display: flex;
         flex-direction: column;
-        margin-bottom: 0;
     }
-
-    .faculty__title {}
 
     .faculty__image {
-        max-width: 200px;
+        width: 220px;
+        max-width: 300px;
     }
 
-    .faculty__name {}
+    .faculty__name {
+        font-weight: 600;
+    }
 
-    .faculty__text {}
+    .faculty__title {
+        font-weight: 400;
+    }
+
+    .faculty__text {
+        text-align: center;
+    }
+
+    .faculty__social {
+        padding-bottom: 10rem;
+    }
 
     /* FOOTER */
     .footer {
@@ -147,8 +238,8 @@ for instance: 600px / 16em = 37.7em
 /* Big tablet to 1140px (widths smaller then the 1140px row) */
 @media only screen and (max-width: 1140px) {
     /* DESIGN FOR THE HOME PAGE*/
-    /* FEATURES */
 
+    /* FEATURES */
     .features {
         display: block;
         font-family: sans-serif;
@@ -218,7 +309,7 @@ for instance: 600px / 16em = 37.7em
         width: 10rem;
     }
 
-    /* ABOUT */
+    /* ABOUT (RoKo) */
     img {
         display: block;
         height: auto;
@@ -230,39 +321,70 @@ for instance: 600px / 16em = 37.7em
     }
 
     .about__bank {
-        align-items: center;
         display: grid;
         grid-template-columns: 1fr;
-        padding-bottom: 130px;
-    }
-
-    .about__header {}
-
-    .about__text {
-        margin: auto;
     }
 
     .about__image {
-        max-width: 500px;
+        max-width: 700px;
         justify-self: center;
+    }
+
+    .about__info {
+        justify-items: center;
+    }
+
+    .about__header {
+        font-size: 2.5rem;
+        padding-top: 5rem;
+    }
+
+    .about__text {
+        justify-items: center;
+        line-height: 2.5rem;
+        margin: auto;
+        padding: 4rem 2rem;
+        text-align: center;
+        width: 80%;
+    }
+
+    .about__button {
+        padding: 2rem;
+        padding-top: 4rem;
     }
 
     /* MISSION */
     .mission {
-        display: block;
-        margin: auto;
+        padding: 4rem;
     }
 
-    .mission__header {}
+    .mission__header {
+        color: hsla(43, 30%, 100%, 1);
+        font-size: 1.6rem;
+        line-height: 3rem;
+        padding: 0 3rem;
+        padding-bottom: 2rem;
+        text-align: center;
+    }
 
-    .mission__text {}
+    .mission__text {
+        color: hsla(41, 31%, 100%, 0.692);
+        padding: 0 2rem;
+        letter-spacing: 2px;
+        line-height: 2.2rem;
+    }
 
     /* FACULTY */
-    .faculty__header {}
+    .faculty__header {
+        font-size: 2rem;
+        padding: 1rem;
+        padding-top: 12rem;
+    }
 
     .faculty {
         display: grid;
-        grid-template-columns: repeat(4, 1fr);
+        grid-template-columns: repeat(2, 1fr);
+        padding: 5rem;
     }
 
     .faculty__person {
@@ -271,15 +393,26 @@ for instance: 600px / 16em = 37.7em
         flex-direction: column;
     }
 
-    .faculty__title {}
-
     .faculty__image {
-        max-width: 100px;
+        width: 220px;
+        max-width: 300px;
     }
 
-    .faculty__name {}
+    .faculty__name {
+        font-weight: 600;
+    }
 
-    .faculty__text {}
+    .faculty__title {
+        font-weight: 400;
+    }
+
+    .faculty__text {
+        text-align: center;
+    }
+
+    .faculty__social {
+        padding-bottom: 10rem;
+    }
 
     /* FOOTER */
     .footer {
@@ -367,6 +500,7 @@ for instance: 600px / 16em = 37.7em
     .features {
         display: block;
         font-family: sans-serif;
+        padding-top: 5rem;
         text-align: center;
     }
 
@@ -390,13 +524,17 @@ for instance: 600px / 16em = 37.7em
         grid-template-columns: 1fr;
     }
 
+    .features__card {
+        margin-bottom: 5rem;
+    }
+
     .features__h2 {
         font-size: 1.9rem;
-        padding: 2rem;
+        padding: 1.5rem;
     }
 
     .features__h3 {
-        font-size: 1.5rem;
+        font-size: 1.3rem;
         font-weight: normal;
         line-height: 40px;
         padding-bottom: 3rem;
@@ -434,6 +572,10 @@ for instance: 600px / 16em = 37.7em
         grid-template-columns: 1fr;
     }
 
+    .about__image {
+        width: 100%;
+    }
+
     .about__header {
         font-size: 2.5rem;
         padding-top: 4rem;
@@ -442,7 +584,6 @@ for instance: 600px / 16em = 37.7em
     .about__text {
         line-height: 2.2rem;
         padding: 4rem 2rem;
-
     }
 
     .about__button {
@@ -450,14 +591,13 @@ for instance: 600px / 16em = 37.7em
         padding-top: 4rem;
     }
 
-
     /* MISSION */
     .mission {
-        padding: 3rem;
+        padding: 3rem 0;
     }
 
     .mission__header {
-        color: hsla(43, 30%, 88%, 1);
+        color: hsla(41, 31%, 100%, 0.692);
         font-size: 1.6rem;
         line-height: 3rem;
         padding: 0 3rem;
@@ -466,7 +606,7 @@ for instance: 600px / 16em = 37.7em
     }
 
     .mission__text {
-        color: hsla(43, 30%, 88%, 1);
+        color: hsla(41, 31%, 100%, 0.692);
         padding: 0 2rem;
         line-height: 2.2rem;
     }
@@ -475,21 +615,19 @@ for instance: 600px / 16em = 37.7em
     .faculty {
         display: grid;
         grid-template-columns: 1fr;
-        padding-bottom: 4rem;
+        padding-bottom: 1.5rem;
     }
 
     .faculty__header {
         color: #222;
-        font-size: 1.8rem;
+        font-size: 2.3rem;
         font-weight: 600;
-        padding-bottom: 7rem;
-        padding-top: 5rem;
+        padding-top: 10rem;
     }
 
     .faculty__person {
         display: flex;
         flex-direction: column;
-        margin-bottom: 5rem;
     }
 
     .faculty__image {
@@ -507,7 +645,6 @@ for instance: 600px / 16em = 37.7em
     .faculty__title {
         font-weight: 400;
     }
-
 
     .faculty__text {
         text-align: center;
@@ -531,17 +668,19 @@ for instance: 600px / 16em = 37.7em
         grid-area: l;
         grid-template-columns: 1fr;
         height: 10rem;
-        margin: 5rem 0;
         margin-bottom: 4rem;
+        margin-top: 4rem;
     }
 
     .footer__list {
         align-items: space-between;
         justify-content: space-between;
+        margin-top: 1.5rem
     }
 
     .footer__social {
         grid-area: s;
+        margin-top: 4rem;
         justify-content: center;
     }
 
