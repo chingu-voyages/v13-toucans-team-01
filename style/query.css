@@ -330,6 +330,7 @@ for instance: 600px / 16em = 37.7em
 
     .hero_box {
         position: relative;
+        flex-direction: column;
         left: 10px;
         top: 150px;
         width: 100%;
@@ -647,30 +648,82 @@ for instance: 600px / 16em = 37.7em
 @media only screen and (max-width: 480px) {
 
     /* DESIGN FOR THE HOME PAGE*/
-    /* HEADER*/
+    /* Header*/
+    #header {
+        display: block;
+        text-align: center;
+    }
+
+    .top_header {
+        display: block;
+        width: 100%;
+        margin: auto;
+        padding-top: 1em;
+    }
+
     .logo {
         display: block;
-        margin-left: 13%;
         text-align: center;
         overflow: hidden;
+        position: relative;
+        padding-top: .3em;
+    }
+
+    .logo_image {
+        width: 3em;
+        margin: auto;
+
     }
 
     .logo p {
         margin: 0;
     }
 
+    .nav {
+        display: block;
+    }
+
+    .nav ul {
+        display: block;
+        text-decoration: none;
+        list-style: none;
+        text-align: center;
+    }
+
+    .nav ul li {
+        text-decoration: none;
+        display: block;
+        padding: .3em;
+        cursor: pointer;
+    }
+
+    .div_hamburger {
+        text-align: center;
+        margin: 30px auto;
+    }
+
+    .div_hamburgerBars {
+        position: relative;
+        left: 50%;
+    }
+
+    .span_hamburgerBar {
+        margin: auto;
+    }
+
     .hero_box {
         position: relative;
+        flex-direction: column;
         left: 1px;
-        top: 150px;
+        top: 50px;
         width: 100%;
         text-align: center;
     }
 
     .hero_box .hero_h1 {
-        font-size: 35px;
+        font-size: 30px;
         padding: 12px;
-        margin-bottom: 40px;
+        margin-bottom: 20px;
         color: #fff;
         text-align: center;
     }
@@ -683,12 +736,11 @@ for instance: 600px / 16em = 37.7em
 
     .hero_box a {
         text-decoration: none;
-        ;
         font-size: 20px;
         cursor: pointer;
         background: green;
         padding: 12px;
-        margin-top: 30px;
+        margin-top: 20px;
         border-radius: 10px;
         color: #fff;
     }
