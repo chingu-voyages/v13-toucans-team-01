@@ -445,56 +445,101 @@ button {
 }
 
 /* ABOUT FEATURES */
+
+
+/* ABOUT(RoKo) FEATURES */
 .about {
     display: grid;
 }
 
-/* ABOUT FEATURES COTAINERS */
-.about__bank,
-.mission,
-.faculty {
-    text-align: center;
-    padding-bottom: 9rem;
-}
-
-/* ABOUT FEATURES H2 */
-.mission__header,
-.faculty__title,
-.faculty__header {
-    font-size: 2.3rem;
-    font-weight: bold;
-    letter-spacing: 6px;
-    padding-bottom: 3rem;
-}
-
-.faculty__header {
+.about__header {
     text-align: center;
 }
 
-/* ABOUT FEATURES H3 */
-.faculty__name {
-    font-size: 1.5rem;
-    font-weight: normal;
-    letter-spacing: 2px;
-    padding: 1rem 0;
-}
-
-/* ABOUT FEATURES P */
-.about__text,
-.mission__text,
-.faculty__text {
+.about__text {
     font-size: 1.2rem;
+}
+
+.about__button {
+    font-weight: normal;
+}
+
+.about__link {
+    background-color: hsla(43, 30%, 88%, 1);
+    border: 1px solid #efefef;
+    border-radius: 4px;
+    color: rgb(22, 21, 19);
+    font-size: 1.3rem;
+    font-weight: 900;
+    padding: 15px;
+    transition: 0.08s ease-in;
+    -o-transition: 0.08s ease-in;
+    -ms-transition: 0.08s ease-in;
+    -moz-transition: 0.08s ease-in;
+    -webkit-transition: 0.08s ease-in;
+    text-decoration: none;
+}
+
+.about__link:hover {
+    background-color: hsla(43, 8%, 8%, 1);
+    color: hsla(43, 30%, 77%, 1);
+}
+
+/* MISSION */
+.mission {
+    background-color: rgb(45, 39, 24);
+}
+
+.mission__header {
+    letter-spacing: 5px;
+    word-spacing: 2px;
+}
+
+.mission__text {
+    color: #efefef;
+}
+
+/* FACULTY */
+.faculty__header {
+    color: rgb(45, 39, 24);
+    letter-spacing: 5px;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    word-spacing: 5px;
+}
+
+.faculty__name {
     font-weight: normal;
     letter-spacing: 2px;
-    line-height: 35px;
     padding: 1rem;
+    font-weight: 0;
+    margin-bottom: 0;
+}
+
+.faculty__title {
+    letter-spacing: 2px;
+}
+
+.faculty__social {
+    margin-top: 1rem;
+}
+
+.faculty__link {
+    margin: 0;
+    padding: 0;
+}
+
+.faculty .fab {
+    margin: 0.2rem;
+    padding: 0;
 }
 
 /* FOOTER */
 .footer {
-    background-color: #191901;
+    background-color: rgb(45, 39, 24);
     border-top: 1px solid #000;
-    color: #fffbea;
+    color: #efefef;
     display: grid;
     font-family: sans-serif;
     width: 100%;
@@ -514,7 +559,7 @@ button {
 }
 
 .footer__link {
-    color: #fffbea;
+    color: #efefef;
     font-weight: normal;
     text-decoration: none;
 }
@@ -532,15 +577,15 @@ button {
 }
 
 .fa-twitter {
-    color: #6ac2fc;
+    color: hsla(204, 100%, 50%, 1);
 }
 
 .fa-facebook {
-    color: rgb(140, 175, 250);
+    color: hsla(227, 100%, 62%, 1);
 }
 
 .fa-linkedin-in {
-    color: rgb(96, 202, 255);
+    color: hsla(200, 100%, 42%, 1);
 }
 
 /********** ABOUT DESIGN **********/
