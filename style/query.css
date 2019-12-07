@@ -87,7 +87,7 @@ for instance: 600px / 16em = 37.7em
     .about__text {
         margin: auto;
         margin-bottom: 4rem;
-        width: 90vw;
+        /* width: 90vw; */
     }
 
     /* FACULTY */
@@ -109,27 +109,15 @@ for instance: 600px / 16em = 37.7em
         margin-bottom: 0;
     }
 
-    .faculty__title {
-        font-size: 1rem;
-        padding-bottom: 0.8rem;
-        padding-top: 0;
-    }
+    .faculty__title {}
 
     .faculty__image {
         max-width: 200px;
     }
 
-    .faculty__name {
-        font-size: 1.1rem;
-        padding-bottom: 1.3rem;
-    }
+    .faculty__name {}
 
-    .faculty__text {
-        font-size: 0.85rem;
-        line-height: 27px;
-        padding: 0;
-        width: 85%;
-    }
+    .faculty__text {}
 
     /* FOOTER */
     .footer {
@@ -239,24 +227,19 @@ for instance: 600px / 16em = 37.7em
 
     .about-container {
         grid-template-columns: 1fr;
-        padding: 0 1rem;
     }
 
     .about__bank {
         align-items: center;
         display: grid;
         grid-template-columns: 1fr;
+        padding-bottom: 130px;
     }
 
-    .about__header {
-        font-size: 2.5rem;
-        padding: 4rem 0;
-    }
+    .about__header {}
 
     .about__text {
         margin: auto;
-        margin-bottom: 3rem;
-        width: 85vw;
     }
 
     .about__image {
@@ -266,13 +249,17 @@ for instance: 600px / 16em = 37.7em
 
     /* MISSION */
     .mission {
-        /* background-color: rgb(182, 182, 182); */
         display: block;
         margin: auto;
-        width: 90vw;
     }
 
+    .mission__header {}
+
+    .mission__text {}
+
     /* FACULTY */
+    .faculty__header {}
+
     .faculty {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
@@ -282,31 +269,17 @@ for instance: 600px / 16em = 37.7em
         align-items: center;
         display: flex;
         flex-direction: column;
-        margin-bottom: 0;
     }
 
-    .faculty__title {
-        font-size: 1rem;
-        padding-bottom: 0.8rem;
-        padding-top: 0;
-    }
+    .faculty__title {}
 
     .faculty__image {
         max-width: 100px;
     }
 
-    .faculty__name {
-        font-size: 1.1rem;
-        /* padding: 0; */
-        padding-bottom: 1.3rem;
-    }
+    .faculty__name {}
 
-    .faculty__text {
-        font-size: 0.85rem;
-        line-height: 27px;
-        padding: 0;
-        width: 85%;
-    }
+    .faculty__text {}
 
     /* FOOTER */
     .footer {
@@ -454,7 +427,6 @@ for instance: 600px / 16em = 37.7em
 
     .about-container {
         grid-template-columns: 1fr;
-        padding: 0 1rem;
     }
 
     .about__bank {
@@ -464,11 +436,39 @@ for instance: 600px / 16em = 37.7em
 
     .about__header {
         font-size: 2.5rem;
-        padding: 4rem 0;
+        padding-top: 4rem;
     }
 
     .about__text {
-        margin-bottom: 4rem;
+        line-height: 2.2rem;
+        padding: 4rem 2rem;
+
+    }
+
+    .about__button {
+        padding: 2rem;
+        padding-top: 4rem;
+    }
+
+
+    /* MISSION */
+    .mission {
+        padding: 3rem;
+    }
+
+    .mission__header {
+        color: hsla(43, 30%, 88%, 1);
+        font-size: 1.6rem;
+        line-height: 3rem;
+        padding: 0 3rem;
+        padding-bottom: 2rem;
+        text-align: center;
+    }
+
+    .mission__text {
+        color: hsla(43, 30%, 88%, 1);
+        padding: 0 2rem;
+        line-height: 2.2rem;
     }
 
     /* FACULTY */
@@ -478,10 +478,13 @@ for instance: 600px / 16em = 37.7em
         padding-bottom: 4rem;
     }
 
-    /* .faculty__header {
-    padding-bottom: 3rem;
-    font-size: 2.3rem;
-} */
+    .faculty__header {
+        color: #222;
+        font-size: 1.8rem;
+        font-weight: 600;
+        padding-bottom: 7rem;
+        padding-top: 5rem;
+    }
 
     .faculty__person {
         display: flex;
@@ -489,18 +492,26 @@ for instance: 600px / 16em = 37.7em
         margin-bottom: 5rem;
     }
 
-    .faculty__title {
-        padding: 1.2rem;
-    }
-
     .faculty__image {
-        max-width: 200px;
+        max-width: 250px;
         align-self: center;
     }
 
-    /* .faculty__name {} */
+    .faculty__name {
+        color: #222;
+        font-weight: 900;
+        padding-bottom: 0.5rem;
+        padding-top: 1.5rem;
+    }
 
-    .faculty__text {}
+    .faculty__title {
+        font-weight: 400;
+    }
+
+
+    .faculty__text {
+        text-align: center;
+    }
 
     /* FOOTER */
     .footer {
