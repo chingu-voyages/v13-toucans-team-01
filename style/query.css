@@ -96,45 +96,40 @@ for instance: 600px / 16em = 37.7em
 
     .about__image {
         align-self: center;
-        justify-self: center;
         max-width: 600px;
         width: 95%;
     }
 
     .about__info {
-        justify-items: center;
+        width: 60vw;
     }
 
     .about__header {
         font-size: 2.5rem;
-        padding-top: 5rem;
+        margin: auto;
+        padding-bottom: 3rem;
+        padding-left: 3rem;
+        text-align: left;
+        width: 60vw;
     }
 
     .about__text {
-        justify-items: center;
         line-height: 2.5rem;
         margin: auto;
-        padding: 4rem 2rem;
         padding-top: 1rem;
-        text-align: center;
-        width: 80%;
-    }
-
-    .about__button {
-        padding: 2rem;
-        padding-top: 4rem;
+        text-align: left;
+        width: 55vw;
     }
 
     /* MISSION */
     .mission {
-        padding: 4rem;
+        padding: 7rem 0;
     }
 
     .mission__header {
         color: hsla(43, 30%, 100%, 1);
         font-size: 2rem;
         line-height: 3rem;
-        padding: 0 3rem;
         padding-bottom: 2rem;
         text-align: center;
     }
@@ -144,11 +139,11 @@ for instance: 600px / 16em = 37.7em
         font-size: 1.2rem;
         letter-spacing: 2.5px;
         line-height: 2.7rem;
-        padding: 0 2rem;
+        margin: auto;
+        width: 90vw;
     }
 
     .about__button {
-        padding: 2rem;
         padding-top: 4rem;
         text-align: center;
     }
@@ -173,14 +168,13 @@ for instance: 600px / 16em = 37.7em
     /* FACULTY */
     .faculty__header {
         font-size: 2rem;
-        padding: 1rem;
-        padding-top: 12rem;
+        padding-bottom: 5rem;
+        padding-top: 9rem;
     }
 
     .faculty {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
-        padding: 1rem;
     }
 
     .faculty__person {
@@ -323,6 +317,7 @@ for instance: 600px / 16em = 37.7em
     .about__bank {
         display: grid;
         grid-template-columns: 1fr;
+        padding: 7rem 0;
     }
 
     .about__image {
@@ -330,61 +325,63 @@ for instance: 600px / 16em = 37.7em
         justify-self: center;
     }
 
-    .about__info {
-        justify-items: center;
-    }
+    .about__info {}
 
     .about__header {
         font-size: 2.5rem;
-        padding-top: 5rem;
+        margin: auto;
+        width: 90vw;
     }
 
     .about__text {
-        justify-items: center;
         line-height: 2.5rem;
         margin: auto;
-        padding: 4rem 2rem;
-        text-align: center;
-        width: 80%;
+        text-align: left;
+        padding-bottom: 3rem;
+        padding-top: 3rem;
+        width: 90vw;
     }
 
     .about__button {
-        padding: 2rem;
         padding-top: 4rem;
+        width: 90vw;
+        margin: auto;
     }
 
     /* MISSION */
     .mission {
-        padding: 4rem;
+        padding: 7rem 0;
     }
 
     .mission__header {
         color: hsla(43, 30%, 100%, 1);
         font-size: 1.6rem;
         line-height: 3rem;
-        padding: 0 3rem;
+        margin: auto;
         padding-bottom: 2rem;
-        text-align: center;
+        text-align: left;
+        width: 90vw;
     }
 
     .mission__text {
         color: hsla(41, 31%, 100%, 0.692);
-        padding: 0 2rem;
         letter-spacing: 2px;
         line-height: 2.2rem;
+        margin: auto;
+        width: 90vw;
     }
 
     /* FACULTY */
     .faculty__header {
         font-size: 2rem;
-        padding: 1rem;
-        padding-top: 12rem;
+        padding-bottom: 5rem;
+        padding-top: 7rem;
     }
 
     .faculty {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        padding: 5rem;
+        padding-bottom: 7rem;
     }
 
     .faculty__person {
@@ -395,7 +392,7 @@ for instance: 600px / 16em = 37.7em
 
     .faculty__image {
         width: 220px;
-        max-width: 300px;
+        max-width: 320px;
     }
 
     .faculty__name {
@@ -411,7 +408,7 @@ for instance: 600px / 16em = 37.7em
     }
 
     .faculty__social {
-        padding-bottom: 10rem;
+        padding-bottom: 7rem;
     }
 
     /* FOOTER */
@@ -472,7 +469,8 @@ for instance: 600px / 16em = 37.7em
 
     .hero_box .hero_h1 {
         font-size: 35px;
-        padding: 12px;
+        /* padding: 12px; */
+        /*  ^^^^^^^^This was affecting the responsiveness.  It was keeping the screen-width from shrinking */
         margin-bottom: 40px;
         color: #fff;
         text-align: center;
@@ -570,6 +568,8 @@ for instance: 600px / 16em = 37.7em
     .about__bank {
         display: grid;
         grid-template-columns: 1fr;
+        padding: 7rem 0;
+        padding-bottom: 0;
     }
 
     .about__image {
@@ -578,37 +578,44 @@ for instance: 600px / 16em = 37.7em
 
     .about__header {
         font-size: 2.5rem;
-        padding-top: 4rem;
+        margin: auto;
+        text-align: left;
+        width: 90vw;
     }
 
     .about__text {
         line-height: 2.2rem;
-        padding: 4rem 2rem;
+        padding: 4rem 0;
+        text-align: left;
+        width: 90vw;
     }
 
     .about__button {
-        padding: 2rem;
         padding-top: 4rem;
+        width: 90vw;
+        margin: auto;
     }
 
     /* MISSION */
     .mission {
-        padding: 3rem 0;
+        padding: 7rem 0;
     }
 
     .mission__header {
         color: hsla(41, 31%, 100%, 0.692);
         font-size: 1.6rem;
         line-height: 3rem;
-        padding: 0 3rem;
+        margin: auto;
         padding-bottom: 2rem;
-        text-align: center;
+        text-align: left;
+        width: 90vw;
     }
 
     .mission__text {
         color: hsla(41, 31%, 100%, 0.692);
-        padding: 0 2rem;
         line-height: 2.2rem;
+        margin: auto;
+        width: 90vw;
     }
 
     /* FACULTY */
@@ -622,7 +629,7 @@ for instance: 600px / 16em = 37.7em
         color: #222;
         font-size: 2.3rem;
         font-weight: 600;
-        padding-top: 10rem;
+        padding-top: 7rem;
     }
 
     .faculty__person {
@@ -648,6 +655,10 @@ for instance: 600px / 16em = 37.7em
 
     .faculty__text {
         text-align: center;
+    }
+
+    .faculty__social {
+        padding-bottom: 7rem;
     }
 
     /* FOOTER */
