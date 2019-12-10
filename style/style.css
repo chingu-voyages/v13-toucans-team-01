@@ -18,8 +18,8 @@ body {
 /* DESGIN FOR HEADER SECTION */
 
 header {
-    background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(/images/hero_img.jpg);
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(/images/hero_img.jpg);
+    background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../images/hero_img.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../images/hero_img.jpg);
     overflow: hidden;
     background-position: center;
     background-size: cover;
@@ -454,14 +454,9 @@ button {
 }
 
 /* FEATURES */
-
 .features__container {
     width: 100%;
-}
-
-/* FEATURES */
-.features__container {
-    width: 100%;
+    padding: 7rem 0;
 }
 
 .features {
@@ -487,20 +482,29 @@ button {
     width: 100%;
 }
 
-/* ABOUT FEATURES */
-
-
 /* ABOUT(RoKo) FEATURES */
+.about__container {
+    padding: 7rem 0;
+}
+
 .about {
     display: grid;
+    padding: 7rem 0;
+    padding-bottom: 0;
+}
+
+.about__image {
+    padding-top: 12rem;
 }
 
 .about__header {
-    /* text-align: center; */
+    /* padding-bottom: 3rem; */
+    width: 75vw;
 }
 
 .about__text {
     font-size: 1.2rem;
+    line-height: 3.1rem;
 }
 
 .misson__button {
@@ -531,15 +535,25 @@ button {
 /* MISSION */
 .mission {
     background-color: rgb(45, 39, 24);
+    padding: 12rem 0;
 }
 
 .mission__header {
     letter-spacing: 5px;
+    line-height: 3.5rem;
+    word-spacing: 2px;
+    padding-bottom: 5rem;
     word-spacing: 2px;
 }
 
 .mission__text {
     color: #efefef;
+    font-size: 1.2rem;
+    line-height: 3.1rem;
+    /* letter-spacing: 0.3px; */
+    /* word-spacing: 2px; */
+    text-align: left;
+    width: 80vw;
 }
 
 /* FACULTY */
@@ -547,7 +561,8 @@ button {
     color: rgb(45, 39, 24);
     letter-spacing: 5px;
     margin: 0;
-    padding: 0;
+    padding-top: 12rem;
+    padding-bottom: 5rem;
     text-align: center;
     word-spacing: 5px;
 }
@@ -780,8 +795,8 @@ button {
 /********** ABOUT DESIGN **********/
 
 #about {
-    background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(/images/about_img.jpg);
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(/images/about_img.jpg);
+    background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../images/about_img.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../images/about_img.jpg);
     overflow: hidden;
     background-position: center;
     background-size: cover;
