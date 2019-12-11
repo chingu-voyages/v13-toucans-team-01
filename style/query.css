@@ -897,9 +897,17 @@ for instance: 600px / 16em = 37.7em
 
     /* DESIGN FOR THE SERVICES PAGE*/
     /* SERVICES TOP HEADER */
+
+    #services {
+        display: block;
+        text-align: center;
+    }
+
     .services_header {
+        display: block;
         width: 100%;
-        overflow: hidden;
+        margin: auto;
+        padding-top: 1em;
     }
 
     .services_top_header {
@@ -907,13 +915,9 @@ for instance: 600px / 16em = 37.7em
         width: 100%;
     }
 
-    .services_logo {
-        text-align: center;
-    }
-
     .services_logo_image {
         width: 50px;
-        position: relative;
+        margin: auto;
     }
 
     .services_menu {
@@ -921,9 +925,15 @@ for instance: 600px / 16em = 37.7em
         float: none;
     }
 
+    .services_menu ul li {
+        display: block;
+        flex: none;
+        overflow: hidden;
+    }
+
     .services_nav {
         position: relative;
-        margin-top: 15px;
+        margin-top: 5px;
     }
 
     .services_nav ul li a {
