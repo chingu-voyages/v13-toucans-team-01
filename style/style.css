@@ -675,8 +675,8 @@ button {
 
 /********** SERIVCES DESIGN **********/
 .services_header {
-    width: 1100px;
-    margin: auto;
+    /* width: 1100px;
+    margin: auto; */
 }
 
 .services_top_header {
@@ -823,8 +823,8 @@ button {
 /********** SERIVCES DESIGN **********/
 
 .services_header {
-    width: 1100px;
-    margin: auto;
+    /* width: 1100px;
+margin: auto; */
 }
 
 .services_top_header {
