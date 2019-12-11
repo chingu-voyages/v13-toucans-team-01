@@ -346,8 +346,8 @@ b {
 
 /* ADD FULL-WIDTH INPUT FIELDS */
 
-input[type=text],
-input[type=password] {
+input,
+textarea {
     width: 100%;
     padding: 12px 20px;
     margin: 8px 0;
@@ -355,6 +355,8 @@ input[type=password] {
     border: 2px solid #ccc;
     border-radius: 30px;
     box-sizing: border-box;
+    font-family: 'Comfortaa';
+    font-size: 12px;
 }
 
 /* SET A STYLE FOR ALL BUTTONS */
