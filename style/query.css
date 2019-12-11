@@ -616,9 +616,6 @@ line-height: 2.2rem; */
     }
 
     /* MISSION */
-    .mission {
-        /* padding: 7rem 0; */
-    }
 
     .mission__header {
         color: hsla(41, 31%, 100%, 0.692);
@@ -671,10 +668,6 @@ line-height: 2.2rem; */
 
     .faculty__title {
         font-weight: 400;
-    }
-
-    .faculty__text {
-        /* text-align: center; */
     }
 
     .faculty__social {
@@ -917,9 +910,17 @@ line-height: 2.2rem; */
 
     /* DESIGN FOR THE SERVICES PAGE*/
     /* SERVICES TOP HEADER */
+
+    #services {
+        display: block;
+        text-align: center;
+    }
+
     .services_header {
+        display: block;
         width: 100%;
-        overflow: hidden;
+        margin: auto;
+        padding-top: 1em;
     }
 
     .services_top_header {
@@ -927,13 +928,9 @@ line-height: 2.2rem; */
         width: 100%;
     }
 
-    .services_logo {
-        text-align: center;
-    }
-
     .services_logo_image {
         width: 50px;
-        position: relative;
+        margin: auto;
     }
 
     .services_menu {
@@ -941,9 +938,15 @@ line-height: 2.2rem; */
         float: none;
     }
 
+    .services_menu ul li {
+        display: block;
+        flex: none;
+        overflow: hidden;
+    }
+
     .services_nav {
         position: relative;
-        margin-top: 15px;
+        margin-top: 5px;
     }
 
     .services_nav ul li a {
