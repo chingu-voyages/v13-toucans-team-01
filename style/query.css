@@ -912,9 +912,26 @@ line-height: 2.2rem; */
         color: #fff;
     }
 
+    /* ABOUT HERO */
+    #about {
+        width: 100%;
+        display: flex;
+        text-align: center;
+    }
+
+    .about_hero_content {
+        position: absolute;
+        top: 55%;
+        left: 50%;
+        transform: translate(-50% -50%);   
+    }
+    
+    .about_hero_content h3 {
+        text-align: center;
+    }
+
     /* DESIGN FOR THE SERVICES PAGE*/
     /* SERVICES TOP HEADER */
-
     #services {
         display: block;
         text-align: center;
