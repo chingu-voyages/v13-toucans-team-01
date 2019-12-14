@@ -14,7 +14,6 @@ for instance: 600px / 16em = 37.7em
 @media only screen and (min-width: 1141px) {
 
     /* DESIGN FOR THE HOME PAGE*/
-
     /* FEATURES */
     .features__container {
         width: 100%;
@@ -126,7 +125,6 @@ for instance: 600px / 16em = 37.7em
     }
 
     .about__text {
-        /* line-height: 2.5rem; */
         margin: auto;
         padding-top: 1rem;
         text-align: left;
@@ -134,25 +132,16 @@ for instance: 600px / 16em = 37.7em
     }
 
     /* MISSION */
-    .mission {
-        /* padding: 7rem 0; */
-    }
-
     .mission__header {
         color: hsla(43, 30%, 100%, 1);
         font-size: 2rem;
-        /* line-height: 3rem; */
-        /* padding-bottom: 2rem; */
         text-align: center;
     }
 
     .mission__text {
         color: hsla(41, 31%, 100%, 0.692);
-        /* font-size: 1.2rem; */
         letter-spacing: 2.5px;
-        /* line-height: 2.7rem; */
         margin: auto;
-        /* width: 90vw; */
     }
 
     .about__button {
@@ -180,8 +169,6 @@ for instance: 600px / 16em = 37.7em
     /* FACULTY */
     .faculty__header {
         font-size: 2rem;
-        /* padding-bottom: 5rem; */
-        /* padding-top: 9rem; */
     }
 
     .faculty {
@@ -338,8 +325,6 @@ for instance: 600px / 16em = 37.7em
         justify-self: center;
     }
 
-    .about__info {}
-
     .about__header {
         font-size: 2.5rem;
         margin: auto;
@@ -347,7 +332,6 @@ for instance: 600px / 16em = 37.7em
     }
 
     .about__text {
-        /* line-height: 2.5rem; */
         margin: auto;
         text-align: left;
         padding-bottom: 3rem;
@@ -362,33 +346,23 @@ for instance: 600px / 16em = 37.7em
     }
 
     /* MISSION */
-    .mission {
-        /* padding: 7rem 0; */
-    }
 
     .mission__header {
         color: hsla(43, 30%, 100%, 1);
         font-size: 1.6rem;
-        /* line-height: 3rem; */
         margin: auto;
-        /* padding-bottom: 2rem; */
         text-align: left;
         width: 80vw;
     }
 
     .mission__text {
         color: hsla(41, 31%, 100%, 0.692);
-        /* letter-spacing: 2px;
-line-height: 2.2rem; */
         margin: auto;
-        /* width: 80vw; */
     }
 
     /* FACULTY */
     .faculty__header {
         font-size: 2rem;
-        /* padding-bottom: 5rem; */
-        /* padding-top: 7rem; */
     }
 
     .faculty {
@@ -578,8 +552,6 @@ line-height: 2.2rem; */
         grid-template-columns: 1fr;
     }
 
-    .about {}
-
     .about__bank {
         display: grid;
         grid-template-columns: 1fr;
@@ -601,7 +573,6 @@ line-height: 2.2rem; */
     }
 
     .about__text {
-        /* line-height: 2.2rem; */
         padding: 4rem 0;
         text-align: left;
         margin: auto;
@@ -616,22 +587,17 @@ line-height: 2.2rem; */
     }
 
     /* MISSION */
-
     .mission__header {
         color: hsla(41, 31%, 100%, 0.692);
         font-size: 1.6rem;
-        /* line-height: 3rem; */
         margin: auto;
-        /* padding-bottom: 2rem; */
         text-align: left;
         width: 75vw;
     }
 
     .mission__text {
         color: hsla(41, 31%, 100%, 0.692);
-        /* line-height: 2.2rem; */
         margin: auto;
-        /* width: 90vw; */
         font-size: 1rem;
     }
 
@@ -639,14 +605,12 @@ line-height: 2.2rem; */
     .faculty {
         display: grid;
         grid-template-columns: 1fr;
-        /* padding-bottom: 1.5rem; */
     }
 
     .faculty__header {
         color: #222;
         font-size: 2.3rem;
         font-weight: 600;
-        /* padding-top: 7rem; */
     }
 
     .faculty__person {
@@ -839,7 +803,6 @@ line-height: 2.2rem; */
     .logo_image {
         width: 3em;
         margin: auto;
-
     }
 
     .logo p {
@@ -910,6 +873,23 @@ line-height: 2.2rem; */
         margin-top: 20px;
         border-radius: 10px;
         color: #fff;
+    }
+
+    /* HOW IT WORKS*/
+    .how_to .how_lists {
+        font-size: larger;
+        font-weight: 700;
+        grid: none;
+    }
+
+/* HOW IT WORKS*/
+    .action {
+        text-align: center;
+        width: 100%;
+        float: none;
+        height: auto;
+        padding: 2em;
+        overflow: hidden;
     }
 
     /* ABOUT HERO */
