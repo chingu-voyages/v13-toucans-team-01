@@ -134,9 +134,6 @@ for instance: 600px / 16em = 37.7em
     }
 
     /* MISSION */
-    .mission {
-        /* padding: 7rem 0; */
-    }
 
     .mission__header {
         color: hsla(43, 30%, 100%, 1);
@@ -246,6 +243,10 @@ for instance: 600px / 16em = 37.7em
     /* DESIGN FOR THE HOME PAGE*/
 
     /* FEATURES */
+    .features__container {
+        padding-top: 5rem;
+    }
+
     .features {
         display: block;
         font-family: sans-serif;
@@ -264,7 +265,7 @@ for instance: 600px / 16em = 37.7em
         font-size: 1.4rem;
         font-weight: normal;
         line-height: 2.2rem;
-        margin-bottom: 5rem;
+        margin-bottom: 1rem;
     }
 
     .features__cards {
@@ -274,7 +275,7 @@ for instance: 600px / 16em = 37.7em
 
     .features__card {
         border: 1px solid rgba(0, 128, 0, 0.151);
-        box-shadow: 2px 2px 5px 2px rgba(211, 211, 211, 0.274);
+        box-shadow: 2px 2px 5px 2px rgba(211, 211, 211, 0.589);
         margin-top: 3rem;
         padding: .5rem;
         padding-bottom: 3.5rem;
@@ -316,11 +317,11 @@ for instance: 600px / 16em = 37.7em
     }
 
     /* ABOUT (RoKo) */
-    img {
+    /* img {
         display: block;
         height: auto;
         width: 100%;
-    }
+    } */
 
     .about-container {
         grid-template-columns: 1fr;
@@ -337,8 +338,6 @@ for instance: 600px / 16em = 37.7em
         max-width: 700px;
         justify-self: center;
     }
-
-    .about__info {}
 
     .about__header {
         font-size: 2.5rem;
@@ -362,33 +361,22 @@ for instance: 600px / 16em = 37.7em
     }
 
     /* MISSION */
-    .mission {
-        /* padding: 7rem 0; */
-    }
-
     .mission__header {
         color: hsla(43, 30%, 100%, 1);
         font-size: 1.6rem;
-        /* line-height: 3rem; */
         margin: auto;
-        /* padding-bottom: 2rem; */
         text-align: left;
         width: 80vw;
     }
 
     .mission__text {
         color: hsla(41, 31%, 100%, 0.692);
-        /* letter-spacing: 2px;
-line-height: 2.2rem; */
         margin: auto;
-        /* width: 80vw; */
     }
 
     /* FACULTY */
     .faculty__header {
         font-size: 2rem;
-        /* padding-bottom: 5rem; */
-        /* padding-top: 7rem; */
     }
 
     .faculty {
@@ -457,19 +445,10 @@ line-height: 2.2rem; */
 
 
 /* Small phones to small tablets: from 481px to 670px */
-@media only screen and (max-width: 670px) {
+@media only screen and (max-width: 780px) {
 
     /* DESIGN FOR THE HOME PAGE*/
     /* HEADER*/
-    /* .logo {
-        display: flex;
-        margin-left: 40px;
-        overflow: hidden;
-    }
-
-    .logo p {
-        margin-top: 20px;
-    } */
 
     .hero_box {
         position: relative;
@@ -482,8 +461,6 @@ line-height: 2.2rem; */
 
     .hero_box .hero_h1 {
         font-size: 35px;
-        /* padding: 12px; */
-        /*  ^^^^^^^^This was affecting the responsiveness.  It was keeping the screen-width from shrinking */
         margin-bottom: 40px;
         color: #fff;
         text-align: center;
@@ -533,10 +510,12 @@ line-height: 2.2rem; */
     .features__cards {
         display: grid;
         grid-template-columns: 1fr;
+        justify-items: center;
     }
 
     .features__card {
         margin-bottom: 5rem;
+        max-width: 450px;
     }
 
     .features__h2 {
@@ -568,17 +547,11 @@ line-height: 2.2rem; */
     }
 
     /* ABOUT */
-    img {
-        display: block;
-        height: auto;
-        width: 100%;
-    }
+
 
     .about-container {
         grid-template-columns: 1fr;
     }
-
-    .about {}
 
     .about__bank {
         display: grid;
@@ -601,7 +574,6 @@ line-height: 2.2rem; */
     }
 
     .about__text {
-        /* line-height: 2.2rem; */
         padding: 4rem 0;
         text-align: left;
         margin: auto;
@@ -616,25 +588,17 @@ line-height: 2.2rem; */
     }
 
     /* MISSION */
-    .mission {
-        /* padding: 7rem 0; */
-    }
-
     .mission__header {
         color: hsla(41, 31%, 100%, 0.692);
         font-size: 1.6rem;
-        /* line-height: 3rem; */
         margin: auto;
-        /* padding-bottom: 2rem; */
         text-align: left;
         width: 75vw;
     }
 
     .mission__text {
         color: hsla(41, 31%, 100%, 0.692);
-        /* line-height: 2.2rem; */
         margin: auto;
-        /* width: 90vw; */
         font-size: 1rem;
     }
 
@@ -642,14 +606,12 @@ line-height: 2.2rem; */
     .faculty {
         display: grid;
         grid-template-columns: 1fr;
-        /* padding-bottom: 1.5rem; */
     }
 
     .faculty__header {
         color: #222;
         font-size: 2.3rem;
         font-weight: 600;
-        /* padding-top: 7rem; */
     }
 
     .faculty__person {
@@ -671,10 +633,6 @@ line-height: 2.2rem; */
 
     .faculty__title {
         font-weight: 400;
-    }
-
-    .faculty__text {
-        /* text-align: center; */
     }
 
     .faculty__social {
@@ -720,45 +678,6 @@ line-height: 2.2rem; */
         padding-top: 2rem;
         text-align: center;
     }
-
-    /* DESIGN FOR THE SERVICES PAGE*/
-    /* SERVICES TOP HEADER */
-    /* .services_header {
-    width: 100%;
-    overflow: hidden;
-}
-
-.services_top_header {
-    display: block;
-    display: flex;
-    width: 100%;
-}
-
-.services_logo {
-    padding: 10px;
-}
-
-.services_logo_image {
-    width: 50px;
-    position: relative;
-} */
-
-    /* .services_menu {
-        display: block;
-        text-align: center;
-    }
-
-    .services_nav {
-        position: relative;
-        margin: auto;
-        text-align: center;
-    }
-
-    .services_nav ul li a {
-        color: #000;
-        font-size: 17px;
-        text-align: center;
-    } */
 
     /* SERVICES HERO */
     #services_hero {
@@ -823,6 +742,7 @@ line-height: 2.2rem; */
     #header {
         display: block;
         text-align: center;
+
     }
 
     .top_header {
@@ -830,6 +750,7 @@ line-height: 2.2rem; */
         width: 100%;
         margin: auto;
         padding-top: 1em;
+        padding-bottom: 3rem;
     }
 
     .logo {
@@ -897,12 +818,14 @@ line-height: 2.2rem; */
         margin-bottom: 20px;
         color: #fff;
         text-align: center;
+        line-height: 3rem;
     }
 
     .hero_box p {
         font-size: 20px;
         margin-bottom: 40px;
         color: #fff;
+        line-height: 2.0rem;
     }
 
     .hero_box a {
@@ -915,42 +838,6 @@ line-height: 2.2rem; */
         border-radius: 10px;
         color: #fff;
     }
-
-    /* DESIGN FOR THE SERVICES PAGE*/
-    /* SERVICES TOP HEADER */
-    /* .services_header {
-    width: 100%;
-    overflow: hidden;
-}
-
-.services_top_header {
-    display: flex;
-    width: 100%;
-}
-
-.services_logo {
-    text-align: center;
-} */
-
-    /* .services_logo_image {
-        width: 50px;
-        position: relative;
-    }
-
-    .services_menu {
-        display: block;
-        float: none;
-    }
-
-    .services_nav {
-        position: relative;
-        margin-top: 15px;
-    }
-
-    .services_nav ul li a {
-        color: #000;
-        display: block;
-    } */
 
     /*SERVICES HERO */
     #services_hero {
@@ -982,6 +869,7 @@ line-height: 2.2rem; */
 
     .services_content {
         padding: 20px 20px;
+        line-height: 1.8rem;
     }
 
     .services_content h3 {
@@ -1003,5 +891,9 @@ line-height: 2.2rem; */
     .calc_img {
         width: 100%;
         height: 100%;
+    }
+
+    .action h2 {
+        padding: 0 1rem
     }
 }
