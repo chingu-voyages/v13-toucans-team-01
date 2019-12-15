@@ -74,8 +74,7 @@ nav ul li a {
     font-size: 17px;
 }
 
-.hamburger {
-    background: green;
+.div_hamburger {
     color: #fff;
 }
 
@@ -647,8 +646,8 @@ button {
 
 /********** ABOUT DESIGN **********/
 #about {
-    background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(/images/about_img.jpg);
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(/images/about_img.jpg);
+    background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../images/about_img.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../images/about_img.jpg);
     overflow: hidden;
     background-position: center;
     background-size: cover;
@@ -767,6 +766,7 @@ button {
     min-width: 300px;
     height: auto;
 }
+
 
 
 /********** ABOUT DESIGN **********/
