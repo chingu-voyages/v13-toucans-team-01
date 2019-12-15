@@ -20,30 +20,29 @@
     <!-- SERVICES HEADER SECTION -->
     <section id="services">
         <!-- HEADER SECTION -->
-        <section class="services_header">
-            <div class="services_top_header">
-                <div class="services_logo">
-                    <img class="services_logo_image" src="images/toucan-logo.png" alt="Toucan Logo - Bank of Toucan">
-                </div>
-                <div class="div_hamburger">
-                    <div class="div_hamburgerBars">
-                        <span class="span_hamburgerBar span_topBar"></span>
-                        <span class="span_hamburgerBar span_midBar"></span>
-                        <span class="span_hamburgerBar span_bottomBar"></span>
-                    </div>
-                </div>
-                <div class="services_menu">
-                    <nav class="services_nav services_main_menu">
-                        <ul>
-                            <li><a href="index.html">Home</a></li>
-                            <li><a href="about.html">About</a></li>
-                            <li><a href="services.html">Services</a></li>
-                            <li><a href="#">Log In</a></li>
-                        </ul>
-                    </nav>
+        <!-- HEADER NAVIGATION -->
+        <div class="top_header services_top_header">
+            <div class="logo">
+                <img class="logo_image" src="images/toucan-logo.png" alt="Toucan Logo - Bank of Toucan">
+                <p>Bank Toucan</p>
+            </div>
+            <div class="div_hamburger">
+                <div class="div_hamburgerBars">
+                    <span class="span_hamburgerBar span_topBar"></span>
+                    <span class="span_hamburgerBar span_midBar"></span>
+                    <span class="span_hamburgerBar span_bottomBar"></span>
                 </div>
             </div>
-        </section>
+            <nav class="nav main_menu">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="#" onclick="document.getElementById('logInForm').style.display='block'">Log In</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
     </section>
 
     <!-- SERVICES HERO SECTION -->
@@ -52,15 +51,15 @@
         <div class="services_agreement">
             <div class="services_content">
                 <h3>Track your budget</h3>
-                <p>It can be easy to get a bit lost when it comes to money and budgeting. 
-                    How do you track your expenses and dept? 
+                <p>It can be easy to get a bit lost when it comes to money and budgeting.
+                    How do you track your expenses and dept?
                     This is going to have a huge impact on your saving.</p>
             </div>
             <div class="services_content">
                 <h3>Make investments</h3>
-                <p>Just commit to an amount you can afford, and invest it regularly. 
-                Even small investments can add up over time, the sooner you start the better! 
-                And when it comes to reaching money goals, consistency is key.</p>
+                <p>Just commit to an amount you can afford, and invest it regularly.
+                    Even small investments can add up over time, the sooner you start the better!
+                    And when it comes to reaching money goals, consistency is key.</p>
             </div>
         </div>
     </section>
@@ -70,8 +69,8 @@
         <h3>Income and Expense Calculator</h3>
         <div class="services_calc_content">
             <div class="services_calc_text calc_box">
-                <p>Provide your recurring expenses (Tv, internet, transport etc) in the below calculator, 
-                get a quick summary on your transacton habit. And we got you covered by helping you invest</p>
+                <p>Provide your recurring expenses (Tv, internet, transport etc) in the below calculator,
+                    get a quick summary on your transacton habit. And we got you covered by helping you invest</p>
                 <img class="calc_arrow" src="./images/down-arrow.png" alt="calc_arrow_img">
             </div>
             <div class="services_calc_image calc_box">
@@ -160,8 +159,8 @@
                     <div class="expenses">
                         <h2 class="expenses__title">Expenses</h2>
 
-                        
-                            <!-- <div class="item clearfix" id="expense-0">
+
+                        <!-- <div class="item clearfix" id="expense-0">
                                 <div class="item__description">Apartment rent</div>
                                 <div class="right clearfix">
                                     <div class="item__value">- 900.00</div>
@@ -222,7 +221,7 @@
                     </div>
                 </form>
             </div>
-          
+
             <li class="footer__list">
                 <a class="footer__link" href="privacy.html">Privacy</a>
             </li>

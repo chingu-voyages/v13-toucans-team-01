@@ -461,7 +461,7 @@ line-height: 2.2rem; */
 
     /* DESIGN FOR THE HOME PAGE*/
     /* HEADER*/
-    .logo {
+    /* .logo {
         display: flex;
         margin-left: 40px;
         overflow: hidden;
@@ -469,7 +469,7 @@ line-height: 2.2rem; */
 
     .logo p {
         margin-top: 20px;
-    }
+    } */
 
     .hero_box {
         position: relative;
@@ -723,27 +723,27 @@ line-height: 2.2rem; */
 
     /* DESIGN FOR THE SERVICES PAGE*/
     /* SERVICES TOP HEADER */
-    .services_header {
-        width: 100%;
-        overflow: hidden;
-    }
+    /* .services_header {
+    width: 100%;
+    overflow: hidden;
+}
 
-    .services_top_header {
-        /* display: block; */
-        display: flex;
-        width: 100%;
-    }
+.services_top_header {
+    display: block;
+    display: flex;
+    width: 100%;
+}
 
-    .services_logo {
-        padding: 10px;
-    }
+.services_logo {
+    padding: 10px;
+}
 
-    .services_logo_image {
-        width: 50px;
-        position: relative;
-    }
+.services_logo_image {
+    width: 50px;
+    position: relative;
+} */
 
-    .services_menu {
+    /* .services_menu {
         display: block;
         text-align: center;
     }
@@ -758,7 +758,7 @@ line-height: 2.2rem; */
         color: #000;
         font-size: 17px;
         text-align: center;
-    }
+    } */
 
     /* SERVICES HERO */
     #services_hero {
@@ -816,7 +816,7 @@ line-height: 2.2rem; */
 }
 
 /* Small phones: from 0 to 480px //*/
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 495px) {
 
     /* DESIGN FOR THE HOME PAGE*/
     /* Header*/
@@ -918,21 +918,21 @@ line-height: 2.2rem; */
 
     /* DESIGN FOR THE SERVICES PAGE*/
     /* SERVICES TOP HEADER */
-    .services_header {
-        width: 100%;
-        overflow: hidden;
-    }
+    /* .services_header {
+    width: 100%;
+    overflow: hidden;
+}
 
-    .services_top_header {
-        display: flex;
-        width: 100%;
-    }
+.services_top_header {
+    display: flex;
+    width: 100%;
+}
 
-    .services_logo {
-        text-align: center;
-    }
+.services_logo {
+    text-align: center;
+} */
 
-    .services_logo_image {
+    /* .services_logo_image {
         width: 50px;
         position: relative;
     }
@@ -950,7 +950,7 @@ line-height: 2.2rem; */
     .services_nav ul li a {
         color: #000;
         display: block;
-    }
+    } */
 
     /*SERVICES HERO */
     #services_hero {
