@@ -211,9 +211,10 @@
    </section>
 
    <!-- FOOTER -->
+   <!-- FOOTER SECTION -->
    <footer class="footer">
 
-      <!-- FOOTER__NAV START -->
+      <!-- FOOTER-NAV START BLOCK -->
       <ul class="footer__nav">
          <li class="footer__list">
             <a class="footer__link" href="index.html">Home</a>
@@ -222,24 +223,19 @@
             <a class="footer__link" href="about.html">About</a>
          </li>
          <li class="footer__list">
-            <a class="footer__link" href="contact.html"
+            <a class="footer__link" href="#"
                onclick="document.getElementById('contactForm').style.display='block'">Contact</a>
          </li>
-
          <div id="contactForm" class="modal">
             <span onclick="document.getElementById('contactForm').style.display='none'" class="close"
                title="Close Modal">×</span>
             <form class="modal-content animate" action="/action_page.php">
 
-               <div class="container">
+               <div class="containerBtn">
                   <b>Contact</b>
                   <input type="text" placeholder="Name" name="" required>
-
-
                   <input type="text" placeholder="Email" name="" required>
-
-                  <input type="text" placeholder="Message" name="" required>
-
+                  <textarea cols="40" rows="3" placeholder="Message" name="" required></textarea>
                   <div class="clearfix">
                      <button type="button" onclick="document.getElementById('contactForm').style.display='none'"
                         class="cancelbtn">Cancel</button>
@@ -275,7 +271,6 @@
          <p>&copy; 2020 Bank of Toucan, Quebec & USA - All Rights reserved</p>
       </section>
    </footer>
-   </section>
 
    <script src="javascript/script.js"></script>
 
