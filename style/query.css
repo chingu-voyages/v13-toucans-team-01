@@ -15,10 +15,15 @@ for instance: 600px / 16em = 37.7em
 
     /* DESIGN FOR THE HOME PAGE*/
 
+    #header {
+        height: 100vh;
+    }
+
     /* FEATURES */
     .features__container {
         width: 100%;
-        padding: 12rem 0;
+        padding: 8rem 0;
+        padding-bottom: 5rem;
     }
 
     .features {
@@ -30,7 +35,7 @@ for instance: 600px / 16em = 37.7em
     .features__header {
         font-size: 3.8rem;
         line-height: 3rem;
-        padding: 2.5rem 0;
+        padding: 0;
         text-transform: uppercase;
         word-spacing: 1px;
     }
@@ -54,6 +59,7 @@ for instance: 600px / 16em = 37.7em
         padding: .5rem;
         padding-bottom: 5.5rem;
         position: relative;
+        margin: 2rem;
     }
 
     .features__h2 {
@@ -571,6 +577,7 @@ for instance: 600px / 16em = 37.7em
         margin: auto;
         width: 75vw;
         font-size: 1rem;
+        line-height: 2.1rem;
     }
 
     .about__button {
@@ -592,6 +599,7 @@ for instance: 600px / 16em = 37.7em
         color: hsla(41, 31%, 100%, 0.692);
         margin: auto;
         font-size: 1rem;
+        line-height: 2.1rem;
     }
 
     /* FACULTY */

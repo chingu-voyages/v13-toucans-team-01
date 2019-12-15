@@ -721,9 +721,7 @@ button {
     word-spacing: 1px;
 }
 
-.calc_form {
-    padding: 0 1.5rem;
-}
+.calc_form {}
 
 .calc_box p {
     margin: 40px auto 30px auto;
@@ -918,14 +916,9 @@ button {
     transition: border 0.3s;
 }
 
-.add__description {
-    width: 400px;
-}
+.add__description {}
 
-.add__value {
-    width: 100px;
-    width: 400px;
-}
+.add__value {}
 
 .add__btn {
     font-size: 35px;
@@ -957,14 +950,13 @@ button {
 /***** LISTS *****/
 
 .container {
-    width: 1000px;
     margin: 60px auto;
 }
 
 .income {
-    float: left;
+    /* float: left;
     width: 475px;
-    margin-right: 50px;
+    margin-right: 50px; */
 }
 
 .expenses {
