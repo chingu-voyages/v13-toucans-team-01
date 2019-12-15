@@ -40,6 +40,23 @@
                     <li><a href="services.html">Services</a></li>
                     <li><a href="#" onclick="document.getElementById('logInForm').style.display='block'">Log In</a>
                     </li>
+                    <div id="logInForm" class="modal">
+                        <span onclick="document.getElementById('logInForm').style.display='none'" class="close"
+                            title="Close Modal">×</span>
+                        <li><a href="#" onclick="document.getElementById('logInForm').style.display='block'">Log
+                                In</a>
+                        </li>
+                        <form class="modal-content animate" action="/action_page.php">
+                            <div class="containerBtn">
+                                <b> Log In</b>
+                                <input type="text" placeholder="Enter Email" name="email" required>
+                                <input type="password" placeholder="Enter Password" name="psw" required>
+                                <div class="clearfix">
+                                    <button type="submit" class="signupbtn">Log In</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
                 </ul>
             </nav>
         </div>
@@ -160,32 +177,31 @@
                         <h2 class="expenses__title">Expenses</h2>
 
 
-                        <!-- <div class="item clearfix" id="expense-0">
-                                <div class="item__description">Apartment rent</div>
-                                <div class="right clearfix">
-                                    <div class="item__value">- 900.00</div>
-                                    <div class="item__percentage">21%</div>
-                                    <div class="item__delete">
-                                        <button class="item__delete--btn"><i class="ion-ios-close-outline"></i></button>
-                                    </div>
+                        <div class="item clearfix" id="expense-0">
+                            <div class="item__description">Apartment rent</div>
+                            <div class="right clearfix">
+                                <div class="item__value">- 900.00</div>
+                                <div class="item__percentage">21%</div>
+                                <div class="item__delete">
+                                    <button class="item__delete--btn"><i class="ion-ios-close-outline"></i></button>
                                 </div>
                             </div>
-                            <div class="item clearfix" id="expense-1">
-                                <div class="item__description">Grocery shopping</div>
-                                <div class="right clearfix">
-                                    <div class="item__value">- 435.28</div>
-                                    <div class="item__percentage">10%</div>
-                                    <div class="item__delete">
-                                        <button class="item__delete--btn"><i class="ion-ios-close-outline"></i></button>
-                                    </div>
+                        </div>
+                        <div class="item clearfix" id="expense-1">
+                            <div class="item__description">Grocery shopping</div>
+                            <div class="right clearfix">
+                                <div class="item__value">- 435.28</div>
+                                <div class="item__percentage">10%</div>
+                                <div class="item__delete">
+                                    <button class="item__delete--btn"><i class="ion-ios-close-outline"></i></button>
                                 </div>
                             </div>
-                        </div>  -->
+                        </div>
                     </div>
                 </div>
-
-
             </div>
+
+
         </div>
     </section>
 
@@ -195,10 +211,13 @@
         <!-- Footer nav start block -->
         <ul class="footer__nav">
             <li class="footer__list">
-                <a class="footer__link" href="#">About</a>
+                <a class="footer__link" href="index.html">Home</a>
             </li>
             <li class="footer__list">
-                <a class="footer__link" href="#">Contact</a>
+                <a class="footer__link" href="about.html">About</a>
+            </li>
+            <li class="footer__list">
+                <a class="footer__link" href="contact.html">Contact</a>
             </li>
 
             <div id="contactForm" class="modal">

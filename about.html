@@ -43,6 +43,23 @@
                   <li><a href="services.html">Services</a></li>
                   <li><a href="#" onclick="document.getElementById('logInForm').style.display='block'">Log In</a>
                   </li>
+                  <div id="logInForm" class="modal">
+                     <span onclick="document.getElementById('logInForm').style.display='none'" class="close"
+                        title="Close Modal">×</span>
+                     <li><a href="#" onclick="document.getElementById('logInForm').style.display='block'">Log
+                           In</a>
+                     </li>
+                     <form class="modal-content animate" action="/action_page.php">
+                        <div class="containerBtn">
+                           <b> Log In</b>
+                           <input type="text" placeholder="Enter Email" name="email" required>
+                           <input type="password" placeholder="Enter Password" name="psw" required>
+                           <div class="clearfix">
+                              <button type="submit" class="signupbtn">Log In</button>
+                           </div>
+                        </div>
+                     </form>
+                  </div>
                </ul>
             </nav>
          </div>
@@ -199,13 +216,13 @@
       <!-- FOOTER__NAV START -->
       <ul class="footer__nav">
          <li class="footer__list">
-            <a class="footer__link" href="home.html">Home</a>
+            <a class="footer__link" href="index.html">Home</a>
          </li>
          <li class="footer__list">
-            <a class="footer__link" href="#">About</a>
+            <a class="footer__link" href="about.html">About</a>
          </li>
          <li class="footer__list">
-            <a class="footer__link" href="#"
+            <a class="footer__link" href="contact.html"
                onclick="document.getElementById('contactForm').style.display='block'">Contact</a>
          </li>
 
