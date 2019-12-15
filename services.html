@@ -125,8 +125,6 @@
                 </div>
             </div>
 
-
-
             <div class="bottom">
                 <div class="add">
                     <div class="add__container">
@@ -140,17 +138,15 @@
                     </div>
                 </div>
 
-                <div class="container clearfix">
+                <div class="container clearfix calc_transactions">
                     <div class="income">
                         <h2 class="icome__title">Income</h2>
 
                         <div class="income__list">
-
-
                             <div class="item clearfix" id="income-0">
-                                <div class="item__description">Salary</div>
+                                <div class="item__description"></div>
                                 <div class="right clearfix">
-                                    <div class="item__value">+ 2,100.00</div>
+                                    <div class="item__value"></div>
                                     <div class="item__delete">
                                         <button class="item__delete--btn"><i class="ion-ios-close-outline"></i></button>
                                     </div>
@@ -158,16 +154,14 @@
                             </div>
 
                             <div class="item clearfix" id="income-1">
-                                <div class="item__description">Sold car</div>
+                                <div class="item__description"></div>
                                 <div class="right clearfix">
-                                    <div class="item__value">+ 1,500.00</div>
+                                    <div class="item__value"></div>
                                     <div class="item__delete">
                                         <button class="item__delete--btn"><i class="ion-ios-close-outline"></i></button>
                                     </div>
                                 </div>
                             </div>
-
-
                         </div>
                     </div>
 
@@ -176,22 +170,11 @@
                     <div class="expenses">
                         <h2 class="expenses__title">Expenses</h2>
 
-
                         <div class="item clearfix" id="expense-0">
                             <div class="item__description">Apartment rent</div>
                             <div class="right clearfix">
                                 <div class="item__value">- 900.00</div>
                                 <div class="item__percentage">21%</div>
-                                <div class="item__delete">
-                                    <button class="item__delete--btn"><i class="ion-ios-close-outline"></i></button>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="item clearfix" id="expense-1">
-                            <div class="item__description">Grocery shopping</div>
-                            <div class="right clearfix">
-                                <div class="item__value">- 435.28</div>
-                                <div class="item__percentage">10%</div>
                                 <div class="item__delete">
                                     <button class="item__delete--btn"><i class="ion-ios-close-outline"></i></button>
                                 </div>
@@ -219,26 +202,24 @@
             <li class="footer__list">
                 <a class="footer__link" href="contact.html">Contact</a>
             </li>
-
             <div id="contactForm" class="modal">
                 <span onclick="document.getElementById('contactForm').style.display='none'" class="close"
                     title="Close Modal">×</span>
                 <form class="modal-content animate" action="/action_page.php">
 
-                    <div class="container">
-                        <label><b>Contact</b></label>
+                    <div class="containerBtn">
+                        <b>Contact</b>
                         <input type="text" placeholder="Name" name="" required>
-
-                        <label></label>
                         <input type="text" placeholder="Email" name="" required>
-
-                        <input type="text" placeholder="Message" name="" required>
-
+                        <textarea cols="40" rows="3" placeholder="Message" name="" required></textarea>
                         <div class="clearfix">
-                            <button type="submit" class="logInBtn">Submit</button>
+                            <button type="button" onclick="document.getElementById('contactForm').style.display='none'"
+                                class="cancelbtn">Cancel</button>
+                            <button type="submit" class="signupbtn">Submit</button>
                         </div>
                     </div>
-                </form>
+            </div>
+            </form>
             </div>
 
             <li class="footer__list">

@@ -14,10 +14,10 @@ for instance: 600px / 16em = 37.7em
 @media only screen and (min-width: 1141px) {
 
     /* DESIGN FOR THE HOME PAGE*/
-
     #header {
         height: 100vh;
     }
+
 
     /* FEATURES */
     .features__container {
@@ -132,7 +132,6 @@ for instance: 600px / 16em = 37.7em
     }
 
     .about__text {
-        /* line-height: 2.5rem; */
         margin: auto;
         padding-top: 1rem;
         text-align: left;
@@ -140,22 +139,16 @@ for instance: 600px / 16em = 37.7em
     }
 
     /* MISSION */
-
     .mission__header {
         color: hsla(43, 30%, 100%, 1);
         font-size: 2rem;
-        /* line-height: 3rem; */
-        /* padding-bottom: 2rem; */
         text-align: center;
     }
 
     .mission__text {
         color: hsla(41, 31%, 100%, 0.692);
-        /* font-size: 1.2rem; */
         letter-spacing: 2.5px;
-        /* line-height: 2.7rem; */
         margin: auto;
-        /* width: 90vw; */
     }
 
     .about__button {
@@ -183,8 +176,6 @@ for instance: 600px / 16em = 37.7em
     /* FACULTY */
     .faculty__header {
         font-size: 2rem;
-        /* padding-bottom: 5rem; */
-        /* padding-top: 9rem; */
     }
 
     .faculty {
@@ -727,7 +718,7 @@ for instance: 600px / 16em = 37.7em
         font-size: 22px;
     }
 
-    .calc_img {
+    .calc_box p {
         width: 100%;
         height: auto;
     }
@@ -763,7 +754,6 @@ for instance: 600px / 16em = 37.7em
     .logo_image {
         width: 3em;
         margin: auto;
-
     }
 
     .logo p {
@@ -887,9 +877,22 @@ for instance: 600px / 16em = 37.7em
         font-size: 22px;
     }
 
-    .calc_img {
+    .calc_box p {
         width: 100%;
-        height: 100%;
+        margin: auto;
+        display: flex;
+        padding: 15px;
+        line-height: 1.5;
+        color: #000;
+    }
+
+    .bottom input {
+        width: 100%;
+    }
+
+    .calc_transactions {
+        display: block;
+        float: none;
     }
 
     .action h2 {
