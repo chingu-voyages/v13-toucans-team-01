@@ -14,10 +14,16 @@ for instance: 600px / 16em = 37.7em
 @media only screen and (min-width: 1141px) {
 
     /* DESIGN FOR THE HOME PAGE*/
+
+    #header {
+        height: 100vh;
+    }
+
     /* FEATURES */
     .features__container {
         width: 100%;
-        padding: 12rem 0;
+        padding: 8rem 0;
+        padding-bottom: 5rem;
     }
 
     .features {
@@ -29,7 +35,7 @@ for instance: 600px / 16em = 37.7em
     .features__header {
         font-size: 3.8rem;
         line-height: 3rem;
-        padding: 2.5rem 0;
+        padding: 0;
         text-transform: uppercase;
         word-spacing: 1px;
     }
@@ -53,6 +59,7 @@ for instance: 600px / 16em = 37.7em
         padding: .5rem;
         padding-bottom: 5.5rem;
         position: relative;
+        margin: 2rem;
     }
 
     .features__h2 {
@@ -125,6 +132,7 @@ for instance: 600px / 16em = 37.7em
     }
 
     .about__text {
+        /* line-height: 2.5rem; */
         margin: auto;
         padding-top: 1rem;
         text-align: left;
@@ -132,16 +140,22 @@ for instance: 600px / 16em = 37.7em
     }
 
     /* MISSION */
+
     .mission__header {
         color: hsla(43, 30%, 100%, 1);
         font-size: 2rem;
+        /* line-height: 3rem; */
+        /* padding-bottom: 2rem; */
         text-align: center;
     }
 
     .mission__text {
         color: hsla(41, 31%, 100%, 0.692);
+        /* font-size: 1.2rem; */
         letter-spacing: 2.5px;
+        /* line-height: 2.7rem; */
         margin: auto;
+        /* width: 90vw; */
     }
 
     .about__button {
@@ -169,6 +183,8 @@ for instance: 600px / 16em = 37.7em
     /* FACULTY */
     .faculty__header {
         font-size: 2rem;
+        /* padding-bottom: 5rem; */
+        /* padding-top: 9rem; */
     }
 
     .faculty {
@@ -233,6 +249,10 @@ for instance: 600px / 16em = 37.7em
     /* DESIGN FOR THE HOME PAGE*/
 
     /* FEATURES */
+    .features__container {
+        padding-top: 5rem;
+    }
+
     .features {
         display: block;
         font-family: sans-serif;
@@ -251,7 +271,7 @@ for instance: 600px / 16em = 37.7em
         font-size: 1.4rem;
         font-weight: normal;
         line-height: 2.2rem;
-        margin-bottom: 5rem;
+        margin-bottom: 1rem;
     }
 
     .features__cards {
@@ -261,7 +281,7 @@ for instance: 600px / 16em = 37.7em
 
     .features__card {
         border: 1px solid rgba(0, 128, 0, 0.151);
-        box-shadow: 2px 2px 5px 2px rgba(211, 211, 211, 0.274);
+        box-shadow: 2px 2px 5px 2px rgba(211, 211, 211, 0.589);
         margin-top: 3rem;
         padding: .5rem;
         padding-bottom: 3.5rem;
@@ -302,13 +322,6 @@ for instance: 600px / 16em = 37.7em
         width: 10rem;
     }
 
-    /* ABOUT (RoKo) */
-    img {
-        display: block;
-        height: auto;
-        width: 100%;
-    }
-
     .about-container {
         grid-template-columns: 1fr;
     }
@@ -346,7 +359,6 @@ for instance: 600px / 16em = 37.7em
     }
 
     /* MISSION */
-
     .mission__header {
         color: hsla(43, 30%, 100%, 1);
         font-size: 1.6rem;
@@ -368,7 +380,7 @@ for instance: 600px / 16em = 37.7em
     .faculty {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        padding-bottom: 7rem;
+        padding-bottom: 5rem;
     }
 
     .faculty__person {
@@ -431,19 +443,10 @@ for instance: 600px / 16em = 37.7em
 
 
 /* Small phones to small tablets: from 481px to 670px */
-@media only screen and (max-width: 670px) {
+@media only screen and (max-width: 780px) {
 
     /* DESIGN FOR THE HOME PAGE*/
     /* HEADER*/
-    .logo {
-        display: flex;
-        margin-left: 40px;
-        overflow: hidden;
-    }
-
-    .logo p {
-        margin-top: 20px;
-    }
 
     .hero_box {
         position: relative;
@@ -456,8 +459,6 @@ for instance: 600px / 16em = 37.7em
 
     .hero_box .hero_h1 {
         font-size: 35px;
-        /* padding: 12px; */
-        /*  ^^^^^^^^This was affecting the responsiveness.  It was keeping the screen-width from shrinking */
         margin-bottom: 40px;
         color: #fff;
         text-align: center;
@@ -507,10 +508,12 @@ for instance: 600px / 16em = 37.7em
     .features__cards {
         display: grid;
         grid-template-columns: 1fr;
+        justify-items: center;
     }
 
     .features__card {
-        margin-bottom: 5rem;
+        margin-bottom: 0rem;
+        max-width: 350px;
     }
 
     .features__h2 {
@@ -542,11 +545,7 @@ for instance: 600px / 16em = 37.7em
     }
 
     /* ABOUT */
-    img {
-        display: block;
-        height: auto;
-        width: 100%;
-    }
+
 
     .about-container {
         grid-template-columns: 1fr;
@@ -578,6 +577,7 @@ for instance: 600px / 16em = 37.7em
         margin: auto;
         width: 75vw;
         font-size: 1rem;
+        line-height: 2.1rem;
     }
 
     .about__button {
@@ -599,6 +599,7 @@ for instance: 600px / 16em = 37.7em
         color: hsla(41, 31%, 100%, 0.692);
         margin: auto;
         font-size: 1rem;
+        line-height: 2.1rem;
     }
 
     /* FACULTY */
@@ -678,44 +679,6 @@ for instance: 600px / 16em = 37.7em
         text-align: center;
     }
 
-    /* DESIGN FOR THE SERVICES PAGE*/
-    /* SERVICES TOP HEADER */
-    .services_header {
-        width: 100%;
-        overflow: hidden;
-    }
-
-    .services_top_header {
-        display: block;
-        width: 100%;
-    }
-
-    .services_logo {
-        padding: 10px;
-    }
-
-    .services_logo_image {
-        width: 50px;
-        position: relative;
-    }
-
-    .services_menu {
-        display: block;
-        text-align: center;
-    }
-
-    .services_nav {
-        position: relative;
-        margin: auto;
-        text-align: center;
-    }
-
-    .services_nav ul li a {
-        color: #000;
-        font-size: 17px;
-        text-align: center;
-    }
-
     /* SERVICES HERO */
     #services_hero {
         text-align: center;
@@ -754,10 +717,9 @@ for instance: 600px / 16em = 37.7em
 
     /* SERVICES CALCULATOR*/
     .services_calc_content {
-        overflow: hidden;
-        width: 100%;
         display: flex;
         margin: 20px auto auto auto;
+        justify-content: space-around;
     }
 
     #services_calculator h3 {
@@ -765,24 +727,21 @@ for instance: 600px / 16em = 37.7em
         font-size: 22px;
     }
 
-    .calc_box p {
+    .calc_img {
         width: 100%;
-        margin: auto;
-        display: flex;
-        padding: 15px;
-        line-height: 1.5;
-        color: #000;
+        height: auto;
     }
 }
 
 /* Small phones: from 0 to 480px //*/
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 500px) {
 
     /* DESIGN FOR THE HOME PAGE*/
     /* Header*/
     #header {
         display: block;
         text-align: center;
+
     }
 
     .top_header {
@@ -790,6 +749,7 @@ for instance: 600px / 16em = 37.7em
         width: 100%;
         margin: auto;
         padding-top: 1em;
+        padding-bottom: 3rem;
     }
 
     .logo {
@@ -803,6 +763,7 @@ for instance: 600px / 16em = 37.7em
     .logo_image {
         width: 3em;
         margin: auto;
+
     }
 
     .logo p {
@@ -856,12 +817,14 @@ for instance: 600px / 16em = 37.7em
         margin-bottom: 20px;
         color: #fff;
         text-align: center;
+        line-height: 3rem;
     }
 
     .hero_box p {
         font-size: 20px;
         margin-bottom: 40px;
         color: #fff;
+        line-height: 2.0rem;
     }
 
     .hero_box a {
@@ -873,86 +836,6 @@ for instance: 600px / 16em = 37.7em
         margin-top: 20px;
         border-radius: 10px;
         color: #fff;
-    }
-
-    /* HOW IT WORKS*/
-    .how_to .how_lists {
-        font-size: larger;
-        font-weight: 700;
-        grid: none;
-    }
-
-/* HOW IT WORKS*/
-    .action {
-        text-align: center;
-        width: 100%;
-        float: none;
-        height: auto;
-        padding: 2em;
-        overflow: hidden;
-    }
-
-    /* ABOUT HERO */
-    #about {
-        width: 100%;
-        display: flex;
-        text-align: center;
-    }
-
-    .about_hero_content {
-        position: absolute;
-        top: 55%;
-        left: 50%;
-        transform: translate(-50% -50%);   
-    }
-    
-    .about_hero_content h3 {
-        text-align: center;
-    }
-
-    /* DESIGN FOR THE SERVICES PAGE*/
-    /* SERVICES TOP HEADER */
-    #services {
-        display: block;
-        text-align: center;
-    }
-
-    .services_header {
-        display: block;
-        width: 100%;
-        margin: auto;
-        padding-top: 1em;
-    }
-
-    .services_top_header {
-        display: block;
-        width: 100%;
-    }
-
-    .services_logo_image {
-        width: 50px;
-        margin: auto;
-    }
-
-    .services_menu {
-        display: block;
-        float: none;
-    }
-
-    .services_menu ul li {
-        display: block;
-        flex: none;
-        overflow: hidden;
-    }
-
-    .services_nav {
-        position: relative;
-        margin-top: 5px;
-    }
-
-    .services_nav ul li a {
-        color: #000;
-        display: block;
     }
 
     /*SERVICES HERO */
@@ -985,6 +868,7 @@ for instance: 600px / 16em = 37.7em
 
     .services_content {
         padding: 20px 20px;
+        line-height: 1.8rem;
     }
 
     .services_content h3 {
@@ -1003,21 +887,12 @@ for instance: 600px / 16em = 37.7em
         font-size: 22px;
     }
 
-    .calc_box p {
+    .calc_img {
         width: 100%;
-        margin: auto;
-        display: flex;
-        padding: 15px;
-        line-height: 1.5;
-        color: #000;
+        height: 100%;
     }
 
-    .bottom input {
-        width: 100%;
-    }
-
-    .calc_transactions {
-        display: block;
-        float: none;
+    .action h2 {
+        padding: 0 1rem
     }
 }

@@ -20,49 +20,29 @@
     <!-- SERVICES HEADER SECTION -->
     <section id="services">
         <!-- HEADER SECTION -->
-        <section class="services_header">
-            <div class="services_top_header">
-                <div class="services_logo">
-                    <img class="services_logo_image" src="images/toucan-logo.png" alt="Toucan Logo - Bank of Toucan">
-                </div>
-                <div class="div_hamburger">
-                    <div class="div_hamburgerBars">
-                        <span class="span_hamburgerBar span_topBar"></span>
-                        <span class="span_hamburgerBar span_midBar"></span>
-                        <span class="span_hamburgerBar span_bottomBar"></span>
-                    </div>
-                </div>
-                <div class="services_menu">
-                    <nav class="services_nav services_main_menu">
-                        <ul>
-                            <li><a href="index.html">Home</a></li>
-                            <li><a href="about.html">About</a></li>
-                            <li><a href="#">Services</a></li>
-                            <li><a href="#" onclick="document.getElementById('logInForm').style.display='block'">Log In</a>
-                            </li>
-    
-                            <div id="logInForm" class="modal">
-                                <span onclick="document.getElementById('logInForm').style.display='none'" class="close"
-                                    title="Close Modal">×</span>
-                                <li><a href="#" onclick="document.getElementById('logInForm').style.display='block'">Log
-                                        In</a>
-                                </li>
-                                <form class="modal-content animate" action="/action_page.php">
-                                    <div class="containerBtn">
-                                        <b> Log In</b>
-                                        <input type="text" placeholder="Enter Email" name="email" required>
-                                        <input type="password" placeholder="Enter Password" name="psw" required>
-                                        <div class="clearfix">
-                                            <button type="submit" class="signupbtn">Log In</button>
-                                        </div>
-                                    </div>
-                                </form>
-                            </div>
-                        </ul>
-                    </nav>
+        <!-- HEADER NAVIGATION -->
+        <div class="top_header services_top_header">
+            <div class="logo">
+                <img class="logo_image" src="images/toucan-logo.png" alt="Toucan Logo - Bank of Toucan">
+                <p>_Bank Toucan</p>
+            </div>
+            <div class="div_hamburger">
+                <div class="div_hamburgerBars">
+                    <span class="span_hamburgerBar span_topBar"></span>
+                    <span class="span_hamburgerBar span_midBar"></span>
+                    <span class="span_hamburgerBar span_bottomBar"></span>
                 </div>
             </div>
-        </section>
+            <nav class="nav main_menu">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="#" onclick="document.getElementById('logInForm').style.display='block'">Log In</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
     </section>
 
     <!-- SERVICES HERO SECTION -->
@@ -71,15 +51,15 @@
         <div class="services_agreement">
             <div class="services_content">
                 <h3>Track your budget</h3>
-                <p>It can be easy to get a bit lost when it comes to money and budgeting. 
-                    How do you track your expenses and dept? 
+                <p>It can be easy to get a bit lost when it comes to money and budgeting.
+                    How do you track your expenses and dept?
                     This is going to have a huge impact on your saving.</p>
             </div>
             <div class="services_content">
                 <h3>Make investments</h3>
-                <p>Just commit to an amount you can afford, and invest it regularly. 
-                Even small investments can add up over time, the sooner you start the better! 
-                And when it comes to reaching money goals, consistency is key.</p>
+                <p>Just commit to an amount you can afford, and invest it regularly.
+                    Even small investments can add up over time, the sooner you start the better!
+                    And when it comes to reaching money goals, consistency is key.</p>
             </div>
         </div>
     </section>
@@ -88,14 +68,14 @@
     <section id="services_calculator">
         <h3>Income and Expense Calculator</h3>
         <div class="services_calc_content">
+            <div class="services_calc_image calc_box">
+                <img class="calc_img" src="./images/calculator.jpg" alt="calc_image">
+            </div>
             <div class="services_calc_text calc_box">
-                <p>Provide your recurring expenses (Tv, internet, transport etc) in the below calculator, 
-                get a quick summary on your transacton habit. And we got you covered by helping you invest</p>
+                <p>Provide your recurring expenses (Tv, internet, transport etc) in the below calculator,
+                    get a quick summary on your transacton habit. And we got you covered by helping you invest</p>
                 <img class="calc_arrow" src="./images/down-arrow.png" alt="calc_arrow_img">
             </div>
-            <!-- <div class="services_calc_image calc_box">
-                <img class="calc_img" src="./images/calculator.jpg" alt="calc_image">
-            </div> -->
         </div>
     </section>
 
@@ -128,6 +108,8 @@
                 </div>
             </div>
 
+
+
             <div class="bottom">
                 <div class="add">
                     <div class="add__container">
@@ -141,15 +123,17 @@
                     </div>
                 </div>
 
-                <div class="container clearfix calc_transactions">
+                <div class="container clearfix">
                     <div class="income">
                         <h2 class="icome__title">Income</h2>
 
                         <div class="income__list">
+
+
                             <div class="item clearfix" id="income-0">
-                                <div class="item__description"></div>
+                                <div class="item__description">Salary</div>
                                 <div class="right clearfix">
-                                    <div class="item__value"></div>
+                                    <div class="item__value">+ 2,100.00</div>
                                     <div class="item__delete">
                                         <button class="item__delete--btn"><i class="ion-ios-close-outline"></i></button>
                                     </div>
@@ -157,14 +141,16 @@
                             </div>
 
                             <div class="item clearfix" id="income-1">
-                                <div class="item__description"></div>
+                                <div class="item__description">Sold car</div>
                                 <div class="right clearfix">
-                                    <div class="item__value"></div>
+                                    <div class="item__value">+ 1,500.00</div>
                                     <div class="item__delete">
                                         <button class="item__delete--btn"><i class="ion-ios-close-outline"></i></button>
                                     </div>
                                 </div>
                             </div>
+
+
                         </div>
                     </div>
 
@@ -173,7 +159,8 @@
                     <div class="expenses">
                         <h2 class="expenses__title">Expenses</h2>
 
-                            <!-- <div class="item clearfix" id="expense-0">
+
+                        <!-- <div class="item clearfix" id="expense-0">
                                 <div class="item__description">Apartment rent</div>
                                 <div class="right clearfix">
                                     <div class="item__value">- 900.00</div>
@@ -211,29 +198,30 @@
                 <a class="footer__link" href="#">About</a>
             </li>
             <li class="footer__list">
-                <a class="footer__link" href="#"
-                    onclick="document.getElementById('contactForm').style.display='block'">Contact</a>
+                <a class="footer__link" href="#">Contact</a>
             </li>
+
             <div id="contactForm" class="modal">
                 <span onclick="document.getElementById('contactForm').style.display='none'" class="close"
                     title="Close Modal">×</span>
                 <form class="modal-content animate" action="/action_page.php">
 
-                        <div class="containerBtn">
-                            <b>Contact</b>
-                            <input type="text" placeholder="Name" name="" required>
-                            <input type="text" placeholder="Email" name="" required>
-                            <textarea cols="40" rows="3" placeholder="Message" name="" required></textarea>
-                            <div class="clearfix">
-                                <button type="button"
-                                    onclick="document.getElementById('contactForm').style.display='none'"
-                                    class="cancelbtn">Cancel</button>
-                                <button type="submit" class="signupbtn">Submit</button>
-                            </div>
+                    <div class="container">
+                        <label><b>Contact</b></label>
+                        <input type="text" placeholder="Name" name="" required>
+
+                        <label></label>
+                        <input type="text" placeholder="Email" name="" required>
+
+                        <input type="text" placeholder="Message" name="" required>
+
+                        <div class="clearfix">
+                            <button type="submit" class="logInBtn">Submit</button>
                         </div>
-                    </form>
-                </div>
-          
+                    </div>
+                </form>
+            </div>
+
             <li class="footer__list">
                 <a class="footer__link" href="privacy.html">Privacy</a>
             </li>

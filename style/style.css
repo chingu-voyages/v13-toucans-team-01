@@ -24,20 +24,20 @@ header {
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    height: 100vh;
+    height: 115vh;
     background-attachment: fixed;
 }
 
 .top_header {
     display: flex;
-    width: 70em;
     margin: auto;
-    padding-top: 3em;
+    padding: 1rem 1rem;
+    padding-top: 2rem;
+    justify-content: space-between;
 }
 
 .logo {
     display: flex;
-    margin-right: auto;
     color: #fff;
 }
 
@@ -47,10 +47,12 @@ header {
 
 .logo p {
     margin-top: 1.1em;
+    font-size: 12px;
 }
 
 nav {
     display: flex;
+    align-items: center;
 }
 
 nav ul {
@@ -63,17 +65,17 @@ nav ul {
 
 nav ul li {
     text-decoration: none;
-    display: inline-block;
 }
 
 nav ul li a {
     text-decoration: none;
     padding: 10px 10px 0 10px;
     color: #fff;
-    font-size: 20px;
+    font-size: 17px;
 }
 
-.div_hamburger {
+.hamburger {
+    background: green;
     color: #fff;
 }
 
@@ -87,7 +89,7 @@ nav ul li a {
 
 .hero_box {
     position: absolute;
-    top: 40%;
+    top: 30%;
     left: 20%;
     transform: translate(-50% -50%);
     width: 60%;
@@ -98,12 +100,17 @@ nav ul li a {
     font-size: 45px;
     padding-bottom: 20px;
     color: #fff;
+    line-height: 5rem;
 }
 
 .hero_box p {
     font-size: 20px;
     margin-bottom: 20px;
     color: #fff;
+    padding-bottom: 5rem;
+    line-height: 2rem;
+    letter-spacing: 1px;
+    word-spacing: 1px;
 }
 
 .hero_box a {
@@ -132,7 +139,6 @@ nav ul li a {
 }
 
 /* DESIGN FOR HOW IT WORKS SECTION */
-
 .how_to {
     width: 100%;
     margin: auto;
@@ -141,6 +147,7 @@ nav ul li a {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+    box-shadow: 0 1px 1px 1px rgb(182, 182, 182);
 }
 
 .how_to .how_lists {
@@ -205,42 +212,35 @@ nav ul li a {
 }
 
 /*  CALL TO ACTION SECTION */
-
-.action h1 {
-    font-size: 28px;
-    padding: 1em 4em 4em 2em;
-    color: #383736;
-    grid-area: 1 / 1 / 2 / 2;
-    font-family: sans-serif;
-    text-transform: uppercase;
-    text-align: left;
+.action {
+    display: flex;
+    justify-content: space-around;
+    flex-flow: wrap;
+    padding: 7rem 0;
+    padding-bottom: 6.5rem;
+    background-color: rgb(45, 39, 24, 0.1);
 }
 
-.action {
+.action h2 {
+    font-size: 28px;
+    color: #383736;
+    font-family: sans-serif;
+    text-transform: uppercase;
+    align-self: center;
+    padding: 1rem 0;
     text-align: center;
-    width: 90%;
-    height: auto;
-    display: grid;
-    padding: 4em;
-    grid-template-columns: repeat(3fr 1fr);
-    grid-template-rows: 1fr;
-    grid-column-gap: 0px;
-    grid-row-gap: 0px;
-    margin: auto;
+    line-height: 3rem;
 }
 
 .applyBtn {
-    grid-area: 1 / 2 / 2 / 3;
-    padding-top: 90px;
+    padding: 1rem 0;
 }
 
-/* style action button using fill on hover */
-
+/* BUTTON HOVER */
 .action button {
     position: relative;
     height: 45px;
     width: auto;
-    margin: 5px 7px;
     padding: 5px 5px;
     font-weight: 700;
     font-size: 15px;
@@ -259,6 +259,7 @@ nav ul li a {
     -ms-transition: 0.08s ease-in;
     -moz-transition: 0.08s ease-in;
     -webkit-transition: 0.08s ease-in;
+    width: 10rem;
 }
 
 .action button:before {
@@ -447,6 +448,7 @@ button {
 }
 
 @media screen and (max-width: 300px) {
+
     .cancelbtn,
     .signupbtn {
         width: 100%;
@@ -456,7 +458,7 @@ button {
 /* FEATURES */
 .features__container {
     width: 100%;
-    padding: 7rem 0;
+    padding: 4rem 0;
 }
 
 .features {
@@ -489,12 +491,12 @@ button {
 
 .about {
     display: grid;
-    padding: 7rem 0;
+    padding: 1rem 0;
     padding-bottom: 0;
 }
 
 .about__image {
-    padding-top: 12rem;
+    padding-top: 4rem;
 }
 
 .about__header {
@@ -534,14 +536,14 @@ button {
 /* MISSION */
 .mission {
     background-color: rgb(45, 39, 24);
-    padding: 12rem 0;
+    padding: 8rem 0;
 }
 
 .mission__header {
     letter-spacing: 5px;
     line-height: 3.5rem;
     word-spacing: 2px;
-    padding-bottom: 5rem;
+    padding-bottom: 3rem;
     word-spacing: 2px;
 }
 
@@ -558,7 +560,7 @@ button {
     color: rgb(45, 39, 24);
     letter-spacing: 5px;
     margin: 0;
-    padding-top: 12rem;
+    padding-top: 8rem;
     padding-bottom: 5rem;
     text-align: center;
     word-spacing: 5px;
@@ -668,25 +670,7 @@ button {
     font-size: 30px;
 }
 
-
 /********** SERIVCES DESIGN **********/
-.services_top_header {
-    display: flex;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    color: #f4f4f4;
-    margin: auto;
-}
-
-.services_logo {
-    margin-right: auto;
-}
-
-.services_logo_image {
-    width: 50px;
-    position: relative;
-}
-
 .services_menu {
     display: flex;
 }
@@ -696,8 +680,12 @@ button {
     margin-top: 15px;
 }
 
-.services_nav ul li a {
-    color: #000;
+#services .logo p {
+    color: #222;
+}
+
+#services nav a {
+    color: #222;
 }
 
 #services_hero {
@@ -708,7 +696,7 @@ button {
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    height: 400px;
+    height: 500px;
     background-attachment: fixed;
 }
 
@@ -718,7 +706,6 @@ button {
 }
 
 .services_agreement {
-    width: 1100px;
     margin: auto;
     display: flex;
     padding: 20px;
@@ -729,25 +716,20 @@ button {
 .services_content {
     flex: 1;
     padding: 20px 30px;
+    line-height: 2rem;
+    letter-spacing: 1px;
+    word-spacing: 1px;
 }
 
-.services_content h3 {
-    margin-bottom: 20px;
-}
+.calc_form {}
 
 .calc_box p {
     margin: 40px auto 30px auto;
-    width: 1100px;
     margin: auto;
     display: flex;
     padding: 20px;
     line-height: 1.5;
-    color: #fff;
-}
-
-.services_content {
-    flex: 1;
-    padding: 20px 30px;
+    color: #222;
 }
 
 .services_content h3 {
@@ -756,10 +738,9 @@ button {
 
 #services_calculator {
     text-align: center;
-    padding-top: 60px;
-    padding-bottom: 60px;
+    padding-top: 5rem;
+    padding-bottom: 20px;
     background: #f4f4f4;
-    overflow: hidden;
 }
 
 #services_calculator h3 {
@@ -769,21 +750,23 @@ button {
 
 .services_calc_content {
     display: flex;
-    width: 1100px;
     margin: 20px auto auto auto;
+    flex-flow: wrap;
 }
 
 .calc_box {
     align-items: center;
     margin: 20px;
     flex: 1;
+    display: flex;
+    flex-direction: column;
 }
 
 .calc_img {
-    width: 500px;
-    height: 300px;
+    width: 100%;
+    min-width: 300px;
+    height: auto;
 }
-
 
 
 /********** ABOUT DESIGN **********/
@@ -810,122 +793,6 @@ button {
 
 .about_hero_content h3 {
     font-size: 30px;
-}
-
-/********** SERIVCES DESIGN **********/
-
-.services_header {
-    width: 90%;
-    margin: auto;
-}
-
-.services_top_header {
-    display: flex;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    color: #f4f4f4;
-    margin: auto;
-}
-
-.services_logo {
-    margin-right: auto;
-}
-
-.services_logo_image {
-    width: 50px;
-    position: relative;
-}
-
-.services_menu {
-    display: flex;
-}
-
-.services_nav {
-    position: relative;
-    margin-top: 15px;
-}
-
-.services_nav ul li a {
-    color: #000;
-}
-
-#services_hero {
-    text-align: center;
-    background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(/images/agreement.jpg);
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(/images/agreement.jpg);
-    overflow: hidden;
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 400px;
-    background-attachment: fixed;
-}
-
-#services_hero h2 {
-    margin: 60px auto 40px auto;
-    color: #fff;
-}
-
-.services_agreement {
-    width: 1100px;
-    margin: auto;
-    display: flex;
-    padding: 20px;
-    line-height: 1.5;
-    color: #fff;
-}
-
-.services_content h3 {
-    margin-bottom: 20px;
-}
-
-.calc_box p {
-    margin: 40px auto 30px auto;
-    width: 50%;
-    margin: auto;
-    display: flex;
-    padding: 20px;
-    line-height: 1.5;
-    color: #000;
-}
-
-.services_content {
-    flex: 1;
-    padding: 20px 30px;
-}
-
-.services_content h3 {
-    margin-bottom: 20px;
-}
-
-#services_calculator {
-    text-align: center;
-    padding-top: 60px;
-    padding-bottom: 60px;
-    background: #f4f4f4;
-    overflow: hidden;
-}
-
-#services_calculator h3 {
-    padding: 40px auto 30px auto;
-    font-size: 30px;
-}
-
-.services_calc_content {
-    display: flex;
-    width: 1100px;
-    margin: 20px auto auto auto;
-}
-
-.calc_box {
-    align-items: center;
-    margin: 20px;
-    flex: 1;
-}
-
-.calc_img {
-    width: 500px;
-    height: 300px;
 }
 
 /*****************************************
@@ -1049,14 +916,9 @@ button {
     transition: border 0.3s;
 }
 
-.add__description {
-    width: 400px;
-}
+.add__description {}
 
-.add__value {
-    width: 100px;
-    width: 400px;
-}
+.add__value {}
 
 .add__btn {
     font-size: 35px;
@@ -1088,14 +950,13 @@ button {
 /***** LISTS *****/
 
 .container {
-    width: 1000px;
     margin: 60px auto;
 }
 
 .income {
-    float: left;
+    /* float: left;
     width: 475px;
-    margin-right: 50px;
+    margin-right: 50px; */
 }
 
 .expenses {
@@ -1191,11 +1052,11 @@ h2 {
 }
 
 .item:hover .item__value {
-    transform: translateX(-20px);
+    transform: translateX(5px);
 }
 
 .item:hover .item__percentage {
-    transform: translateX(-20px);
+    transform: translateX(5px);
 }
 
 .unpaid {
