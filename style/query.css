@@ -729,7 +729,8 @@ line-height: 2.2rem; */
     }
 
     .services_top_header {
-        display: block;
+        /* display: block; */
+        display: flex;
         width: 100%;
     }
 
@@ -923,7 +924,7 @@ line-height: 2.2rem; */
     }
 
     .services_top_header {
-        display: block;
+        display: flex;
         width: 100%;
     }
 
