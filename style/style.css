@@ -1096,6 +1096,10 @@ h2 {
     text-align: center;
 }
 
+#privacy p {
+    line-height: 2rem;
+}
+
 /* ADD TERMS AND CONDITIONS PAGE */
 
 #terms {
@@ -1113,4 +1117,8 @@ h2 {
 
 .termsHeading {
     text-align: center;
+}
+
+#terms p {
+    line-height: 2rem;
 }
