@@ -188,7 +188,7 @@
     <!-- FOOTER SECTION -->
     <footer class="footer">
 
-        <!-- Footer nav start block -->
+        <!-- FOOTER-NAV START BLOCK -->
         <ul class="footer__nav">
             <li class="footer__list">
                 <a class="footer__link" href="index.html">Home</a>
@@ -197,7 +197,8 @@
                 <a class="footer__link" href="about.html">About</a>
             </li>
             <li class="footer__list">
-                <a class="footer__link" href="contact.html">Contact</a>
+                <a class="footer__link" href="#"
+                    onclick="document.getElementById('contactForm').style.display='block'">Contact</a>
             </li>
             <div id="contactForm" class="modal">
                 <span onclick="document.getElementById('contactForm').style.display='none'" class="close"
@@ -215,8 +216,7 @@
                             <button type="submit" class="signupbtn">Submit</button>
                         </div>
                     </div>
-            </div>
-            </form>
+                </form>
             </div>
 
             <li class="footer__list">
@@ -226,9 +226,8 @@
                 <a class="footer__link" href="terms.html">Terms</a>
             </li>
         </ul>
-        <!-- Footer Nav end block -->
 
-        <!-- Social Icons/Links -->
+        <!-- SOCIAL ICONS -->
         <section class="footer__social">
             <a class="footer__link" href="https://twitter.com/">
                 <i class="fab fa-twitter"></i>
@@ -241,14 +240,11 @@
             </a>
         </section>
 
-        <!-- Copyright -->
+        <!-- COPY -->
         <section class="footer__copyright">
             <p>&copy; 2020 Bank of Toucan, Quebec & USA - All Rights reserved</p>
         </section>
-
-
     </footer>
-    <!-- END FOOTER -->
 
     <script src="javascript/script.js"></script>
 </body>
