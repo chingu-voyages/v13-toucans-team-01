@@ -670,6 +670,12 @@ button {
 }
 
 /********** SERIVCES DESIGN **********/
+
+.bottom {
+    width: 80vw;
+    margin: auto;
+}
+
 .services_menu {
     display: flex;
 }
